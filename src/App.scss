@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+:root {
+  // colors
+  --primaryOrange: #f3a225;
+  --secondaryOrange: #f3a12531;
+  --lightOrange: #f3a12517;
+  --primaryBlue: #4dbde8;
+  --secondaryBlue: #4dbce83a;
+  --primaryGrey: #212121;
+  --secondaryGrey: #373737;
+  --trackColor: #e7e7e7;
+  --lightGrey: #a4a4a4;
+  --white: #ffffff;
+  --black: #000000;
+  --bgColor: #f9f9f9;
+  --borderCard: #d8d8d8;
+  --tertiaryColor: #3f51b583;
+
+  // other
+  --shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.325);
+  --topBarHeight: 5rem;
+  --hoverAnimation: all 175ms ease-in-out;
+  --buttonPadding: 0.3rem 0.7rem 0.3rem 0.7rem;
+  --buttonRadius: 5px;
+  --border: 2px solid var(--borderCard);
+}
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px; /* width of the entire scrollbar */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* color of the tracking area */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: var(--lightGrey); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body,
+html {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  background-color: var(--white);
+  height: 100vh;
+  width: 100vw;
+}
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
