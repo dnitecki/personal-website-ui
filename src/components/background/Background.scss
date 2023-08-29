@@ -1,0 +1,11 @@
+path {
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+.bg-wrap {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bgColor);
+  overflow: hidden;
+  position: absolute;
+}
