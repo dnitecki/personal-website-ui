@@ -15,12 +15,15 @@
   --borderCard: #d8d8d8;
   --tertiaryColor: #3f51b583;
 
+  // glass card
+  --glassBgColor: rgba(255, 255, 255, 0.3);
+
   // other
-  --shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.325);
+  --shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   --topBarHeight: 5rem;
   --hoverAnimation: all 175ms ease-in-out;
   --buttonPadding: 0.3rem 0.7rem 0.3rem 0.7rem;
-  --buttonRadius: 5px;
+  --borderRadius: 16px;
   --border: 2px solid var(--borderCard);
 }
 ::-webkit-scrollbar {
@@ -60,4 +63,18 @@ html {
   height: 100%;
   width: 100%;
   z-index: 1000;
+}
+.glass-card {
+  display: flex;
+  height: 12rem;
+  width: 16rem;
+  justify-content: center;
+  color: var(--white);
+  align-items: center;
+  background: var(--glassBgColor);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glassBgColor);
 }
