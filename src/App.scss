@@ -53,9 +53,11 @@ html {
   overflow-y: auto;
   overflow-x: hidden;
   overflow: overlay;
+  position: relative;
 }
 .bg-wrap {
   display: flex;
+  position: absolute;
   height: 100%;
   width: 100%;
   background-color: var(--bgColor);
