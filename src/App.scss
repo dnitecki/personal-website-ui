@@ -56,7 +56,7 @@ html {
 .app-container {
   display: flex;
   position: absolute;
-  overflow: hidden;
+  overflow: auto;
   height: 100%;
   width: 100%;
   z-index: 1000;
