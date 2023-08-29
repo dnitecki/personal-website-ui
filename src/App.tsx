@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.scss";
+import BackgroundLight from "./components/backgroundLight/BackgroundLight";
 
 function App() {
   return (
     <div className="app">
-      <div className="app-container">hi</div>
+      <BackgroundLight />
     </div>
   );
 }

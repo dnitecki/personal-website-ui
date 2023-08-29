@@ -50,10 +50,13 @@ html {
   background-color: var(--white);
   height: 100vh;
   width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overflow: overlay;
 }
-.app-container {
+.bg-wrap {
   display: flex;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  background-color: var(--bgColor);
 }
