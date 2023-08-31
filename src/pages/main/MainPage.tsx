@@ -8,7 +8,7 @@ export default function MainPage() {
   return (
     <div className="main-page-content">
       <Card />
-      <div>
+      <div className="main-page-logo">
         <Lottie animationData={Logo} />
       </div>
     </div>
