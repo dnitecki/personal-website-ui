@@ -8,13 +8,16 @@ import BottomNav from "../../components/bottomNav/BottomNav";
 export default function MainPage() {
   return (
     <div className="main-page-content">
-      <Card />
       <div className="main-page-logo">
         <Lottie animationData={Logo} className="player" loop play />
       </div>
-      <div className="main-page-bottom">
-        <BottomNav />
-      </div>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <BottomNav />
     </div>
   );
 }
