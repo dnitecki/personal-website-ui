@@ -64,11 +64,7 @@ html {
   width: 100%;
   z-index: 1000;
 }
-.glass-card {
-  display: flex;
-  height: 20%;
-  width: 100%;
-  justify-content: center;
+.glass {
   color: var(--white);
   align-items: center;
   border-radius: var(--borderRadius);
