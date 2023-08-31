@@ -1,7 +1,7 @@
 import React from "react";
 import "./MainPage.scss";
 import Card from "../../components/card/Card";
-import Lottie from "lottie-react";
+import Lottie from "react-lottie-player";
 import Logo from "./MyLogo.json";
 
 export default function MainPage() {
@@ -9,7 +9,7 @@ export default function MainPage() {
     <div className="main-page-content">
       <Card />
       <div className="main-page-logo">
-        <Lottie animationData={Logo} />
+        <Lottie animationData={Logo} className="player" loop play />
       </div>
     </div>
   );
