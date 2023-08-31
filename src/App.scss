@@ -19,6 +19,7 @@
   --glassBgColor: rgba(255, 255, 255, 0);
 
   // other
+  --doc-height: 100%;
   --shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   --topBarHeight: 5rem;
   --hoverAnimation: all 175ms ease-in-out;
@@ -44,15 +45,21 @@
   box-sizing: border-box;
   outline: none;
 }
-body,
-html {
+html,
+body {
   margin: 0;
+  padding: 0;
+  margin: 0;
+  height: 100vh; /* fallback for Js load */
+  height: var(--doc-height);
 }
 
 .app {
+  display: flex;
   background-color: var(--white);
-  height: 100svh;
-  width: 100svw;
+  height: 100%;
+  width: 100%;
+  height: var(--doc-height);
   overflow: hidden;
   position: relative;
 }
