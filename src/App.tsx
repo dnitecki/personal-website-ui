@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.scss";
 import Background from "./components/background/Background";
 import MainPage from "./pages/main/MainPage";
