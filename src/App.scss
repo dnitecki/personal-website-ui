@@ -56,13 +56,12 @@ body {
   display: flex;
   height: 100svh;
   width: 100svw;
-  overflow: visible;
   position: relative;
 }
 .app-container {
   display: flex;
   position: absolute;
-  overflow: visible;
+  overflow-y: visible;
   height: 100%;
   width: 100%;
   z-index: 1000;
