@@ -49,20 +49,20 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--black);
 }
 
 .app {
   display: flex;
-  background-color: var(--white);
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  height: 100svh;
+  width: 100svw;
+  overflow: visible;
   position: relative;
 }
 .app-container {
   display: flex;
   position: absolute;
-  overflow: auto;
+  overflow: visible;
   height: 100%;
   width: 100%;
   z-index: 1000;
