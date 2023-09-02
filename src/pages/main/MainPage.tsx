@@ -26,6 +26,7 @@ export default function MainPage() {
           <motion.div
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
+            animate={{ x: 0 }}
             className="inner-slider"
           >
             <motion.div className="item">
