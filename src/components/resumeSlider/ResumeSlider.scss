@@ -2,11 +2,11 @@
   display: flex;
   height: 20rem;
   width: 20rem;
-  align-items: flex-start;
+  flex-direction: column;
 }
 .top-card {
   display: flex;
-  height: 8rem;
+  height: 7rem;
   width: 100%;
   padding: 1rem;
   justify-content: center;
@@ -41,7 +41,7 @@
 .inner-slider {
   display: flex;
   width: 100%;
-  column-gap: 1rem;
+  column-gap: 1.5rem;
 }
 .slider {
   display: flex;
