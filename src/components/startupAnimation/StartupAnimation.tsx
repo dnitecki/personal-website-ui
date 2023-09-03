@@ -8,7 +8,7 @@ export default function StartupAnimation() {
     <div>
       <div className="startup-container">
         <div className="main-page-logo">
-          <Lottie animationData={Logo} className="player" loop play />
+          <Lottie animationData={Logo} className="player" play />
         </div>
       </div>
     </div>

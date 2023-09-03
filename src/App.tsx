@@ -14,10 +14,12 @@ function App() {
   }, []);
 
   return (
-    <div className={showStartup ? "app no-scroll" : "app"}>
+    <div className="app">
       {showStartup ? <StartupAnimation /> : null}
       <Background />
-      <div className="app-container">
+      <div
+        className={showStartup ? "app-container no-scroll" : "app-container"}
+      >
         <MainPage />
       </div>
     </div>
