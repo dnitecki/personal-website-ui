@@ -5,11 +5,14 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import profile from "../../assets/Profile.png";
 
 export default function Header() {
   return (
     <div className="header">
-      <div className="profile-image"></div>
+      <div className="profile-image">
+        <img className="headshot" src={profile} alt="headshot" />
+      </div>
       <div className="glass header-container">
         <div className="header-content">
           <div className="header-links">

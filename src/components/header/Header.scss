@@ -4,14 +4,17 @@
   justify-content: center;
   height: 15rem;
   width: 100svw;
-  padding: 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
 }
 
 .profile-image {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 10rem;
   height: 10rem;
-  background-color: azure;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   z-index: 1000;
   left: 50%;
@@ -32,9 +35,14 @@
   display: flex;
   height: 3rem;
   width: 100%;
-  column-gap: 3rem;
+  column-gap: 2.5rem;
   justify-content: center;
   align-items: center;
   font-size: var(--iconSize);
   opacity: 0.7;
+}
+.headshot {
+  height: 9.5rem;
+  width: 9.5rem;
+  border-radius: 50%;
 }

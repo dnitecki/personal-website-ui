@@ -14,7 +14,7 @@
   --bgColor: rgba(255, 255, 255, 0.33);
   --borderCard: #d8d8d8;
   --tertiaryColor: #3f51b583;
-  --iconSize: 35px;
+  --iconSize: 30px;
 
   // glass card
   --glassBgColor: rgba(255, 255, 255, 0);
@@ -77,7 +77,6 @@ body {
   backdrop-filter: blur(10px);
   transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .no-scroll {
   overflow: hidden;
