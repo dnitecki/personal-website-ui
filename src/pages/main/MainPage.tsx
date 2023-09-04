@@ -2,13 +2,13 @@ import React from "react";
 import "./MainPage.scss";
 import Card from "../../components/card/Card";
 import BottomNav from "../../components/bottomNav/BottomNav";
-import ResumeSlider from "../../components/resumeSlider/ResumeSlider";
+import PortfolioSlider from "../../components/portfolioSlider/PortfolioSlider";
 
 export default function MainPage() {
   return (
     <div className="main-page-content">
-      <div className="resume">
-        <ResumeSlider />
+      <div className="portfolio">
+        <PortfolioSlider />
       </div>
       <Card />
       <Card />

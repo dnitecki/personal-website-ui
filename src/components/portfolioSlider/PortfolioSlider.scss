@@ -1,12 +1,12 @@
-.resume-card {
+.portfolio-card {
   display: flex;
   height: 20rem;
-  width: 20rem;
+  width: 15rem;
   flex-direction: column;
 }
 .top-card {
   display: flex;
-  height: 7rem;
+  height: 5rem;
   width: 100%;
   padding: 1rem;
   justify-content: center;
@@ -24,15 +24,6 @@
   height: 100%;
   width: 100%;
   border-radius: var(--borderRadius);
-}
-.STNLogo {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-  padding: 1rem;
-}
-.JPMCLogo {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
 }
 .item {
   height: 100%;
