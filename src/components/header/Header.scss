@@ -1,0 +1,40 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 15rem;
+  width: 100svw;
+  padding: 1rem;
+}
+
+.profile-image {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-color: azure;
+  border-radius: 50%;
+  z-index: 1000;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header {
+  display: flex;
+  position: relative;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+}
+.header-links {
+  display: flex;
+  height: 3rem;
+  width: 100%;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--iconSize);
+  opacity: 0.6;
+}
