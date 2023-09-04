@@ -41,6 +41,17 @@
   font-size: var(--iconSize);
   opacity: 0.7;
 }
+.header-text {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 1rem;
+  line-height: 0%;
+  opacity: 0.8;
+}
 .headshot {
   height: 9.5rem;
   width: 9.5rem;

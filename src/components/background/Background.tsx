@@ -11,6 +11,7 @@ export default function Background() {
         className="player"
         play
         renderer="svg"
+        speed={0.2}
         rendererSettings={{ preserveAspectRatio: "xMidYMid slice" }}
         style={{ height: "100%" }}
       />

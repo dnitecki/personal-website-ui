@@ -15,6 +15,10 @@ export default function Header() {
       </div>
       <div className="glass header-container">
         <div className="header-content">
+          <div className="header-text">
+            <h3>Dominick Nitecki</h3>
+            <p>Software Engineer</p>
+          </div>
           <div className="header-links">
             <FontAwesomeIcon icon={faLinkedin} />
             <FontAwesomeIcon icon={faInstagram} />
