@@ -1,6 +1,6 @@
 import React from "react";
 import "./Background.scss";
-import Lottie from "react-lottie-player";
+import Lottie from "react-lottie-player/dist/LottiePlayerLight";
 import background from "./dark.json";
 
 export default function Background() {
