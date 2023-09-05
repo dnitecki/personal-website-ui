@@ -9,10 +9,19 @@ export default function MainPage() {
   return (
     <div className="main-page-content">
       <Header />
+      <div className="section-name">
+        <h1>Portfolio</h1>
+      </div>
       <PortfolioSlider />
+      <div className="section-name">
+        <h1>Experience</h1>
+      </div>
       <Card />
       <Card />
       <Card />
+      <div className="section-name">
+        <h1>Contact</h1>
+      </div>
       <Card />
       <BottomNav />
     </div>

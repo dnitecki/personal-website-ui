@@ -15,3 +15,14 @@
 .header {
   display: flex;
 }
+.section-name {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  color: var(--white);
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  line-height: 0%;
+  opacity: 0.8;
+}
