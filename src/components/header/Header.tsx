@@ -13,7 +13,7 @@ export default function Header() {
       <div className="profile-image">
         <img className="headshot" src={profile} alt="headshot" />
       </div>
-      <div className="glass header-container">
+      <div className="header-container">
         <div className="header-content">
           <div className="header-text">
             <h3>Dominick Nitecki</h3>
