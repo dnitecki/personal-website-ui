@@ -22,10 +22,8 @@
   width: 100%;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   line-height: 0%;
-  background: linear-gradient(#fcf6ba 30%, #bf953f 90%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--white);
+  opacity: 0.8;
 }

@@ -8,7 +8,7 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 export default function BottomNav() {
   return (
-    <div className="bottomNav-container">
+    <div className=" bottomNav-container">
       <div className="bottomNav-links">
         <FontAwesomeIcon icon={faHouse} />
         <FontAwesomeIcon icon={faFolder} />

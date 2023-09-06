@@ -2,7 +2,23 @@
   z-index: 1;
   height: 100lvh;
   width: 100%;
-  background-color: var(--black);
   overflow: hidden;
   position: fixed;
+  background: rgb(1, 1, 6);
+  background: -moz-linear-gradient(
+    329deg,
+    rgba(1, 1, 6, 1) 49%,
+    rgba(0, 79, 111, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    329deg,
+    rgba(1, 1, 6, 1) 49%,
+    rgba(0, 79, 111, 1) 100%
+  );
+  background: linear-gradient(
+    329deg,
+    rgba(1, 1, 6, 1) 49%,
+    rgba(0, 79, 111, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010106",endColorstr="#004f6f",GradientType=1);
 }

@@ -1,24 +1,22 @@
 .bottomNav-container {
   position: fixed;
   display: flex;
-  width: 100%;
+  width: calc(100svw - 2rem);
   left: 50%;
   transform: translate(-50%, 0);
-  bottom: 0px;
+  bottom: 1rem;
   height: 4rem;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  color: var(--white);
-  border-top-left-radius: var(--borderRadius);
-  border-top-right-radius: var(--borderRadius);
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  border-radius: var(--borderRadius);
+  background-color: #004f6f;
+  color: var(--iconColor);
 }
 .bottomNav-links {
   display: flex;
-  column-gap: 4rem;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem 0 2rem;
   font-size: var(--navIconSize);
   opacity: 0.8;
 }

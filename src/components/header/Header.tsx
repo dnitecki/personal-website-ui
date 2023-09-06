@@ -21,11 +21,11 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="header-container">
+      <div className=" glass header-container">
         <div className="header-content">
           <div className="header-text">
-            <h3>Dominick Nitecki</h3>
-            <p>Software Engineer</p>
+            <h2>Dominick Nitecki</h2>
+            <h3>Software Engineer</h3>
           </div>
           <div className="header-links">
             <FontAwesomeIcon icon={faLinkedin} />
