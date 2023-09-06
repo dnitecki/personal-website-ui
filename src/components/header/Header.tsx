@@ -6,6 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import profile from "../../assets/Profile.png";
+import logo from "../../assets/MyLogo.png";
 
 export default function Header() {
   return (
@@ -15,7 +16,9 @@ export default function Header() {
           <img className="headshot" src={profile} alt="headshot" />
         </div>
         <div className="back">
-          <div className="dn-logo" />
+          <div className="logo-background">
+            <img className="dn-logo" src={logo} alt="logo" />
+          </div>
         </div>
       </div>
       <div className="header-container">

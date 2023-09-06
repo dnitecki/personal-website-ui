@@ -96,11 +96,20 @@
   width: 10rem;
   border-radius: 50%;
 }
-.dn-logo {
+.logo-background {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  background-color: black;
+  background-color: var(--primaryGrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: solid 3px white;
+}
+.dn-logo {
+  transform: scale(0.3);
+  display: flex;
+  margin-left: 5px;
 }
 @keyframes flip {
   0% {
