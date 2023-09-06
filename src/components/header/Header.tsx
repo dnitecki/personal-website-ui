@@ -11,7 +11,12 @@ export default function Header() {
   return (
     <div className="header">
       <div className="profile-image">
-        <img className="headshot" src={profile} alt="headshot" />
+        <div className="front">
+          <img className="headshot" src={profile} alt="headshot" />
+        </div>
+        <div className="back">
+          <div className="dn-logo" />
+        </div>
       </div>
       <div className="header-container">
         <div className="header-content">

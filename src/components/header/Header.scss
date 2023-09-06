@@ -30,11 +30,17 @@
   align-items: center;
   width: 9rem;
   height: 9rem;
-  background: transparent;
   border-radius: 50%;
   z-index: 1000;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  top: -71px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform-style: preserve-3d;
+  -webkit-animation: flip 10s infinite ease-in-out;
+  animation: flip 10s infinite ease-in-out;
 }
 .header {
   display: flex;
@@ -68,8 +74,39 @@
   line-height: 0%;
   opacity: 0.8;
 }
+.front,
+.back {
+  position: absolute;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.front {
+  z-index: 2000;
+}
+.back {
+  z-index: 1000;
+  transform: rotateX(180deg);
+}
 .headshot {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
+}
+.dn-logo {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: black;
+}
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
 }

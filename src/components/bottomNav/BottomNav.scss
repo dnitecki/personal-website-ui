@@ -5,7 +5,7 @@
   left: 50%;
   transform: translate(-50%, 0);
   bottom: 0px;
-  height: 5rem;
+  height: 4rem;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -19,6 +19,6 @@
 .bottomNav-links {
   display: flex;
   column-gap: 4rem;
-  font-size: var(--iconSize);
+  font-size: var(--navIconSize);
   opacity: 0.8;
 }
