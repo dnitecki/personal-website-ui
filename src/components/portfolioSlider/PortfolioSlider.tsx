@@ -10,23 +10,23 @@ export default function PortfolioSlider() {
   }, []);
   return (
     <div>
-      <motion.div ref={slider} className="slider">
+      <div ref={slider} className="slider">
         <motion.div
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
           className="inner-slider"
         >
-          <motion.div className="item">
+          <div className="item">
             <div className="glass portfolio-card"></div>
-          </motion.div>
-          <motion.div className="item">
+          </div>
+          <div className="item">
             <div className="glass portfolio-card"></div>
-          </motion.div>
-          <motion.div className="item">
+          </div>
+          <div className="item">
             <div className="glass portfolio-card"></div>
-          </motion.div>
+          </div>
         </motion.div>
-      </motion.div>
+      </div>
     </div>
   );
 }
