@@ -3,7 +3,7 @@ import "./Header.scss";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import profile from "../../assets/Profile.png";
 import logo from "../../assets/MyLogo.png";
@@ -31,7 +31,7 @@ export default function Header() {
             <FontAwesomeIcon icon={faLinkedin} />
             <FontAwesomeIcon icon={faInstagram} />
             <FontAwesomeIcon icon={faGithub} />
-            <FontAwesomeIcon icon={faPaperPlane} />
+            <FontAwesomeIcon icon={faEllipsis} />
           </div>
         </div>
       </div>
