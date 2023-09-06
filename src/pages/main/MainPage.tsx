@@ -8,18 +8,20 @@ import Header from "../../components/header/Header";
 export default function MainPage() {
   return (
     <div className="main-page-content">
-      <Header />
-      <div className="section-name">
+      <div id="home" className="home">
+        <Header />
+      </div>
+      <div id="portfolio" className="section-name">
         <h1>Portfolio</h1>
       </div>
       <PortfolioSlider />
-      <div className="section-name">
+      <div id="experience" className="section-name">
         <h1>Experience</h1>
       </div>
       <Card />
       <Card />
       <Card />
-      <div className="section-name">
+      <div id="contact" className="section-name">
         <h1>Contact</h1>
       </div>
       <Card />
