@@ -95,6 +95,7 @@
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
+  outline: solid 3px var(--borderCard);
 }
 .logo-background {
   height: 10rem;
@@ -104,7 +105,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: solid 3px white;
+  outline: solid 3px var(--borderCard);
 }
 .dn-logo {
   transform: scale(0.3);
