@@ -17,8 +17,10 @@ export default function BottomNav() {
         // if scroll down hide the navbar
         setHide(false);
       } else {
+        setTimeout(() => {
+          setHide(true);
+        }, 500);
         // if scroll up show the navbar
-        setHide(true);
       }
       // remember current page location to use in the next move
       setLastScrollY(window.scrollY);

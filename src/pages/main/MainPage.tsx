@@ -8,8 +8,7 @@ import Header from "../../components/header/Header";
 export default function MainPage() {
   return (
     <div className="main-page-content">
-      <div id="home" className="top" />
-      <div className="home">
+      <div id="home" className="home">
         <Header />
       </div>
       <div id="portfolio" className="section">
