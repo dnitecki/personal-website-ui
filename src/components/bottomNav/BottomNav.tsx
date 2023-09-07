@@ -8,17 +8,15 @@ import { faBusinessTime } from "@fortawesome/free-solid-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 export default function BottomNav() {
-  const [hide, setHide] = useState(true);
+  const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleScroll = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
-        setHide(false);
+        setShow(false);
       } else {
-        setTimeout(() => {
-          setHide(true);
-        }, 200);
+        setShow(true);
       }
       setLastScrollY(window.scrollY);
     }
@@ -34,7 +32,7 @@ export default function BottomNav() {
   });
 
   return (
-    <div className={`bottomNav-container ${hide ? "nav-hidden" : "nav-show"}`}>
+    <div className={`bottomNav-container ${show ? "nav-show" : "nav-hidden"}`}>
       <ul className="bottomNav-links">
         <li className="nav-button">
           <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
