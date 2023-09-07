@@ -15,7 +15,9 @@ export default function BottomNav() {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
         // if scroll down hide the navbar
-        setHide(false);
+        setTimeout(() => {
+          setHide(false);
+        }, 500);
       } else {
         setTimeout(() => {
           setHide(true);
