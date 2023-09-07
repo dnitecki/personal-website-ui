@@ -17,11 +17,11 @@ export default function BottomNav() {
         // if scroll down hide the navbar
         setTimeout(() => {
           setHide(false);
-        }, 500);
+        }, 300);
       } else {
         setTimeout(() => {
           setHide(true);
-        }, 500);
+        }, 200);
         // if scroll up show the navbar
       }
       // remember current page location to use in the next move
