@@ -15,7 +15,7 @@
   --borderCard: #d8d8d8;
   --tertiaryColor: #3f51b583;
   --iconSize: 30px;
-  --navIconSize: 25px;
+  --navIconSize: 20px;
   --iconColor: rgb(255, 255, 255);
 
   // glass card
@@ -54,7 +54,9 @@ body {
   padding: 0;
   background-color: var(--black);
 }
-
+html:focus-within {
+  scroll-behavior: smooth;
+}
 .app {
   display: flex;
   height: 100svh;

@@ -7,10 +7,14 @@
   width: calc(100svw - 3rem);
   z-index: 3000;
   padding: 2rem 0 0 0;
-  -webkit-mask: radial-gradient(11rem 11rem, transparent 50.05%, white 49.9%)
+  -webkit-mask: radial-gradient(
+      11rem 11rem at 50% 50%,
+      transparent 50.05%,
+      white 49.9%
+    )
     bottom/ 100% 200%;
-  mask: radial-gradient(11rem 11rem, transparent 50.05%, white 49.9%) bottom/
-    100% 200%;
+  mask: radial-gradient(11rem 11rem at 50% 50%, transparent 50.05%, white 49.9%)
+    bottom/ 100% 200%;
 }
 .profile-image {
   position: absolute;
@@ -48,7 +52,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  font-size: var(--navIconSize);
+  font-size: var(--iconSize);
   padding: 0 4rem 0 4rem;
   background-color: #002b3b;
 }

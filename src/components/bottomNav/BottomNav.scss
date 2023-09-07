@@ -16,12 +16,30 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 2rem 0 2rem;
-  font-size: var(--navIconSize);
+  align-items: center;
+  padding: 0 3rem 0 3rem;
 }
 .nav-button {
+  display: flex;
   color: var(--iconColor);
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  border-radius: var(--borderRadius);
+  font-size: var(--navIconSize);
+  transition: all 0.2s ease-in-out, border-radius, height, width;
 }
-.sidebar-button-active {
-  color: #010106;
+.nav-button .active {
+  display: flex;
+  color: #002b3b;
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  font-size: var(--navIconSize);
+  transition: all 0.2s ease-in-out, border-radius, height, width;
 }

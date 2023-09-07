@@ -11,12 +11,12 @@ export default function BottomNav() {
   return (
     <div className=" bottomNav-container">
       <ul className="bottomNav-links">
-        <li>
+        <li className="nav-button">
           <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
             <FontAwesomeIcon icon={faHouse} />
           </Link>
         </li>
-        <li>
+        <li className="nav-button">
           <Link
             to="portfolio"
             spy={true}
@@ -27,7 +27,7 @@ export default function BottomNav() {
             <FontAwesomeIcon icon={faFolder} />
           </Link>
         </li>
-        <li>
+        <li className="nav-button">
           <Link
             to="experience"
             spy={true}
@@ -38,7 +38,7 @@ export default function BottomNav() {
             <FontAwesomeIcon icon={faBusinessTime} />
           </Link>
         </li>
-        <li>
+        <li className="nav-button">
           <Link
             to="contact"
             spy={true}

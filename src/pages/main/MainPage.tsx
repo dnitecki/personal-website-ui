@@ -11,20 +11,26 @@ export default function MainPage() {
       <div id="home" className="home">
         <Header />
       </div>
-      <div id="portfolio" className="section-name">
-        <h1>Portfolio</h1>
+      <div id="portfolio" className="section">
+        <div className="section-name">
+          <h1>Portfolio</h1>
+        </div>
+        <PortfolioSlider />
       </div>
-      <PortfolioSlider />
-      <div id="experience" className="section-name">
-        <h1>Experience</h1>
+      <div id="experience" className="section">
+        <div className="section-name">
+          <h1>Experience</h1>
+        </div>
+        <Card />
+        <Card />
+        <Card />
       </div>
-      <Card />
-      <Card />
-      <Card />
-      <div id="contact" className="section-name">
-        <h1>Contact</h1>
+      <div id="contact" className="section">
+        <div className="section-name">
+          <h1>Let's Connect</h1>
+        </div>
+        <div className="glass contact"></div>
       </div>
-      <Card />
       <BottomNav />
     </div>
   );
