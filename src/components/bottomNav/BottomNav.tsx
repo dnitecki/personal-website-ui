@@ -14,17 +14,12 @@ export default function BottomNav() {
   const handleScroll = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
-        // if scroll down hide the navbar
-        setTimeout(() => {
-          setHide(false);
-        }, 300);
+        setHide(false);
       } else {
         setTimeout(() => {
           setHide(true);
         }, 200);
-        // if scroll up show the navbar
       }
-      // remember current page location to use in the next move
       setLastScrollY(window.scrollY);
     }
   };
@@ -32,8 +27,6 @@ export default function BottomNav() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", handleScroll);
-
-      // cleanup function
       return () => {
         window.removeEventListener("scroll", handleScroll);
       };
