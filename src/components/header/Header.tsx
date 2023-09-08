@@ -10,7 +10,7 @@ import logo from "../../assets/MyLogo.png";
 
 export default function Header() {
   return (
-    <div className="header">
+    <div className="glass header">
       <div className="profile-image">
         <div className="front">
           <img className="headshot" src={profile} alt="headshot" />
@@ -21,7 +21,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className=" glass header-container">
+      <div className="header-container">
         <div className="header-content">
           <div className="header-text">
             <h2>Dominick Nitecki</h2>
