@@ -12,13 +12,13 @@ export default function Resume() {
         </div>
         <div className="resume-card-back">
           <div className="resume-firm">
-            <h1>JPMorgan Chase</h1>
+            <h2>JPMorgan Chase</h2>
           </div>
           <div className="resume-title">
-            <h2>Software Engineer</h2>
+            <h3>Software Engineer</h3>
           </div>
           <div className="resume-dates">
-            <h3>Nov 2022 to Present</h3>
+            <h4>Nov 2022 to Present</h4>
           </div>
         </div>
       </div>
@@ -30,13 +30,13 @@ export default function Resume() {
         </div>
         <div className="resume-card-back">
           <div className="resume-firm">
-            <h1>Stantec</h1>
+            <h2>Stantec</h2>
           </div>
           <div className="resume-title">
-            <h2>Application Developer</h2>
+            <h3>Application Developer</h3>
           </div>
           <div className="resume-dates">
-            <h3>Jan 2021 to Nov 2022</h3>
+            <h4>Jan 2021 to Nov 2022</h4>
           </div>
         </div>
       </div>
