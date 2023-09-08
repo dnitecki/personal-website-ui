@@ -44,7 +44,7 @@ export default function BottomNav() {
             to="portfolio"
             spy={true}
             smooth={true}
-            offset={-15}
+            offset={-20}
             duration={500}
           >
             <FontAwesomeIcon icon={faFolder} />
@@ -55,7 +55,7 @@ export default function BottomNav() {
             to="experience"
             spy={true}
             smooth={true}
-            offset={-15}
+            offset={-20}
             duration={500}
           >
             <FontAwesomeIcon icon={faBusinessTime} />
@@ -66,7 +66,7 @@ export default function BottomNav() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-15}
+            offset={-20}
             duration={500}
           >
             <FontAwesomeIcon icon={faPaperPlane} />
