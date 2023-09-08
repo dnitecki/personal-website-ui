@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./BottomNav.scss";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faFolder } from "@fortawesome/free-solid-svg-icons";
@@ -35,7 +35,14 @@ export default function BottomNav() {
     <div className={`bottomNav-container ${show ? "nav-show" : "nav-hidden"}`}>
       <ul className="bottomNav-links">
         <li className="nav-button">
-          <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-10}
+            duration={500}
+            height="50px"
+          >
             <FontAwesomeIcon icon={faHouse} />
           </Link>
         </li>
@@ -44,7 +51,7 @@ export default function BottomNav() {
             to="portfolio"
             spy={true}
             smooth={true}
-            offset={-20}
+            offset={-10}
             duration={500}
           >
             <FontAwesomeIcon icon={faFolder} />
@@ -55,7 +62,7 @@ export default function BottomNav() {
             to="experience"
             spy={true}
             smooth={true}
-            offset={-20}
+            offset={-10}
             duration={500}
           >
             <FontAwesomeIcon icon={faBusinessTime} />
@@ -66,7 +73,7 @@ export default function BottomNav() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-20}
+            offset={-10}
             duration={500}
           >
             <FontAwesomeIcon icon={faPaperPlane} />
