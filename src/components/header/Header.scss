@@ -54,7 +54,7 @@
   align-items: center;
   font-size: var(--iconSize);
   padding: 0 4rem 0 4rem;
-  background-color: #002b3b;
+  background-color: var(--primary);
 }
 .header-text {
   display: flex;
@@ -87,7 +87,7 @@
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  outline: solid 3px var(--borderCard);
+  outline: solid 2px var(--white);
 }
 .logo-background {
   height: 10rem;
@@ -97,7 +97,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: solid 3px var(--borderCard);
+  outline: solid 2px var(--white);
 }
 .dn-logo {
   transform: scale(0.3);

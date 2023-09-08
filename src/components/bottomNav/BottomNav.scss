@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   border-radius: var(--borderRadius);
-  background-color: #002b3b;
+  background-color: var(--primary);
   transition: all 0.3s ease-in-out;
 }
 .bottomNav-links {
@@ -16,7 +16,7 @@
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  padding: 0 3rem 0 3rem;
+  padding: 0 2rem 0 2rem;
 }
 .nav-button {
   display: flex;
@@ -28,11 +28,11 @@
   background: rgba(255, 255, 255, 0);
   border-radius: var(--borderRadius);
   font-size: var(--navIconSize);
-  transition: all 0.2s ease-in-out, border-radius, height, width;
+  transition: all 0.1s ease-in-out, border-radius, height, width;
 }
 .nav-button .active {
   display: flex;
-  color: #002b3b;
+  color: #1f1a47;
   height: 3rem;
   width: 3rem;
   justify-content: center;
@@ -40,7 +40,7 @@
   background: var(--white);
   border-radius: var(--borderRadius);
   font-size: var(--navIconSize);
-  transition: all 0.2s ease-in-out, border-radius, height, width;
+  transition: all 0.1s ease-in-out, border-radius, height, width;
 }
 .nav-show {
   bottom: 1rem;

@@ -1,24 +1,20 @@
 .bg-wrap {
   z-index: 1;
   height: 100lvh;
-  width: 100%;
+  width: 100lvw;
   overflow: hidden;
   position: fixed;
-  background: rgb(1, 1, 6);
-  background: -moz-linear-gradient(
-    329deg,
-    rgba(1, 1, 6, 1) 32%,
-    rgba(0, 43, 59, 1) 93%
-  );
-  background: -webkit-linear-gradient(
-    329deg,
-    rgba(1, 1, 6, 1) 32%,
-    rgba(0, 43, 59, 1) 93%
-  );
-  background: linear-gradient(
-    329deg,
-    rgba(1, 1, 6, 1) 32%,
-    rgba(0, 43, 59, 1) 93%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010106",endColorstr="#002b3b",GradientType=1);
+  background: linear-gradient(-45deg, #f92185 30%, #1f1a47 90%);
+  background-size: 400% 400%;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
