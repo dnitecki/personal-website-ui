@@ -22,10 +22,6 @@
   width: 100%;
   margin: 0 1.5rem 0 1.5rem;
   justify-content: left;
-  color: var(--white);
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
 }
 .bg-image-jpmc {
   height: 100%;
@@ -49,13 +45,15 @@
   filter: brightness(0) invert(1);
   opacity: 0.05;
 }
-.resume-card:hover,
-.resume-card:active {
-  .resume-card-bg {
-    top: 0;
-    left: 0;
-    border-radius: var(--borderRadius);
-  }
+.closed {
+  top: 0;
+  left: 0;
+  border-radius: var(--borderRadius);
+}
+.open {
+  top: -150px;
+  left: 80%;
+  border-radius: 50%;
 }
 .resume-card-bg {
   height: 400%;
@@ -65,9 +63,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: -150px;
-  left: 80%;
-  border-radius: 50%;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -81,15 +76,14 @@
 .resume-card-front {
   display: flex;
   position: absolute;
-  opacity: 0%;
   height: 100%;
   width: 100%;
   z-index: 2000;
   justify-content: center;
   align-items: center;
-  -webkit-transition: opacity 0.5s ease 0.1s;
-  -o-transition: opacity 0.5s ease 0.1s;
-  transition: opacity 0.5s ease 0.1s;
+  -webkit-transition: opacity 0.5s ease 0s;
+  -o-transition: opacity 0.5s ease 0s;
+  transition: opacity 0.5s ease 0s;
 }
 .resume-card-back {
   display: flex;
@@ -101,7 +95,10 @@
   padding-top: 1rem;
   z-index: 1000;
 }
-.resume-card-front:hover {
+.hidden {
+  opacity: 0%;
+}
+.visible {
   opacity: 100%;
 }
 .resume-title {

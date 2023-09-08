@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Resume.scss";
 
 export default function Resume() {
+  const [jpmcClicked, setJpmcClicked] = useState(false);
+  const [stnClicked, setStnClicked] = useState(false);
+
+  const handleJpmcClick = () => {
+    setJpmcClicked(!jpmcClicked);
+  };
+  const handleStnClick = () => {
+    setStnClicked(!stnClicked);
+  };
+
   return (
     <div className="resume-container">
-      <div className="resume-card">
+      <div onClick={handleJpmcClick} className="resume-card glass">
         <div className="bg-image-jpmc" />
-        <div className="resume-card-bg jpmc"></div>
-        <div className="resume-card-front">
+        <div
+          className={`resume-card-bg ${jpmcClicked ? "closed" : "open"} jpmc`}
+        ></div>
+        <div
+          className={`resume-card-front ${jpmcClicked ? "visible" : "hidden"}`}
+        >
           <h2>Add Info</h2>
         </div>
         <div className="resume-card-back">
@@ -22,10 +36,14 @@ export default function Resume() {
           </div>
         </div>
       </div>
-      <div className="resume-card">
+      <div onClick={handleStnClick} className="resume-card glass">
         <div className="bg-image-stn" />
-        <div className="resume-card-bg stn"></div>
-        <div className="resume-card-front">
+        <div
+          className={`resume-card-bg ${stnClicked ? "closed" : "open"} stn`}
+        ></div>
+        <div
+          className={`resume-card-front ${stnClicked ? "visible" : "hidden"}`}
+        >
           <h2>Add Info</h2>
         </div>
         <div className="resume-card-back">

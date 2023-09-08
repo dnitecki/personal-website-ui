@@ -13,7 +13,7 @@ export default function BottomNav() {
 
   const handleScroll = () => {
     if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
+      if (window.scrollY > lastScrollY + 5) {
         setShow(false);
       } else {
         setShow(true);
