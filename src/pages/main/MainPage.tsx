@@ -7,7 +7,7 @@ import Resume from "../../components/resume/Resume";
 
 export default function MainPage() {
   return (
-    <div className="main-page-content">
+    <div className="main-page-content bg-wrap">
       <div id="home" className="home">
         <Header />
       </div>

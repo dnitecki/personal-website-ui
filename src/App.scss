@@ -64,6 +64,19 @@ html:focus-within {
   width: 100%;
   z-index: 1000;
 }
+.bg-wrap {
+  z-index: 0;
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgb(249, 33, 133);
+  background: linear-gradient(
+    335deg,
+    rgba(249, 33, 133, 0.773546918767507) 0%,
+    rgba(31, 26, 71, 1) 55%
+  );
+}
 .glass {
   color: var(--white);
   border-radius: var(--borderRadius);

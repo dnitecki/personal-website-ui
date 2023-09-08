@@ -10,7 +10,7 @@ import logo from "../../assets/MyLogo.png";
 
 export default function Header() {
   return (
-    <div className="glass header">
+    <div className="header shadow">
       <div className="profile-image">
         <div className="front">
           <img className="headshot" src={profile} alt="headshot" />

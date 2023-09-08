@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./App.scss";
-import Background from "./components/background/Background";
 import MainPage from "./pages/main/MainPage";
 import StartupAnimation from "./components/startupAnimation/StartupAnimation";
 
@@ -16,7 +15,6 @@ function App() {
   return (
     <div className="app">
       {showStartup ? <StartupAnimation /> : null}
-      <Background />
       <div
         className={showStartup ? "app-container no-scroll" : "app-container"}
       >
