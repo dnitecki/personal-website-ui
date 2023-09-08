@@ -73,13 +73,10 @@ html:focus-within {
 }
 .glass {
   color: var(--white);
-  align-items: center;
   border-radius: var(--borderRadius);
-  background: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
 }
 .no-scroll {
   overflow: hidden;

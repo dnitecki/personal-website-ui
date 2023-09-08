@@ -1,9 +1,9 @@
 import React from "react";
 import "./MainPage.scss";
-import Card from "../../components/card/Card";
 import BottomNav from "../../components/bottomNav/BottomNav";
 import PortfolioSlider from "../../components/portfolioSlider/PortfolioSlider";
 import Header from "../../components/header/Header";
+import Resume from "../../components/resume/Resume";
 
 export default function MainPage() {
   return (
@@ -21,9 +21,7 @@ export default function MainPage() {
         <div className="section-name">
           <h1>Experience</h1>
         </div>
-        <Card />
-        <Card />
-        <Card />
+        <Resume />
       </div>
       <div id="contact" className="section">
         <div className="section-name">
