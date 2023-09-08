@@ -79,11 +79,13 @@
   height: 100%;
   width: 100%;
   z-index: 2000;
-  justify-content: center;
-  align-items: center;
-  -webkit-transition: opacity 0.5s ease 0s;
-  -o-transition: opacity 0.5s ease 0s;
-  transition: opacity 0.5s ease 0s;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  line-height: 0%;
+  flex-direction: column;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 .resume-card-back {
   display: flex;
@@ -94,12 +96,14 @@
   padding-left: 1.5rem;
   padding-top: 1rem;
   z-index: 1000;
+  overflow: hidden;
 }
 .hidden {
   opacity: 0%;
 }
 .visible {
   opacity: 100%;
+  transition-delay: 0.4s;
 }
 .resume-title {
   padding-bottom: 1rem;
