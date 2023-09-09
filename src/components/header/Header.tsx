@@ -66,12 +66,15 @@ export default function Header() {
           </div>
         </div>
         {moreClicked ? (
-          <div id="mode-modal" className="more-modal">
-            <button className="modal-close" onClick={handleModalClose}>
-              <FontAwesomeIcon icon={faCircleXmark} />
-            </button>
-            <h2>Modal Content</h2>
-          </div>
+          <>
+            <div className="modal-bg" onClick={handleModalClose} />
+            <div id="mode-modal" className="more-modal glass">
+              <button className="modal-close" onClick={handleModalClose}>
+                <FontAwesomeIcon icon={faCircleXmark} />
+              </button>
+              <h2>Modal Content</h2>
+            </div>
+          </>
         ) : null}
       </div>
     </>
