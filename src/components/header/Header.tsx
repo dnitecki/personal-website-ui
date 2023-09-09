@@ -14,10 +14,13 @@ export default function Header() {
 
   const handleMoreClick = () => {
     setMoreClicked(true);
+    document.getElementById("app-container").style.overflowY = "hidden";
   };
   const handleModalClose = () => {
     setMoreClicked(false);
+    document.getElementById("app-container").style.overflowY = "visible";
   };
+
   return (
     <>
       <div className="header shadow">
@@ -68,8 +71,8 @@ export default function Header() {
         {moreClicked ? (
           <>
             <div className="modal-bg" onClick={handleModalClose} />
-            <div id="mode-modal" className="more-modal glass">
-              <button className="modal-close" onClick={handleModalClose}>
+            <div id="more-modal" className="more-modal glass">
+              <button className="modal-close-btn" onClick={handleModalClose}>
                 <FontAwesomeIcon icon={faCircleXmark} />
               </button>
               <h2>Modal Content</h2>

@@ -71,6 +71,7 @@ html:focus-within {
   width: 100lvh;
   position: fixed;
   display: flex;
+  -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 .glass {
