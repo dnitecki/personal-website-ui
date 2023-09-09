@@ -66,7 +66,7 @@ html:focus-within {
   z-index: 1000;
 }
 .bg-wrap {
-  background: linear-gradient(-45deg, #b1145d 20%, #1f1a47 60%);
+  background: linear-gradient(-45deg, #800d43 30%, #1f1a47 70%);
   height: 100lvh;
   width: 100lvh;
   position: fixed;
@@ -76,7 +76,7 @@ html:focus-within {
 .glass {
   color: var(--white);
   border-radius: var(--borderRadius);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
