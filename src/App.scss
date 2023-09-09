@@ -47,6 +47,7 @@ body {
   padding: 0;
   background-color: var(--black);
 }
+
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -65,17 +66,11 @@ html:focus-within {
   z-index: 1000;
 }
 .bg-wrap {
-  z-index: 0;
-  display: flex;
+  background: linear-gradient(45deg, blue, red);
+  height: 100lvh;
+  width: 100lvh;
   position: fixed;
-  height: 100%;
-  width: 100%;
-  background: rgb(249, 33, 133);
-  background: linear-gradient(
-    335deg,
-    rgba(249, 33, 133, 0.773546918767507) 0%,
-    rgba(31, 26, 71, 1) 55%
-  );
+  transform: translate3d(0, 0, 0);
 }
 .glass {
   color: var(--white);

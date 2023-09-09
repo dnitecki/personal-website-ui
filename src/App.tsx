@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="app">
       {showStartup ? <StartupAnimation /> : null}
+      <div className="bg-wrap"></div>
       <div
         className={showStartup ? "app-container no-scroll" : "app-container"}
       >
