@@ -4,7 +4,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleXmark, faShare } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import profile from "../../assets/Profile.png";
 import logo from "../../assets/MyLogo.png";
@@ -14,11 +14,9 @@ export default function Header() {
 
   const handleMoreClick = () => {
     setMoreClicked(true);
-    document.getElementById("app-container").style.overflowY = "hidden";
   };
   const handleModalClose = () => {
     setMoreClicked(false);
-    document.getElementById("app-container").style.overflowY = "visible";
   };
 
   return (
@@ -68,17 +66,19 @@ export default function Header() {
             </div>
           </div>
         </div>
-        {moreClicked ? (
-          <>
-            <div className="modal-bg" onClick={handleModalClose} />
-            <div id="more-modal" className="more-modal glass">
-              <button className="modal-close-btn" onClick={handleModalClose}>
-                <FontAwesomeIcon icon={faCircleXmark} />
-              </button>
-              <h2>Modal Content</h2>
-            </div>
-          </>
-        ) : null}
+        <div
+          className={`modal-bg ${moreClicked ? "bg-open" : "bg-close"}`}
+          onClick={handleModalClose}
+        />
+        <div
+          id="more-modal"
+          className={`more-modal ${moreClicked ? "modal-open" : "modal-close"}`}
+        >
+          <button className="modal-close-btn" onClick={handleModalClose}>
+            <FontAwesomeIcon icon={faXmark} />
+          </button>
+          <h2>Modal Content</h2>
+        </div>
       </div>
     </>
   );

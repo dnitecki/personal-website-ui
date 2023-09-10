@@ -119,19 +119,37 @@
 .more-modal {
   position: fixed;
   display: flex;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translate3d(0, 0, 0) translate(-50%, -50%);
-  transform: translate3d(0, 0, 0) translate(-50%, -50%);
   z-index: 5000;
-  height: 30rem;
+  height: 15rem;
   width: calc(100% - 3rem);
   justify-content: center;
   align-items: center;
   color: var(--white);
-  transition: all 1s ease-in-out;
   border-radius: var(--borderRadius);
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--primary);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.3s ease-in-out;
+}
+.modal-open {
+  top: 9rem;
+  left: 50%;
+  -moz-transform: translate3d(0, 0, 0) translate(-50%, -50%);
+  transform: translate3d(0, 0, 0) translate(-50%, -50%);
+}
+.modal-close {
+  top: -10rem;
+  left: 50%;
+  -moz-transform: translate3d(0, 0, 0) translate(-50%, -50%);
+  transform: translate3d(0, 0, 0) translate(-50%, -50%);
+}
+.bg-open {
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate3d(0, 0, 0) translate(-50%, -50%);
+  transform: translate3d(0, 0, 0) translate(-50%, -50%);
+}
+.bg-close {
+  display: none;
 }
 .modal-bg {
   position: fixed;
@@ -141,7 +159,6 @@
   transform: translate3d(0, 0, 0) translate(-50%, -50%);
   height: 100lvh;
   width: 100lvw;
-  background: rgba(0, 0, 0, 0.7);
   z-index: 4000;
 }
 .modal-close-btn {

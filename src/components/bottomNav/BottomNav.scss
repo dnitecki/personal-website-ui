@@ -12,6 +12,27 @@
   background-color: var(--primary);
   transition: all 0.3s ease-in-out;
 }
+.menu-btn {
+  position: absolute;
+  display: flex;
+  top: 2rem;
+  left: 2rem;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--navIconSize);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+.active-btn {
+  opacity: 1;
+  z-index: 3000;
+}
+.inactive-btn {
+  opacity: 0;
+  z-index: 1;
+}
 .bottomNav-links {
   display: flex;
   justify-content: space-between;
@@ -19,7 +40,7 @@
   align-items: center;
   padding: 0 2rem 0 2rem;
 }
-.nav-button {
+.nav-btn {
   display: flex;
   color: var(--iconColor);
   height: 3rem;
@@ -31,7 +52,7 @@
   font-size: var(--navIconSize);
   transition: all 0.1s ease-in-out, border-radius, height, width;
 }
-.nav-button .active {
+.nav-btn .active {
   display: flex;
   color: #1f1a47;
   height: 3rem;
@@ -45,7 +66,7 @@
 }
 .nav-show {
   bottom: 1rem;
-  opacity: 2;
+  opacity: 1;
 }
 .nav-hidden {
   bottom: -10rem;
