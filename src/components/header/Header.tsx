@@ -3,9 +3,9 @@ import "./Header.scss";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import { faCircleXmark, faShare } from "@fortawesome/free-solid-svg-icons";
+import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import profile from "../../assets/Profile.png";
 import logo from "../../assets/MyLogo.png";
 
@@ -63,7 +63,7 @@ export default function Header() {
                 <FontAwesomeIcon icon={faGithub} />
               </a>
               <button onClick={handleMoreClick}>
-                <FontAwesomeIcon icon={faEllipsis} />
+                <FontAwesomeIcon icon={faShareNodes} />
               </button>
             </div>
           </div>
