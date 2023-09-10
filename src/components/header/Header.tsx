@@ -4,7 +4,11 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faComment,
+  faLink,
+  faShareFromSquare,
+} from "@fortawesome/free-solid-svg-icons";
 import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import profile from "../../assets/Profile.png";
 import logo from "../../assets/MyLogo.png";
@@ -12,11 +16,33 @@ import logo from "../../assets/MyLogo.png";
 export default function Header() {
   const [moreClicked, setMoreClicked] = useState(false);
 
+  const shareData = {
+    text: "Thanks for sharing!",
+    url: "https://www.dominicknitecki.com",
+  };
+
   const handleMoreClick = () => {
     setMoreClicked(true);
   };
   const handleModalClose = () => {
     setMoreClicked(false);
+  };
+
+  const copyText = () => {
+    try {
+      navigator.clipboard.writeText(shareData.url);
+      window.alert("Copied!");
+    } catch (error) {
+      window.alert("Copy Failed");
+    }
+  };
+
+  const handleShare = async () => {
+    try {
+      await navigator.share(shareData);
+    } catch (error) {
+      window.alert("Sharing Failed");
+    }
   };
 
   return (
@@ -74,10 +100,21 @@ export default function Header() {
           id="more-modal"
           className={`more-modal ${moreClicked ? "modal-open" : "modal-close"}`}
         >
-          <button className="modal-close-btn" onClick={handleModalClose}>
-            <FontAwesomeIcon icon={faXmark} />
+          <button className="share-icon-btn" onClick={copyText}>
+            <FontAwesomeIcon className="share-icon" icon={faLink} />
+            <p>Copy Link</p>
           </button>
-          <h2>Modal Content</h2>
+          <a
+            className="share-icon-btn"
+            href="sms://?&body=www.dominicknitecki.com"
+          >
+            <FontAwesomeIcon className="share-icon" icon={faComment} />
+            <p>Message</p>
+          </a>
+          <button className="share-icon-btn" onClick={handleShare}>
+            <FontAwesomeIcon className="share-icon" icon={faShareFromSquare} />
+            <p>Share to...</p>
+          </button>
         </div>
       </div>
     </>

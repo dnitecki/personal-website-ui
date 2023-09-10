@@ -120,18 +120,20 @@
   position: fixed;
   display: flex;
   z-index: 5000;
-  height: 15rem;
+  height: fit-content;
   width: calc(100% - 3rem);
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  column-gap: 2rem;
+  align-items: baseline;
   color: var(--white);
   border-radius: var(--borderRadius);
-  background-color: var(--primary);
+  background-color: var(--black);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: all 0.3s ease-in-out;
+  padding: 1rem 3rem 0.7rem 3rem;
 }
 .modal-open {
-  top: 9rem;
+  top: 4rem;
   left: 50%;
   -moz-transform: translate3d(0, 0, 0) translate(-50%, -50%);
   transform: translate3d(0, 0, 0) translate(-50%, -50%);
@@ -166,6 +168,20 @@
   top: 20px;
   right: 30px;
   font-size: var(--iconSize);
+}
+.share-icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0%;
+  text-decoration: none;
+  p {
+    font-size: 12px;
+  }
+}
+.share-icon {
+  font-size: var(--navIconSize);
 }
 
 @keyframes flip {
