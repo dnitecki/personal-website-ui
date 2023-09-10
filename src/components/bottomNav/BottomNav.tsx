@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import "./BottomNav.scss";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faHouse, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faFolder } from "@fortawesome/free-solid-svg-icons";
 import { faBusinessTime } from "@fortawesome/free-solid-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import { faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 
 export default function BottomNav() {
   const [show, setShow] = useState(false);
@@ -27,7 +26,7 @@ export default function BottomNav() {
         className={`menu-btn ${show ? "active-btn" : "inactive-btn"}`}
         onClick={handleMenuClick}
       >
-        <FontAwesomeIcon icon={faEyeSlash} />
+        <FontAwesomeIcon icon={faXmark} />
       </button>
       <div
         className={`bottomNav-container ${show ? "nav-show" : "nav-hidden"}`}
