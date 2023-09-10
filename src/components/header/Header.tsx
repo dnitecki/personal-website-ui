@@ -41,7 +41,7 @@ export default function Header() {
     try {
       await navigator.share(shareData);
     } catch (error) {
-      window.alert("Sharing Failed");
+      console.log("Share Failed");
     }
   };
 
