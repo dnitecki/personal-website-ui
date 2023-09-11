@@ -66,7 +66,7 @@ html:focus-within {
   z-index: 1000;
 }
 .bg-wrap {
-  background: linear-gradient(-45deg, #800d43 30%, #1f1a47 70%);
+  background: linear-gradient(-45deg, #800d43 20%, #1f1a47 60%);
   height: 100lvh;
   width: 100lvh;
   position: fixed;
@@ -80,8 +80,27 @@ html:focus-within {
   background-color: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: 0 0 5px 10px transparent;
 }
+.clouds {
+  width: 10000px;
+  height: 60%;
+  background: transparent url("./assets/clouds.png") repeat;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.2;
+  filter: brightness(4);
+  z-index: 1;
+  -moz-animation: move-background 150s linear infinite;
+  -ms-animation: move-background 150s linear infinite;
+  -o-animation: move-background 150s linear infinite;
+  -webkit-animation: move-background 150s linear infinite;
+  animation: move-background 150s linear infinite;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -117,4 +136,20 @@ a {
 }
 input {
   all: unset;
+}
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
 }

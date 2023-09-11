@@ -20,6 +20,7 @@ function App() {
         id="app-container"
         className={showStartup ? "app-container no-scroll" : "app-container"}
       >
+        <div className="clouds" />
         <MainPage />
       </div>
     </div>
