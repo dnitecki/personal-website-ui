@@ -1,0 +1,21 @@
+.cert-container {
+  width: calc(100% - 3rem);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.cert {
+  display: flex;
+  resize: horizontal;
+  height: 10rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.cert-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
