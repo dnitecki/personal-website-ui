@@ -57,7 +57,6 @@ html:focus-within {
   height: 100svh;
   width: 100svw;
   position: relative;
-  overflow-x: hidden;
   padding: 0;
 }
 .app-container {
@@ -69,13 +68,10 @@ html:focus-within {
   z-index: 1000;
 }
 .bg-wrap {
-  background: linear-gradient(-45deg, #800d43 20%, #1f1a47 60%);
   height: 100lvh;
   width: 100lvh;
-  position: fixed;
-  display: flex;
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  position: relative;
+  overflow-x: hidden;
 }
 .glass {
   color: var(--white);
@@ -84,6 +80,16 @@ html:focus-within {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 5px 10px transparent;
+}
+.background {
+  background: linear-gradient(-45deg, #800d43 20%, #1f1a47 60%);
+  display: flex;
+  height: 100lvh;
+  width: 100%;
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+  z-index: 0;
 }
 .clouds {
   width: 10000px;
@@ -94,7 +100,8 @@ html:focus-within {
   right: 0;
   top: 0;
   bottom: 0;
-  opacity: 0.3;
+  opacity: 0.2;
+  overflow-x: hidden;
   filter: brightness(4);
   z-index: 1;
   -moz-animation: move-background 120s linear infinite;
