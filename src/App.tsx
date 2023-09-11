@@ -15,12 +15,12 @@ function App() {
   return (
     <div className="app">
       {showStartup ? <StartupAnimation /> : null}
-      <div className="bg-wrap"></div>
+      <div className="bg-wrap" />
+      <div className="clouds" />
       <div
         id="app-container"
         className={showStartup ? "app-container no-scroll" : "app-container"}
       >
-        <div className="clouds" />
         <MainPage />
       </div>
     </div>

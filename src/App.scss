@@ -46,6 +46,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--black);
+  padding: 0;
 }
 
 html:focus-within {
@@ -56,6 +57,8 @@ html:focus-within {
   height: 100svh;
   width: 100svw;
   position: relative;
+  overflow-x: hidden;
+  padding: 0;
 }
 .app-container {
   display: flex;
@@ -84,21 +87,21 @@ html:focus-within {
 }
 .clouds {
   width: 10000px;
-  height: 60%;
+  height: 70%;
   background: transparent url("./assets/clouds.png") repeat;
   background-size: contain;
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
-  opacity: 0.2;
+  opacity: 0.3;
   filter: brightness(4);
   z-index: 1;
-  -moz-animation: move-background 150s linear infinite;
-  -ms-animation: move-background 150s linear infinite;
-  -o-animation: move-background 150s linear infinite;
-  -webkit-animation: move-background 150s linear infinite;
-  animation: move-background 150s linear infinite;
+  -moz-animation: move-background 120s linear infinite;
+  -ms-animation: move-background 120s linear infinite;
+  -o-animation: move-background 120s linear infinite;
+  -webkit-animation: move-background 120s linear infinite;
+  animation: move-background 120s linear infinite;
 }
 
 .no-scroll {
