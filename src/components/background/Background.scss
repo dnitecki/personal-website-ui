@@ -1,10 +1,33 @@
-.bg-wrap {
-  z-index: 1;
+.stars {
   display: flex;
-  position: fixed;
-  height: calc(100lvh + 50px);
+  height: 80%;
   width: 100%;
-  overflow-x: hidden;
-  overflow-y: visible;
-  background: linear-gradient(45deg, blue, red);
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+.star {
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.4);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border-radius: 2px;
+  background-color: white;
+  animation: twinkle 3s ease-in-out;
+  @for $i from 1 through 50 {
+    &:nth-child(#{$i}) {
+      animation-delay: 500ms * $i;
+    }
+  }
+}
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
