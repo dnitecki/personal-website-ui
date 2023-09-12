@@ -17,7 +17,7 @@ export default function Background() {
   }
 
   useEffect(() => {
-    createStars(50);
+    createStars(75);
   });
   return <div className="stars" id="stars"></div>;
 }
