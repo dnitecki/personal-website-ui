@@ -1,0 +1,30 @@
+.skills-container {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  padding: 1.5rem;
+  overflow: hidden;
+  align-items: center;
+}
+.inner-container {
+  display: flex;
+  width: 100%;
+  column-gap: 1rem;
+}
+.skill-item {
+  height: 100%;
+  width: 100%;
+}
+.skill-bubble {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  border-radius: var(--borderRadius);
+  background-color: var(--secondary);
+  justify-content: center;
+  align-items: center;
+  p {
+    line-height: 0;
+  }
+}

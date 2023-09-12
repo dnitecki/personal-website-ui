@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  height: 20rem;
+  height: fit-content;
   width: calc(100svw - 3rem);
   z-index: 3000;
   padding: 2rem 0 0 0;
@@ -58,7 +58,7 @@
 }
 .header-links {
   display: flex;
-  height: 5rem;
+  height: 4rem;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -72,9 +72,9 @@
   height: 100%;
   width: 100%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  padding-bottom: 1rem;
+  padding-top: 4rem;
   line-height: 0%;
 }
 .front,

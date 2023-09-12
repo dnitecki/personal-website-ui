@@ -12,6 +12,7 @@ import {
 import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import profile from "../../assets/Profile.png";
 import logo from "../../assets/MyLogo.png";
+import Skills from "../skills/Skills";
 
 export default function Header() {
   const [moreClicked, setMoreClicked] = useState(false);
@@ -63,7 +64,9 @@ export default function Header() {
             <div className="header-text">
               <h2>Dominick Nitecki</h2>
               <h3>Software Engineer</h3>
+              <Skills />
             </div>
+
             <div className="header-links">
               <a
                 href="https://www.linkedin.com/in/dnitecki/"
