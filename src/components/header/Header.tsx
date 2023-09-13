@@ -42,7 +42,7 @@ export default function Header() {
     try {
       await navigator.share(shareData);
     } catch (error) {
-      console.log("Share Failed");
+      setMoreClicked(false);
     }
   };
 
