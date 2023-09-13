@@ -79,7 +79,7 @@ html:focus-within {
   background-color: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 5px 10px transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .background {
   background: linear-gradient(-45deg, #342b77 20%, #110e27 60%);

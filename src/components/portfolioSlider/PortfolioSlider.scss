@@ -6,20 +6,6 @@
   margin-top: 7px;
   flex-direction: column;
 }
-.top-card {
-  display: flex;
-  height: 5rem;
-  width: 100%;
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-top-left-radius: var(--borderRadius);
-  border-top-right-radius: var(--borderRadius);
-}
 .logo-container {
   display: flex;
   justify-content: center;
