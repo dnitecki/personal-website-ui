@@ -1,0 +1,36 @@
+.mode-toggle-container {
+  position: absolute;
+  display: flex;
+  top: 2rem;
+  right: 2rem;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  z-index: 6000;
+}
+.toggle-label {
+  width: 60px;
+  height: 25px;
+  position: relative;
+  display: block;
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  cursor: pointer;
+}
+.toggle-label:after {
+  content: "";
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  background: var(--secondary);
+  border-radius: 50%;
+}
+.mode-toggle {
+  width: 0;
+  height: 0;
+  display: hidden;
+}

@@ -5,11 +5,13 @@ import PortfolioSlider from "../../components/portfolioSlider/PortfolioSlider";
 import Header from "../../components/header/Header";
 import Resume from "../../components/resume/Resume";
 import Certs from "../../components/certs/Certs";
+import ModeToggle from "../../components/modeToggle/ModeToggle";
 
 export default function MainPage() {
   return (
     <>
       <div id="main-page-content" className="main-page-content">
+        <ModeToggle />
         <div id="home" className="home">
           <Header />
         </div>
