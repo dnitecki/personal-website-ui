@@ -15,7 +15,7 @@
 
   // other
   --doc-height: 100%;
-  --shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --topBarHeight: 5rem;
   --hoverAnimation: all 175ms ease-in-out;
   --buttonPadding: 0.3rem 0.7rem 0.3rem 0.7rem;
@@ -43,9 +43,12 @@
 html,
 body {
   --text-color: #000000;
-  --background-color: #ffffff;
-  --primary: #2c67f2;
-  --secondary: #62cff4;
+  --background-color: #e0e0e0;
+  --active-color: #ffffff;
+  --primary: #33bbc5;
+  --secondary: #33bbc5;
+  --iconColor: #ffffff;
+  --menu-icon-color: #33bbc5;
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
@@ -54,8 +57,11 @@ body {
 body.dark {
   --text-color: #ffffff;
   --background-color: #000000;
+  --active-color: #ffffff;
   --primary: #1f1a47;
   --secondary: #7a1e86;
+  --iconColor: #ffffff;
+  --menu-icon-color: #ffffff;
 }
 
 html:focus-within {
@@ -89,9 +95,9 @@ html:focus-within {
   background-color: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--shadow);
 }
-.background {
+body.dark .background {
   background: linear-gradient(-45deg, #342b77 20%, #110e27 60%);
   display: flex;
   height: 100lvh;
@@ -101,7 +107,18 @@ html:focus-within {
   position: fixed;
   z-index: 0;
 }
-.clouds {
+.background {
+  background: linear-gradient(-45deg, #8399a2 20%, #eef2f3 80%);
+  display: flex;
+  height: 100lvh;
+  width: 100%;
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+  z-index: 0;
+}
+
+body.dark .clouds {
   width: 10000px;
   height: 70%;
   background: transparent url("./assets/clouds.png") repeat;
@@ -120,7 +137,9 @@ html:focus-within {
   -webkit-animation: move-background 120s linear infinite;
   animation: move-background 120s linear infinite;
 }
-
+.clouds {
+  display: none;
+}
 .no-scroll {
   overflow: hidden;
 }

@@ -1,4 +1,4 @@
-.stars {
+body.dark .stars {
   display: flex;
   height: 100%;
   width: 100%;
@@ -6,7 +6,7 @@
   z-index: 0;
   overflow: hidden;
 }
-.star {
+body.dark .star {
   box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.4);
   position: absolute;
   width: 1px;

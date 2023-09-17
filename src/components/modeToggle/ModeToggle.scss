@@ -40,7 +40,7 @@
 }
 .mode-toggle:checked + .toggle-label::after {
   left: 50px;
-  background: linear-gradient(180deg, #2c67f2, #62cff4);
+  background: var(--primary);
 }
 .toggle-icons {
   display: flex;

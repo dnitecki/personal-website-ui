@@ -20,9 +20,10 @@
   mask: radial-gradient(11rem 11rem at 50% 50%, transparent 50.05%, white 49.9%)
     bottom/ 100% 200%;
 }
+
 .shadow {
   border-radius: var(--borderRadius);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--shadow);
 }
 .profile-image {
   position: absolute;
@@ -126,10 +127,8 @@
   column-gap: 2rem;
   align-items: baseline;
   border-radius: var(--borderRadius);
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: var(--iconColor);
+  background-color: var(--primary);
   transition: all 0.3s ease-in-out;
   padding: 1rem 3rem 0.7rem 3rem;
 }
