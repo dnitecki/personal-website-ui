@@ -42,15 +42,13 @@
   left: 50px;
   background: linear-gradient(180deg, #2c67f2, #62cff4);
 }
-.mode-toggle:checked + .sun {
-  color: rgba(0, 0, 0, 1);
-}
 .toggle-icons {
   display: flex;
   position: relative;
   width: 100%;
   font-size: var(--navIconSize);
   z-index: 7000;
+  color: var(--white);
 }
 .moon {
   position: absolute;
