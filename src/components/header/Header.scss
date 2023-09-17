@@ -7,7 +7,6 @@
   width: calc(100svw - 3rem);
   z-index: 3000;
   padding: 2rem 0 0 0;
-  color: var(--white);
   border-radius: var(--borderRadius);
   background-color: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(10px);
@@ -125,7 +124,6 @@
   justify-content: space-between;
   column-gap: 2rem;
   align-items: baseline;
-  color: var(--white);
   border-radius: var(--borderRadius);
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
