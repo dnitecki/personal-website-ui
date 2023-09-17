@@ -2,8 +2,6 @@
   // colors
   --white: #ffffff;
   --black: #000000;
-  --primary: #1f1a47;
-  --secondary: #7a1e86;
   --bgColor: rgba(255, 255, 255, 0.33);
   --trackColor: #e7e7e7;
   --lightGrey: #a4a4a4;
@@ -43,10 +41,20 @@
 }
 html,
 body {
+  --text-color: #000000;
+  --background-color: #ffffff;
+  --primary: #1f1a47;
+  --secondary: #7a1e86;
   margin: 0;
   padding: 0;
-  background-color: var(--black);
+  background-color: var(--background-color);
   padding: 0;
+}
+body.dark {
+  --text-color: #ffffff;
+  --background-color: #000000;
+  --primary: #1f1a47;
+  --secondary: #7a1e86;
 }
 
 html:focus-within {
@@ -58,7 +66,7 @@ html:focus-within {
   width: 100svw;
   position: relative;
   padding: 0;
-  color: var(--white);
+  color: var(--text-color);
   transition: color 0.5s ease-in-out;
 }
 .app-container {

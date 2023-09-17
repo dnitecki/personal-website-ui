@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ModeToggle.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
@@ -7,19 +7,22 @@ import { faMoon } from "@fortawesome/free-solid-svg-icons";
 export default function ModeToggle() {
   const [checked, setChecked] = useState(false);
 
+  useEffect(() => {
+    document.body.classList.add("dark");
+  }, []);
+
   const handleCheck = () => {
-    setChecked(!checked);
     if (checked) {
-      document.getElementById("app").style.color = "white";
+      document.body.classList.add("dark");
     } else {
-      document.getElementById("app").style.color = "black";
+      document.body.classList.remove("dark");
     }
+    setChecked(!checked);
   };
   return (
     <div className="mode-toggle-container">
       <input
         onChange={handleCheck}
-        defaultChecked={checked}
         type="checkbox"
         id="mode-toggle"
         className="mode-toggle"
