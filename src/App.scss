@@ -46,7 +46,6 @@ body {
   --background-color: #ffffff;
   --primary: #2c67f2;
   --secondary: #62cff4;
-  --iconColor: var(--secondary);
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
@@ -57,7 +56,6 @@ body.dark {
   --background-color: #000000;
   --primary: #1f1a47;
   --secondary: #7a1e86;
-  --iconColor: var(--iconColor);
 }
 
 html:focus-within {
