@@ -59,6 +59,7 @@ html:focus-within {
   position: relative;
   padding: 0;
   color: var(--white);
+  transition: color 0.5s ease-in-out;
 }
 .app-container {
   display: flex;

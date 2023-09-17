@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
+    <div className="app" id="app">
       {showStartup ? <StartupAnimation /> : null}
       <div className="bg-wrap">
         <div className="background" />
