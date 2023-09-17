@@ -10,7 +10,7 @@
   align-items: center;
   border-radius: var(--borderRadius);
   background-color: var(--primary);
-  transition: all 0.3s ease-in-out;
+  transition: bottom 0.3s ease-in-out;
 }
 .menu-btn {
   position: absolute;
@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center;
   font-size: var(--iconSize);
-  transition: all 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .active-btn {
   opacity: 1;

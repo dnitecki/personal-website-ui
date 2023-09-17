@@ -19,7 +19,7 @@
   border-radius: 60px;
   box-shadow: inset 0px 5px 14px rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: background, left 0.3s ease-in-out;
 }
 .toggle-label:after {
   content: "";
@@ -31,7 +31,7 @@
   bottom: 1px;
   background: linear-gradient(180deg, var(--primary), var(--secondary));
   border-radius: 50%;
-  transition: all 0.3s ease-in-out;
+  transition: background, left 0.3s ease-in-out;
 }
 .mode-toggle {
   width: 0;
