@@ -2,6 +2,7 @@
   // colors
   --white: #ffffff;
   --black: #000000;
+
   --bgColor: rgba(255, 255, 255, 0.33);
   --trackColor: #e7e7e7;
   --lightGrey: #a4a4a4;
@@ -43,8 +44,9 @@ html,
 body {
   --text-color: #000000;
   --background-color: #ffffff;
-  --primary: #1f1a47;
-  --secondary: #7a1e86;
+  --primary: #2c67f2;
+  --secondary: #62cff4;
+  --iconColor: var(--secondary);
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
@@ -55,6 +57,7 @@ body.dark {
   --background-color: #000000;
   --primary: #1f1a47;
   --secondary: #7a1e86;
+  --iconColor: var(--iconColor);
 }
 
 html:focus-within {
