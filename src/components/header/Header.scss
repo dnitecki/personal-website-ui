@@ -99,17 +99,17 @@
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  outline: solid 2px var(--white);
+  outline: solid 3px var(--menu-icon-color);
 }
 .logo-background {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  background-color: #010106;
+  background: linear-gradient(110deg, #474747, var(--black));
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: solid 2px var(--white);
+  outline: solid 3px var(--menu-icon-color);
 }
 .dn-logo {
   transform: scale(0.3);

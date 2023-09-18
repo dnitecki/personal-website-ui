@@ -29,8 +29,14 @@ export default function ModeToggle() {
       />
       <label htmlFor="mode-toggle" className="toggle-label">
         <div className="toggle-icons">
-          <FontAwesomeIcon className="moon" icon={faMoon} />
-          <FontAwesomeIcon className="sun" icon={faSun} />
+          <FontAwesomeIcon
+            className={`moon ${checked ? "icon-active" : "icon-inactive"}`}
+            icon={faMoon}
+          />
+          <FontAwesomeIcon
+            className={`sun ${checked ? "icon-inactive" : "icon-active"}`}
+            icon={faSun}
+          />
         </div>
       </label>
     </div>
