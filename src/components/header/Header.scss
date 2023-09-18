@@ -8,7 +8,7 @@
   z-index: 3000;
   padding: 2rem 0 0 0;
   border-radius: var(--borderRadius);
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--card-color);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   -webkit-mask: radial-gradient(
@@ -24,6 +24,28 @@
 .shadow {
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow);
+}
+body.dark .header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: fit-content;
+  width: calc(100svw - 3rem);
+  z-index: 3000;
+  padding: 2rem 0 0 0;
+  border-radius: var(--borderRadius);
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-mask: radial-gradient(
+      11rem 11rem at 50% 50%,
+      transparent 50.05%,
+      white 49.9%
+    )
+    bottom/ 100% 200%;
+  mask: radial-gradient(11rem 11rem at 50% 50%, transparent 50.05%, white 49.9%)
+    bottom/ 100% 200%;
 }
 .profile-image {
   position: absolute;

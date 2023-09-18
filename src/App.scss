@@ -43,13 +43,16 @@
 html,
 body {
   --text-color: #333333;
-  --background-color: #e0e0e0;
+  --background-color: #000000;
   --active-color: #ffffff;
   --primary: #28979f;
   --secondary: #28979f;
   --iconColor: #ffffff;
   --menu-icon-color: #28979f;
-  --mode-opacity: 0.6;
+  --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --mode-opacity: 0.8;
+  --card-color: #fdfcfaa7;
+  --company-bg: brightness(0) invert(1);
   margin: 0;
   padding: 0;
   background-color: var(--background-color) !important;
@@ -63,7 +66,9 @@ body.dark {
   --secondary: #7a1e86;
   --iconColor: #ffffff;
   --menu-icon-color: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --mode-opacity: 0.2;
+  --company-bg: brightness(0) invert(1);
   margin: 0;
   padding: 0;
   background-color: var(--background-color) !important;
@@ -96,6 +101,11 @@ html:focus-within {
   overflow-x: hidden;
 }
 .glass {
+  border-radius: var(--borderRadius);
+  background-color: var(--card-color);
+  box-shadow: var(--shadow);
+}
+body.dark .glass {
   border-radius: var(--borderRadius);
   background-color: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(10px);

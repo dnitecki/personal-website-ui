@@ -61,11 +61,16 @@
   top: -12px;
   right: 8px;
 }
-.icon-active {
-  opacity: 0.3;
-  color: var(--black);
-}
 .icon-inactive {
+  opacity: 0.6;
+}
+.icon-active {
   opacity: 1;
   color: var(--white);
+}
+.sun-color {
+  color: var(--white);
+}
+.moon-color {
+  color: var(--primary);
 }
