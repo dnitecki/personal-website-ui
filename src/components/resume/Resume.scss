@@ -65,12 +65,7 @@
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-.jpmc {
-  background-color: #005eb8;
-}
-.stn {
-  background-color: #ed7000;
+  background-color: var(--secondary);
 }
 .resume-card-front {
   display: flex;

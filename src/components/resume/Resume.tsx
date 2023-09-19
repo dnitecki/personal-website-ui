@@ -17,7 +17,7 @@ export default function Resume() {
       <div onClick={handleJpmcClick} className="resume-card glass">
         <div className="bg-image-jpmc" />
         <div
-          className={`resume-card-bg ${jpmcClicked ? "closed" : "open"} jpmc`}
+          className={`resume-card-bg ${jpmcClicked ? "closed" : "open"}`}
         ></div>
         <div
           className={`resume-card-front ${jpmcClicked ? "visible" : "hidden"}`}
@@ -39,7 +39,7 @@ export default function Resume() {
       <div onClick={handleStnClick} className="resume-card glass">
         <div className="bg-image-stn" />
         <div
-          className={`resume-card-bg ${stnClicked ? "closed" : "open"} stn`}
+          className={`resume-card-bg ${stnClicked ? "closed" : "open"}`}
         ></div>
         <div
           className={`resume-card-front ${stnClicked ? "visible" : "hidden"}`}
