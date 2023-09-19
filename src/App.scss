@@ -102,12 +102,12 @@ html:focus-within {
 }
 .glass {
   border-radius: var(--borderRadius);
-  background-color: var(--card-color);
+  background: var(--card-color);
   box-shadow: var(--shadow);
 }
 body.dark .glass {
   border-radius: var(--borderRadius);
-  background-color: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow);
