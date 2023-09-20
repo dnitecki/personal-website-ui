@@ -5,6 +5,26 @@
   margin-bottom: 7px;
   margin-top: 7px;
   flex-direction: column;
+  padding: 0.5rem;
+  border-radius: var(--borderRadius);
+}
+.portfolio-image-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--borderRadius);
+  background-color: #0b335b;
+}
+.portfolio-image {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 35px;
+  transform: scale(1.4);
+  width: 100%;
+  height: auto;
 }
 .logo-container {
   display: flex;
