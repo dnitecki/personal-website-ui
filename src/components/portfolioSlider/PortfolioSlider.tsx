@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./PortfolioSlider.scss";
 import { motion } from "framer-motion";
 import finfetch from "../../assets/FinfetchMockup.png";
+import finfetchIcon from "../../assets/FinFetch-icon.png";
 
 export default function PortfolioSlider() {
   const [width, setWidth] = useState(0);
@@ -20,6 +21,7 @@ export default function PortfolioSlider() {
           <div className="item">
             <div className="portfolio-card">
               <div className="portfolio-image-container">
+                <img className="portfolio-logo" src={finfetchIcon} alt="icon" />
                 <img
                   className="portfolio-image"
                   src={finfetch}

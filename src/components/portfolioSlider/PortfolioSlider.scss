@@ -21,11 +21,21 @@
 .portfolio-image {
   display: flex;
   position: absolute;
-  top: 150px;
+  top: 140px;
   left: 60px;
-  transform: scale(5);
+  transform: scale(4.6);
   width: 100%;
   height: auto;
+}
+.portfolio-logo {
+  display: flex;
+  position: absolute;
+  top: 9rem;
+  right: 4rem;
+  width: 100%;
+  height: auto;
+  transform: scale(0.3);
+  z-index: 6000;
 }
 .item {
   height: 100%;
