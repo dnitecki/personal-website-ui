@@ -5,7 +5,7 @@
   margin-bottom: 7px;
   margin-top: 7px;
   flex-direction: column;
-  padding: 0.5rem;
+  padding: 0.75rem;
   border-radius: var(--borderRadius);
 }
 .portfolio-image-container {
@@ -14,7 +14,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: var(--borderRadius);
+  border-radius: 10px;
   background-color: #0b335b;
 }
 .portfolio-image {
