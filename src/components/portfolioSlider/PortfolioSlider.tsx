@@ -18,7 +18,7 @@ export default function PortfolioSlider() {
           className="inner-slider"
         >
           <div className="item">
-            <div className="glass portfolio-card">
+            <div className="portfolio-card">
               <div className="portfolio-image-container">
                 <img
                   className="portfolio-image"
@@ -29,10 +29,10 @@ export default function PortfolioSlider() {
             </div>
           </div>
           <div className="item">
-            <div className="glass portfolio-card"></div>
+            <div className="portfolio-card"></div>
           </div>
           <div className="item">
-            <div className="glass portfolio-card"></div>
+            <div className="portfolio-card"></div>
           </div>
         </motion.div>
       </div>

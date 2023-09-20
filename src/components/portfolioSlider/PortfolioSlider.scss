@@ -5,8 +5,9 @@
   margin-bottom: 7px;
   margin-top: 7px;
   flex-direction: column;
-  padding: 0.75rem;
   border-radius: var(--borderRadius);
+  background-color: var(--primary);
+  box-shadow: var(--shadow);
 }
 .portfolio-image-container {
   display: flex;
@@ -14,24 +15,17 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
   background-color: #0b335b;
+  border-radius: var(--borderRadius);
 }
 .portfolio-image {
   display: flex;
   position: absolute;
-  top: 39px;
-  right: 30px;
-  transform: scale(1.4);
+  top: 150px;
+  left: 60px;
+  transform: scale(5);
   width: 100%;
   height: auto;
-}
-.logo-container {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  border-radius: var(--borderRadius);
 }
 .item {
   height: 100%;
