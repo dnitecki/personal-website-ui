@@ -19,7 +19,12 @@ export default function PortfolioSlider() {
           className="inner-slider"
         >
           <div className="item">
-            <div className="portfolio-card">
+            <a
+              className="portfolio-card"
+              href="https://www.finfetch.dominicknitecki.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="portfolio-image-container">
                 <img className="portfolio-logo" src={finfetchIcon} alt="icon" />
                 <img
@@ -28,7 +33,7 @@ export default function PortfolioSlider() {
                   alt="finfetch"
                 />
               </div>
-            </div>
+            </a>
           </div>
           <div className="item">
             <div className="portfolio-card"></div>
