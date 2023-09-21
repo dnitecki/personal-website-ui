@@ -15,26 +15,25 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  background-color: #0b335b;
   border-radius: var(--borderRadius);
 }
 .portfolio-image {
   display: flex;
   position: absolute;
-  top: 140px;
-  left: 60px;
-  transform: scale(4.6);
+  top: 120px;
+  left: 10px;
+  transform: scale(3);
   width: 100%;
   height: auto;
 }
 .portfolio-logo {
   display: flex;
   position: absolute;
-  top: 9rem;
-  right: 4rem;
+  top: -4.5rem;
+  right: 4.5rem;
   width: 100%;
   height: auto;
-  transform: scale(0.3);
+  transform: scale(0.25);
   z-index: 6000;
 }
 .item {
