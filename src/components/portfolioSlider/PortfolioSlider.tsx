@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import finfetch from "../../assets/FinfetchMockup.png";
 import finfetchIcon from "../../assets/FinFetch-icon.png";
 import insurance from "../../assets/InsuranceMockup.png";
+import insuranceIcon from "../../assets/onestop-icon.png";
 
 export default function PortfolioSlider() {
   const [width, setWidth] = useState(0);
@@ -27,7 +28,11 @@ export default function PortfolioSlider() {
               rel="noreferrer"
             >
               <div className="portfolio-image-container">
-                <img className="portfolio-logo" src={finfetchIcon} alt="icon" />
+                <img
+                  className="portfolio-logo finfetch-icon"
+                  src={finfetchIcon}
+                  alt="icon"
+                />
                 <img
                   className="portfolio-image finfetch"
                   src={finfetch}
@@ -44,6 +49,11 @@ export default function PortfolioSlider() {
               rel="noreferrer"
             >
               <div className="portfolio-image-container">
+                <img
+                  className="portfolio-logo insurance-icon"
+                  src={insuranceIcon}
+                  alt="icon"
+                />
                 <img
                   className="portfolio-image insurance"
                   src={insurance}
