@@ -39,7 +39,7 @@ export default function PortfolioSlider() {
           <div className="item">
             <a
               className="portfolio-card"
-              href="https://www.finfetch.dominicknitecki.com/"
+              href="https://www.onestopinsurance.net/"
               target="_blank"
               rel="noreferrer"
             >
@@ -47,7 +47,7 @@ export default function PortfolioSlider() {
                 <img
                   className="portfolio-image insurance"
                   src={insurance}
-                  alt="finfetch"
+                  alt="onestopinsurance"
                 />
               </div>
             </a>
