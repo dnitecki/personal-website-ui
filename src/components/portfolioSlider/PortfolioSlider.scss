@@ -20,8 +20,17 @@
 .portfolio-image {
   display: flex;
   position: absolute;
+}
+.finfetch {
   top: 120px;
   left: 10px;
+  transform: scale(3);
+  width: 100%;
+  height: auto;
+}
+.insurance {
+  top: 100px;
+  right: 10px;
   transform: scale(3);
   width: 100%;
   height: auto;
