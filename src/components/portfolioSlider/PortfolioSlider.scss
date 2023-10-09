@@ -35,7 +35,6 @@
   display: flex;
   align-items: center;
   transform: scale(0.25);
-  outline: 5px solid var(--white);
   box-shadow: var(--shadow);
   border-radius: 50%;
 }
@@ -48,8 +47,8 @@
 }
 .insurance {
   top: 110px;
-  left: 20px;
-  transform: scale(2.5);
+  left: 60px;
+  transform: scale(2.5) rotate(5deg);
   width: 100%;
   height: auto;
 }

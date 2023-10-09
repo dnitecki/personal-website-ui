@@ -63,7 +63,7 @@ export default function PortfolioSlider() {
             </a>
           </div>
           <div className="item">
-            <div className="portfolio-card"></div>
+            <div className="portfolio-card glass"></div>
           </div>
         </motion.div>
       </div>
