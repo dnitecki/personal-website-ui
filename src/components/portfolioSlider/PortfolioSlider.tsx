@@ -22,7 +22,7 @@ export default function PortfolioSlider() {
         >
           <div className="item">
             <a
-              className="portfolio-card"
+              className="portfolio-card glass"
               href="https://www.finfetch.dominicknitecki.com/"
               target="_blank"
               rel="noreferrer"
@@ -43,7 +43,7 @@ export default function PortfolioSlider() {
           </div>
           <div className="item">
             <a
-              className="portfolio-card"
+              className="portfolio-card glass"
               href="https://www.onestopinsurance.net/"
               target="_blank"
               rel="noreferrer"
