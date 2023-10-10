@@ -3,14 +3,23 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+  .hidden {
+    opacity: 0%;
+  }
+  .visible {
+    opacity: 100%;
+    transition-delay: 0.3s;
+  }
 }
 .cert {
   display: flex;
+  position: relative;
   resize: horizontal;
   height: 10rem;
   padding: 1rem;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .cert-icon {
   display: flex;
@@ -18,4 +27,51 @@
   align-items: center;
   height: 100%;
   width: auto;
+}
+.cert-bg {
+  height: 100%;
+  width: 100%;
+  z-index: 2000;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--secondary);
+}
+.cert-closed {
+  top: 0;
+  left: 0;
+  border-radius: var(--borderRadius);
+}
+.cert-open {
+  top: -60%;
+  left: 70%;
+  border-radius: 50%;
+}
+.cert-front {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2000;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  line-height: 0%;
+  flex-direction: column;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  color: var(--white);
+}
+.cert-back {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
 }

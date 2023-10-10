@@ -10,6 +10,13 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   row-gap: 1.5rem;
+  .hidden {
+    opacity: 0%;
+  }
+  .visible {
+    opacity: 100%;
+    transition-delay: 0.4s;
+  }
 }
 .resume-card {
   overflow: hidden;
@@ -44,12 +51,12 @@
   filter: var(--company-bg);
   opacity: var(--mode-opacity);
 }
-.closed {
+.resume-closed {
   top: 0;
   left: 0;
   border-radius: var(--borderRadius);
 }
-.open {
+.resume-open {
   top: -150px;
   left: 80%;
   border-radius: 50%;
@@ -92,13 +99,6 @@
   padding-top: 1rem;
   z-index: 1000;
   overflow: hidden;
-}
-.hidden {
-  opacity: 0%;
-}
-.visible {
-  opacity: 100%;
-  transition-delay: 0.4s;
 }
 .resume-title {
   padding-bottom: 1rem;
