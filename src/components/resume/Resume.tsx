@@ -17,20 +17,18 @@ export default function Resume() {
   return (
     <div className="resume-container">
       <div onClick={handleJpmcClick} className="resume-card glass">
+        <div
+          className={`resume-icon ${jpmcClicked ? "icon-closed" : "icon-open"}`}
+        >
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </div>
         <div className="bg-image-jpmc" />
+
         <div
           className={`resume-card-bg ${
             jpmcClicked ? "resume-closed" : "resume-open"
           }`}
-        >
-          <div
-            className={`resume-icon ${
-              jpmcClicked ? "icon-closed" : "icon-open"
-            }`}
-          >
-            <FontAwesomeIcon icon={faChevronLeft} />
-          </div>
-        </div>
+        ></div>
         <div
           className={`resume-card-front ${jpmcClicked ? "visible" : "hidden"}`}
         >
@@ -49,20 +47,17 @@ export default function Resume() {
         </div>
       </div>
       <div onClick={handleStnClick} className="resume-card glass">
+        <div
+          className={`resume-icon ${stnClicked ? "icon-closed" : "icon-open"}`}
+        >
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </div>
         <div className="bg-image-stn" />
         <div
           className={`resume-card-bg ${
             stnClicked ? "resume-closed" : "resume-open"
           }`}
-        >
-          <div
-            className={`resume-icon ${
-              stnClicked ? "icon-closed" : "icon-open"
-            }`}
-          >
-            <FontAwesomeIcon icon={faChevronLeft} />
-          </div>
-        </div>
+        ></div>
         <div
           className={`resume-card-front ${stnClicked ? "visible" : "hidden"}`}
         >

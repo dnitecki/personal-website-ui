@@ -83,7 +83,7 @@
   width: 100%;
   z-index: 2000;
   padding-top: 1rem;
-  padding-left: 3.5rem;
+  padding-left: 1.5rem;
   line-height: 0%;
   flex-direction: column;
   -webkit-transition: opacity 0.2s ease;
@@ -109,7 +109,8 @@
   display: flex;
   position: absolute;
   z-index: 3000;
-  left: 20px;
+  top: 70px;
+  right: 20px;
   font-size: var(--navIconSize);
   color: var(--white);
   -webkit-transition: all 0.3s ease;
