@@ -57,13 +57,13 @@
   border-radius: var(--borderRadius);
 }
 .resume-open {
-  top: -150px;
-  left: 80%;
-  border-radius: 50%;
+  top: 0;
+  left: 85%;
+  border-radius: var(--borderRadius);
 }
 .resume-card-bg {
-  height: 400%;
-  width: 400%;
+  height: 100%;
+  width: 100%;
   z-index: 2000;
   position: absolute;
   display: flex;
@@ -76,17 +76,18 @@
 }
 .resume-card-front {
   display: flex;
+  align-items: flex-start;
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 2000;
-  padding-left: 1.5rem;
   padding-top: 1rem;
+  padding-left: 3.5rem;
   line-height: 0%;
   flex-direction: column;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
   color: var(--white);
 }
 .resume-card-back {
@@ -102,4 +103,21 @@
 }
 .resume-title {
   padding-bottom: 1rem;
+}
+.resume-icon {
+  display: flex;
+  position: absolute;
+  z-index: 3000;
+  left: 20px;
+  font-size: var(--navIconSize);
+  color: var(--white);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.icon-open {
+  transform: rotate(0);
+}
+.icon-closed {
+  transform: rotate(180deg);
 }

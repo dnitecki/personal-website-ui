@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Resume.scss";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function Resume() {
   const [jpmcClicked, setJpmcClicked] = useState(false);
@@ -20,7 +22,15 @@ export default function Resume() {
           className={`resume-card-bg ${
             jpmcClicked ? "resume-closed" : "resume-open"
           }`}
-        ></div>
+        >
+          <div
+            className={`resume-icon ${
+              jpmcClicked ? "icon-closed" : "icon-open"
+            }`}
+          >
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </div>
+        </div>
         <div
           className={`resume-card-front ${jpmcClicked ? "visible" : "hidden"}`}
         >
@@ -44,7 +54,15 @@ export default function Resume() {
           className={`resume-card-bg ${
             stnClicked ? "resume-closed" : "resume-open"
           }`}
-        ></div>
+        >
+          <div
+            className={`resume-icon ${
+              stnClicked ? "icon-closed" : "icon-open"
+            }`}
+          >
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </div>
+        </div>
         <div
           className={`resume-card-front ${stnClicked ? "visible" : "hidden"}`}
         >
