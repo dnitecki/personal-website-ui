@@ -16,7 +16,7 @@
   position: relative;
   resize: horizontal;
   height: 10rem;
-  padding: 1rem;
+  padding: 1rem 0 1rem 0;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -40,16 +40,16 @@
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background-color: var(--secondary);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow);
 }
 .cert-closed {
   top: 0;
   left: 0;
-  border-radius: var(--borderRadius);
 }
 .cert-open {
-  top: -60%;
-  left: 70%;
-  border-radius: 50%;
+  top: 150px;
+  left: 0;
 }
 .cert-front {
   display: flex;
