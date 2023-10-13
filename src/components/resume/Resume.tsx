@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Resume.scss";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import StantecLogo from "../../assets/StantecLogoColor.png";
+import ChaseLogo from "../../assets/ChaseLogo.png";
 
 export default function Resume() {
   const [jpmcClicked, setJpmcClicked] = useState(false);
@@ -35,11 +37,15 @@ export default function Resume() {
           <h2>Add Info</h2>
         </div>
         <div className="resume-card-back">
-          <div className="resume-firm">
-            <h2>JPMorgan Chase</h2>
-          </div>
-          <div className="resume-title">
-            <h3>Software Engineer</h3>
+          <div className="resume-header">
+            <div className="resume-logo-container">
+              <img className="resume-logo" src={ChaseLogo} alt="stantec logo" />
+            </div>
+
+            <div className="resume-title">
+              <h2>JPMorgan Chase</h2>
+              <h3>Software Engineer</h3>
+            </div>
           </div>
           <div className="resume-dates">
             <h4>Nov 2022 to Present</h4>
@@ -63,12 +69,20 @@ export default function Resume() {
         >
           <h2>Add Info</h2>
         </div>
+
         <div className="resume-card-back">
-          <div className="resume-firm">
-            <h2>Stantec</h2>
-          </div>
-          <div className="resume-title">
-            <h3>Application Developer</h3>
+          <div className="resume-header">
+            <div className="resume-logo-container">
+              <img
+                className="resume-logo"
+                src={StantecLogo}
+                alt="stantec logo"
+              />
+            </div>
+            <div className="resume-title">
+              <h2>Stantec</h2>
+              <h3>Application Developer</h3>
+            </div>
           </div>
           <div className="resume-dates">
             <h4>Jan 2021 to Nov 2022</h4>

@@ -35,8 +35,8 @@
   position: absolute;
   background: url("../../assets/ChaseLogo.png");
   background-repeat: no-repeat;
-  background-size: 120%;
-  background-position: -7rem -2rem;
+  background-size: 80%;
+  background-position: -3.5rem -2rem;
   filter: var(--company-bg);
   opacity: var(--mode-opacity);
 }
@@ -97,13 +97,16 @@
   height: 100%;
   line-height: 0%;
   flex-direction: column;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   padding-top: 1rem;
   z-index: 1000;
   overflow: hidden;
 }
 .resume-title {
   padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 0%;
 }
 .resume-icon {
   display: flex;
@@ -122,4 +125,26 @@
 }
 .icon-closed {
   transform: rotate(180deg);
+}
+.resume-logo-container {
+  display: flex;
+  height: fit-content;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.resume-logo {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.resume-header {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  column-gap: 1rem;
+  align-items: center;
 }
