@@ -58,7 +58,7 @@
 }
 .resume-open {
   top: 0;
-  left: 96%;
+  left: 97%;
   border-radius: var(--borderRadius);
 }
 .resume-card-bg {
@@ -145,6 +145,6 @@
   display: flex;
   width: 100%;
   height: fit-content;
-  column-gap: 1rem;
+  column-gap: 0.75rem;
   align-items: center;
 }
