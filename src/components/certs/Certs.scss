@@ -41,14 +41,13 @@
   transition: all 0.5s ease-in-out;
   background-color: var(--secondary);
   border-radius: var(--borderRadius);
-  box-shadow: var(--shadow);
 }
 .cert-closed {
   top: 0;
   left: 0;
 }
 .cert-open {
-  top: 150px;
+  top: 100%;
   left: 0;
 }
 .cert-front {

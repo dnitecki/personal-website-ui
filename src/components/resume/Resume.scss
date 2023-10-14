@@ -58,7 +58,7 @@
 }
 .resume-open {
   top: 0;
-  left: 97%;
+  left: 100%;
   border-radius: var(--borderRadius);
 }
 .resume-card-bg {
@@ -73,7 +73,6 @@
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background-color: var(--secondary);
-  box-shadow: var(--shadow);
 }
 .resume-card-front {
   display: flex;
@@ -113,7 +112,7 @@
   position: absolute;
   z-index: 3000;
   top: 68px;
-  right: 30px;
+  right: 20px;
   font-size: var(--navIconSize);
   color: var(--white);
   -webkit-transition: all 0.3s ease;
