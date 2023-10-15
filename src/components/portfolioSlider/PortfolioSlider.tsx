@@ -43,9 +43,10 @@ export default function PortfolioSlider() {
       </div>
     );
   };
+
   return (
     <div>
-      {speedbumpOpen ? <SpeedBump url={url} appName={appName} /> : null}
+      {speedbumpOpen && <SpeedBump url={url} appName={appName} />}
       <div ref={slider} className="slider">
         <motion.div
           drag="x"
