@@ -11,6 +11,8 @@
     "@types/node": "^18.11.13",
     "@types/react": "^18.0.26",
     "framer-motion": "^10.16.2",
+    "node": "^20.7.0",
+    "npm": "^10.2.0",
     "react-dom": "^18.2.0",
     "react-lottie-player": "^1.5.5",
     "react-responsive": "^9.0.2",
