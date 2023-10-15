@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-// import { useNavigate } from "react-router-dom";
 import "./PortfolioSlider.scss";
 import { motion } from "framer-motion";
 import finfetch from "../../assets/FinfetchMockup.png";
@@ -8,7 +7,6 @@ import insurance from "../../assets/InsuranceMockup.png";
 import insuranceIcon from "../../assets/onestop-icon.png";
 
 export default function PortfolioSlider() {
-  // let navigate = useNavigate();
   const [width, setWidth] = useState(0);
   const slider = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
@@ -23,10 +21,14 @@ export default function PortfolioSlider() {
           className="inner-slider"
         >
           <div className="item">
-            <a
+            <div
               className="portfolio-card glass"
-              href="https://www.finfetch.dominicknitecki.com/"
-              target="_blank"
+              onClick={() => {
+                window.open(
+                  "https://www.finfetch.dominicknitecki.com/",
+                  "_blank"
+                );
+              }}
               rel="noreferrer"
             >
               <div className="portfolio-image-container">
@@ -41,13 +43,14 @@ export default function PortfolioSlider() {
                   alt="finfetch"
                 />
               </div>
-            </a>
+            </div>
           </div>
           <div className="item">
-            <a
+            <div
               className="portfolio-card glass"
-              href="https://www.onestopinsurance.net/"
-              target="_blank"
+              onClick={() => {
+                window.open("https://www.onestopinsurance.net/", "_blank");
+              }}
               rel="noreferrer"
             >
               <div className="portfolio-image-container">
@@ -62,7 +65,7 @@ export default function PortfolioSlider() {
                   alt="onestopinsurance"
                 />
               </div>
-            </a>
+            </div>
           </div>
           <div className="item">
             <div className="portfolio-card glass"></div>
