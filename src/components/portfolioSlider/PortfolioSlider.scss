@@ -81,13 +81,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 15rem;
+  height: fit-content;
   width: calc(100% - 3rem);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow);
   background-color: var(--primary);
   z-index: 8000;
-  padding: 1rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
   color: var(--white);
 }
 .speedbump-icon {
