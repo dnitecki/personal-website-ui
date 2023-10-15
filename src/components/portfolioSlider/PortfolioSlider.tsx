@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./PortfolioSlider.scss";
 import { motion } from "framer-motion";
 import finfetch from "../../assets/FinfetchMockup.png";
@@ -7,6 +8,7 @@ import insurance from "../../assets/InsuranceMockup.png";
 import insuranceIcon from "../../assets/onestop-icon.png";
 
 export default function PortfolioSlider() {
+  let navigate = useNavigate();
   const [width, setWidth] = useState(0);
   const slider = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
