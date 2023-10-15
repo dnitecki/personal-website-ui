@@ -7,6 +7,8 @@ import insuranceMockup from "../../assets/InsuranceMockup.png";
 import insuranceIcon from "../../assets/onestop-icon.png";
 import { finfetch, insurance } from "../../utils/constants";
 import { speedbumpProps } from "../../utils/types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function PortfolioSlider() {
   const [width, setWidth] = useState(0);
@@ -20,6 +22,7 @@ export default function PortfolioSlider() {
     setAppName(finfetch.appName);
     setSpeedbumpOpen(true);
   };
+
   const handleInsuranceClick = () => {
     setUrl(insurance.url);
     setAppName(insurance.appName);
@@ -31,6 +34,14 @@ export default function PortfolioSlider() {
     setAppName("");
     setSpeedbumpOpen(false);
   };
+
+  const handleSpeedbumpNavigation = (url: string) => {
+    window.open(url, "_blank");
+    setSpeedbumpOpen(false);
+    setUrl("");
+    setAppName("");
+  };
+
   useEffect(() => {
     setWidth(slider.current.scrollWidth - slider.current.offsetWidth);
   }, []);
@@ -38,8 +49,23 @@ export default function PortfolioSlider() {
   const SpeedBump = ({ url, appName }: speedbumpProps) => {
     return (
       <div className="speedbump-container">
-        <h2>{appName}</h2>
-        <button onClick={handleSpeedbumpClose}>CLOSE</button>
+        <div className="speedbump-text">
+          <h2>You will navigate away to {appName}</h2>
+        </div>
+        <div className="speedbump-buttons">
+          <button className="speedbump-close" onClick={handleSpeedbumpClose}>
+            <h3>Close</h3>
+          </button>
+          <button
+            className="speedbump-proceed"
+            onClick={() => {
+              handleSpeedbumpNavigation(url);
+            }}
+          >
+            <h3>Proceed</h3>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
+        </div>
       </div>
     );
   };

@@ -47,6 +47,7 @@ body {
   --active-color: #ffffff;
   --primary: #28979f;
   --secondary: #28979f;
+  --button-color: #ffffff;
   --iconColor: #ffffff;
   --menu-icon-color: #28979f;
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -64,6 +65,7 @@ body.dark {
   --active-color: #ffffff;
   --primary: #1f1a47;
   --secondary: #7a1e86;
+  --button-color: var(--secondary);
   --iconColor: #ffffff;
   --menu-icon-color: #ffffff;
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

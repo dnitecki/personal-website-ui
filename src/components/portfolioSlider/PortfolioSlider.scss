@@ -85,6 +85,50 @@
   width: calc(100% - 3rem);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow);
-  background-color: var(--secondary);
+  background-color: var(--primary);
   z-index: 8000;
+  padding: 1rem;
+  color: var(--white);
+}
+.speedbump-text {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.speedbump-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  column-gap: 1rem;
+}
+.speedbump-proceed {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  column-gap: 0.5rem;
+  padding: var(--buttonPadding);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--borderRadius);
+  background-color: var(--button-color);
+  h3 {
+    line-height: 0%;
+  }
+  color: var(--menu-icon-color);
+}
+.speedbump-close {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  padding: var(--buttonPadding);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--borderRadius);
+  h3 {
+    line-height: 0%;
+  }
 }
