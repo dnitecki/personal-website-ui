@@ -155,13 +155,13 @@ body.dark .header-container {
   padding: 1rem 3rem 0.7rem 3rem;
 }
 .modal-open {
-  top: 4rem;
+  bottom: 0;
   left: 50%;
   -moz-transform: translate3d(0, 0, 0) translate(-50%, -50%);
   transform: translate3d(0, 0, 0) translate(-50%, -50%);
 }
 .modal-close {
-  top: -10rem;
+  bottom: -10rem;
   left: 50%;
   -moz-transform: translate3d(0, 0, 0) translate(-50%, -50%);
   transform: translate3d(0, 0, 0) translate(-50%, -50%);
