@@ -90,6 +90,10 @@
   padding: 1rem;
   color: var(--white);
 }
+.speedbump-icon {
+  display: flex;
+  font-size: var(--navIconSize);
+}
 .speedbump-text {
   display: flex;
   width: 100%;
@@ -115,10 +119,10 @@
   align-items: center;
   border-radius: var(--borderRadius);
   background-color: var(--button-color);
+  color: var(--menu-icon-color);
   h3 {
     line-height: 0%;
   }
-  color: var(--menu-icon-color);
 }
 .speedbump-close {
   display: flex;
