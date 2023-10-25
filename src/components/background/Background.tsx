@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import "./Background.scss";
 
 export default function Background() {
-  function createStars(i: number) {
-    for (i; i; i--) {
+  function createStars(stars: number) {
+    for (let i = 0; i < stars; i++) {
       drawStars();
     }
   }
