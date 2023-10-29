@@ -1,9 +1,11 @@
+.slider-container {
+  height: fit-content;
+  display: flex;
+}
 .portfolio-card {
   display: flex;
   height: 20rem;
   width: 15rem;
-  margin-bottom: 7px;
-  margin-top: 7px;
   flex-direction: column;
 }
 .portfolio-image-container {
@@ -70,7 +72,7 @@
   display: flex;
   width: 100vw;
   padding: 0 1.5rem 0 1.5rem;
-  overflow: hidden;
+  overflow: visible;
 }
 .speedbump-container {
   position: fixed;
