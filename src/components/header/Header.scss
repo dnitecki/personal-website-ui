@@ -153,6 +153,7 @@ body.dark .header-container {
   background-color: var(--primary);
   transition: all 0.3s ease-in-out;
   padding: 1rem 3rem 0.7rem 3rem;
+  box-shadow: var(--shadow);
 }
 .modal-open {
   bottom: 0;

@@ -48,7 +48,7 @@ export default function Resume() {
             </div>
           </div>
           <div className="resume-dates">
-            <h4>Nov 2022 to Present</h4>
+            <p>Nov 2022 to Present</p>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@ export default function Resume() {
             </div>
           </div>
           <div className="resume-dates">
-            <h4>Jan 2021 to Nov 2022</h4>
+            <p>Jan 2021 to Nov 2022</p>
           </div>
         </div>
       </div>
