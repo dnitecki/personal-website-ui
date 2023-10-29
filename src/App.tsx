@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="app" id="app">
-      {showStartup ? <StartupAnimation /> : null}
+      {showStartup && <StartupAnimation />}
       <div className="bg-wrap">
         <div className="background" />
         <Background />

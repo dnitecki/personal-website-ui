@@ -34,7 +34,7 @@ export default function Resume() {
         <div
           className={`resume-card-front ${jpmcClicked ? "visible" : "hidden"}`}
         >
-          <h2>Add Info</h2>
+          {jpmcClicked && <h2>Add Info</h2>}
         </div>
         <div className="resume-card-back">
           <div className="resume-header">
@@ -67,7 +67,7 @@ export default function Resume() {
         <div
           className={`resume-card-front ${stnClicked ? "visible" : "hidden"}`}
         >
-          <h2>Add Info</h2>
+          {stnClicked && <h2>Add Info</h2>}
         </div>
 
         <div className="resume-card-back">
