@@ -31,7 +31,7 @@ export default function Certs() {
           className={`cert-bg ${cert1Clicked ? "cert-closed" : "cert-open"}`}
         ></div>
         <div className={`cert-front ${cert1Clicked ? "visible" : "hidden"}`}>
-          <h2>Add Info</h2>
+          {cert1Clicked && <h2>Add Info</h2>}
         </div>
         <div className="cert-back">
           <img
@@ -46,7 +46,7 @@ export default function Certs() {
           className={`cert-bg ${cert2Clicked ? "cert-closed" : "cert-open"}`}
         ></div>
         <div className={`cert-front ${cert2Clicked ? "visible" : "hidden"}`}>
-          <h2>Add Info</h2>
+          {cert2Clicked && <h2>Add Info</h2>}
         </div>
         <div className="cert-back">
           <img
@@ -61,7 +61,7 @@ export default function Certs() {
           className={`cert-bg ${cert3Clicked ? "cert-closed" : "cert-open"}`}
         ></div>
         <div className={`cert-front ${cert3Clicked ? "visible" : "hidden"}`}>
-          <h2>Add Info</h2>
+          {cert3Clicked && <h2>Add Info</h2>}
         </div>
         <div className="cert-back">
           <img
@@ -76,7 +76,7 @@ export default function Certs() {
           className={`cert-bg ${cert4Clicked ? "cert-closed" : "cert-open"}`}
         ></div>
         <div className={`cert-front ${cert4Clicked ? "visible" : "hidden"}`}>
-          <h2>Add Info</h2>
+          {cert4Clicked && <h2>Add Info</h2>}
         </div>
         <div className="cert-back">
           <img className="cert-icon" src={ibmPython} alt="IBM Python" />

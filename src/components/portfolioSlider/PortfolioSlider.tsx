@@ -52,11 +52,8 @@ export default function PortfolioSlider() {
   const SpeedBump = ({ url, appName }: speedbumpProps) => {
     return (
       <div className="speedbump-container">
-        <div className="speedbump-icon">
-          <FontAwesomeIcon icon={faPaperPlane} />
-        </div>
         <div className="speedbump-text">
-          <h2>You will navigate away to {appName} </h2>
+          <h2>You will navigate to {appName}. </h2>
         </div>
         <div className="speedbump-buttons">
           <button className="speedbump-close" onClick={handleSpeedbumpClose}>

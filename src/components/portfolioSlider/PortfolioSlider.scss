@@ -91,6 +91,7 @@
   z-index: 8000;
   padding: 1.5rem 1rem 1.5rem 1rem;
   color: var(--white);
+  animation: fadeIn 200ms ease-in;
 }
 .speedbump-icon {
   display: flex;
@@ -136,5 +137,21 @@
   border-radius: var(--borderRadius);
   h3 {
     line-height: 0%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
