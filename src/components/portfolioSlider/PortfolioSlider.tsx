@@ -5,18 +5,15 @@ import finfetchMockup from "../../assets/FinfetchMockup.png";
 import finfetchIcon from "../../assets/FinFetch-icon.png";
 import insuranceMockup from "../../assets/InsuranceMockup.png";
 import insuranceIcon from "../../assets/onestop-icon.png";
-import { finfetch, insurance } from "../../utils/constants";
+import { EMPTY_STRING, finfetch, insurance } from "../../utils/constants";
 import { speedbumpProps } from "../../utils/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronRight,
-  faPaperPlane,
-} from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function PortfolioSlider() {
   const [width, setWidth] = useState(0);
-  const [url, setUrl] = useState("");
-  const [appName, setAppName] = useState("");
+  const [url, setUrl] = useState(EMPTY_STRING);
+  const [appName, setAppName] = useState(EMPTY_STRING);
   const [speedbumpOpen, setSpeedbumpOpen] = useState(false);
   const slider = useRef<HTMLDivElement | null>(null);
 
@@ -33,16 +30,16 @@ export default function PortfolioSlider() {
   };
 
   const handleSpeedbumpClose = () => {
-    setUrl("");
-    setAppName("");
+    setUrl(EMPTY_STRING);
+    setAppName(EMPTY_STRING);
     setSpeedbumpOpen(false);
   };
 
   const handleSpeedbumpNavigation = (url: string) => {
     window.open(url, "_blank");
     setSpeedbumpOpen(false);
-    setUrl("");
-    setAppName("");
+    setUrl(EMPTY_STRING);
+    setAppName(EMPTY_STRING);
   };
 
   useEffect(() => {
