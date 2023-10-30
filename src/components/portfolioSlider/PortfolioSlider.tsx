@@ -50,7 +50,7 @@ export default function PortfolioSlider() {
     return (
       <div className="speedbump-container">
         <div className="speedbump-text">
-          <h2>You will navigate to {appName}. </h2>
+          <h3>Navigating to {appName} </h3>
         </div>
         <div className="speedbump-buttons">
           <button className="speedbump-close" onClick={handleSpeedbumpClose}>
