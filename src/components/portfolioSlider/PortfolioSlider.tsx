@@ -86,7 +86,6 @@ export default function PortfolioSlider() {
           modifier: 1,
           slideShadows: false,
         }}
-        onSwiper={(swiper: any) => console.log(swiper)}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
         className="swiper-container"
