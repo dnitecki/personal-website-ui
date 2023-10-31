@@ -108,6 +108,7 @@ html:focus-within {
   border-radius: var(--borderRadius);
   background: var(--card-color);
   box-shadow: var(--shadow);
+  position: relative;
 }
 body.dark .glass {
   border-radius: var(--borderRadius);
@@ -115,6 +116,7 @@ body.dark .glass {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow);
+  position: relative;
 }
 body.dark .background {
   background: linear-gradient(-45deg, #342b77 20%, #110e27 60%);

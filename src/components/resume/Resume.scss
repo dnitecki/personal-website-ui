@@ -111,7 +111,8 @@
   display: flex;
   position: absolute;
   z-index: 3000;
-  top: 68px;
+  top: 50%;
+  margin-top: -12.5px;
   right: 20px;
   font-size: var(--navIconSize);
   color: var(--white);
