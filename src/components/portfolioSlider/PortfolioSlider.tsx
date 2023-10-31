@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import "./PortfolioSlider.scss";
-import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import finfetchMockup from "../../assets/FinfetchMockup.png";
 import finfetchIcon from "../../assets/FinFetch-icon.png";
 import insuranceMockup from "../../assets/InsuranceMockup.png";
@@ -10,12 +11,15 @@ import { speedbumpProps } from "../../utils/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 export default function PortfolioSlider() {
-  const [width, setWidth] = useState(0);
   const [url, setUrl] = useState(EMPTY_STRING);
   const [appName, setAppName] = useState(EMPTY_STRING);
   const [speedbumpOpen, setSpeedbumpOpen] = useState(false);
-  const slider = useRef<HTMLDivElement | null>(null);
 
   const handleFinfetchClick = () => {
     setUrl(finfetch.url);
@@ -41,10 +45,6 @@ export default function PortfolioSlider() {
     setUrl(EMPTY_STRING);
     setAppName(EMPTY_STRING);
   };
-
-  useEffect(() => {
-    setWidth(slider.current.scrollWidth - slider.current.offsetWidth);
-  }, []);
 
   const SpeedBump = ({ url, appName }: speedbumpProps) => {
     return (
@@ -75,14 +75,25 @@ export default function PortfolioSlider() {
   return (
     <div className="slider-container">
       {speedbumpOpen && <SpeedBump url={url} appName={appName} />}
-      <div ref={slider} className="slider">
-        <motion.div
-          drag="x"
-          dragConstraints={{ right: 0, left: -width }}
-          className="inner-slider"
-        >
+      <Swiper
+        effect={"coverflow"}
+        centeredSlides={false}
+        loop={false}
+        slidesPerView={1.5}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 20,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        pagination={{ clickable: true }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="swiper_container"
+      >
+        <SwiperSlide onClick={handleFinfetchClick}>
           <div className="item">
-            <div className="portfolio-card glass" onClick={handleFinfetchClick}>
+            <div className="portfolio-card glass">
               <div className="portfolio-image-container">
                 <img
                   className="portfolio-logo finfetch-icon"
@@ -97,11 +108,10 @@ export default function PortfolioSlider() {
               </div>
             </div>
           </div>
+        </SwiperSlide>
+        <SwiperSlide onClick={handleInsuranceClick}>
           <div className="item">
-            <div
-              className="portfolio-card glass"
-              onClick={handleInsuranceClick}
-            >
+            <div className="portfolio-card glass">
               <div className="portfolio-image-container">
                 <img
                   className="portfolio-logo insurance-icon"
@@ -116,11 +126,13 @@ export default function PortfolioSlider() {
               </div>
             </div>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="item">
             <div className="portfolio-card glass"></div>
           </div>
-        </motion.div>
-      </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }

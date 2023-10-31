@@ -49,7 +49,7 @@ body {
   --secondary: #28979f;
   --button-color: #ffffff;
   --iconColor: #ffffff;
-  --menu-icon-color: #28979f;
+  --menu-icon-color: #333333;
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --mode-opacity: 0.6;
   --card-color: rgba(221, 221, 221, 0.7);
@@ -58,6 +58,7 @@ body {
   padding: 0;
   background-color: var(--background-color) !important;
   padding: 0;
+  --swiper-pagination-color: var(--secondary);
 }
 body.dark {
   --text-color: #ffffff;
@@ -75,6 +76,7 @@ body.dark {
   padding: 0;
   background-color: var(--background-color) !important;
   padding: 0;
+  --swiper-pagination-color: var(--secondary);
 }
 
 html:focus-within {

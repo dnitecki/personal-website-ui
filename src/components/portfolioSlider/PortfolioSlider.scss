@@ -1,6 +1,19 @@
 .slider-container {
   height: fit-content;
+  width: 100%;
+  padding-left: 1.5rem;
+  z-index: 3000;
+}
+.swiper_container {
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  column-gap: 1rem;
+}
+.swiper-slide {
   display: flex;
+  width: 100%;
+  height: fit-content;
 }
 .portfolio-card {
   display: flex;
@@ -60,8 +73,8 @@
   z-index: 2000;
 }
 .item {
-  height: 100%;
-  width: 100%;
+  height: fit-content;
+  width: fit-content;
 }
 .inner-slider {
   display: flex;
