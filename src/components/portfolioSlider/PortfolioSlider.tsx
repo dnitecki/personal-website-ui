@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./PortfolioSlider.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import finfetchMockup from "../../assets/FinfetchMockup.png";
 import finfetchIcon from "../../assets/FinFetch-icon.png";
 import insuranceMockup from "../../assets/InsuranceMockup.png";
@@ -14,7 +14,6 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 export default function PortfolioSlider() {
   const [url, setUrl] = useState(EMPTY_STRING);
@@ -87,9 +86,10 @@ export default function PortfolioSlider() {
           modifier: 1,
           slideShadows: false,
         }}
-        pagination={{ clickable: true }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container"
+        onSwiper={(swiper: any) => console.log(swiper)}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="swiper-container"
       >
         <SwiperSlide onClick={handleFinfetchClick}>
           <div className="item">
