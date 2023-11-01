@@ -75,14 +75,6 @@ export default function PortfolioSlider() {
     <div className="slider-container">
       {speedbumpOpen && <SpeedBump url={url} appName={appName} />}
       <Swiper
-        effect={"slide"}
-        slidesOffsetBefore={24}
-        watchSlidesProgress={true}
-        slideToClickedSlide={true}
-        updateOnWindowResize={true}
-        preventClicks={false}
-        preventClicksPropagation={false}
-        loop={false}
         onClick={(swiper: any) => {
           const clickedIndex = swiper.clickedIndex;
           if (clickedIndex === 0) {
@@ -92,16 +84,16 @@ export default function PortfolioSlider() {
             handleInsuranceClick();
           }
         }}
-        slidesPerGroup={1}
-        slidesPerView={1.5}
+        slidesOffsetBefore={24}
+        spaceBetween={24}
+        slideToClickedSlide={true}
+        updateOnWindowResize={true}
+        preventClicks={false}
+        preventClicksPropagation={false}
+        loop={false}
+        slidesPerView={"auto"}
+        slidesPerGroupAuto={true}
         style={{ overflow: "visible", width: "100%" }}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 20,
-          modifier: 1,
-          slideShadows: false,
-        }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
         className="swiper-container"

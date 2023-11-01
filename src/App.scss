@@ -54,11 +54,11 @@ body {
   --mode-opacity: 0.6;
   --card-color: rgba(221, 221, 221, 0.7);
   --company-bg: brightness(0) invert(1);
+  --swiper-pagination-color: var(--secondary);
   margin: 0;
   padding: 0;
   background-color: var(--background-color) !important;
   padding: 0;
-  --swiper-pagination-color: var(--secondary);
 }
 body.dark {
   --text-color: #ffffff;
@@ -72,11 +72,13 @@ body.dark {
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --mode-opacity: 0.1;
   --company-bg: brightness(0) invert(1);
+  --swiper-pagination-color: var(--secondary);
+  --swiper-pagination-bullet-inactive-color: var(--white);
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
   margin: 0;
   padding: 0;
   background-color: var(--background-color) !important;
   padding: 0;
-  --swiper-pagination-color: var(--secondary);
 }
 
 html:focus-within {
