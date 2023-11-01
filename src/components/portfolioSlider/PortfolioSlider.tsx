@@ -76,9 +76,35 @@ export default function PortfolioSlider() {
       {speedbumpOpen && <SpeedBump url={url} appName={appName} />}
       <Swiper
         effect={"coverflow"}
-        centeredSlides={false}
+        slidesOffsetBefore={24}
+        watchSlidesProgress={true}
+        slideToClickedSlide={true}
+        updateOnWindowResize={true}
+        preventClicks={false}
+        preventClicksPropagation={false}
+        touchStartPreventDefault={false}
         loop={false}
+        onClick={(swiper: any) => {
+          const clickedIndex = swiper.clickedIndex;
+          if (clickedIndex === 0) {
+            handleFinfetchClick();
+          }
+          if (clickedIndex === 1) {
+            handleInsuranceClick();
+          }
+        }}
+        // onTouchStart={(swiper: any) => {
+        //   const clickedIndex = swiper.clickedIndex;
+        //   if (clickedIndex === 0) {
+        //     handleFinfetchClick();
+        //   }
+        //   if (clickedIndex === 1) {
+        //     handleInsuranceClick();
+        //   }
+        // }}
+        slidesPerGroup={1}
         slidesPerView={1.5}
+        style={{ overflow: "visible", width: "100%" }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -90,7 +116,7 @@ export default function PortfolioSlider() {
         modules={[EffectCoverflow, Pagination]}
         className="swiper-container"
       >
-        <SwiperSlide onClick={handleFinfetchClick}>
+        <SwiperSlide style={{ width: "fit-content" }} className="swiper-slide">
           <div className="item">
             <div className="portfolio-card glass">
               <div className="portfolio-image-container">
@@ -108,7 +134,7 @@ export default function PortfolioSlider() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide onClick={handleInsuranceClick}>
+        <SwiperSlide style={{ width: "fit-content" }} className="swiper-slide">
           <div className="item">
             <div className="portfolio-card glass">
               <div className="portfolio-image-container">
