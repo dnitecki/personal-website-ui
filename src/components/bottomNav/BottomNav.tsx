@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import "./BottomNav.scss";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faHouse, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { faFolder } from "@fortawesome/free-solid-svg-icons";
-import { faBusinessTime } from "@fortawesome/free-solid-svg-icons";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHouse,
+  faFolder,
+  faBriefcase,
+  faPaperPlane,
+  faXmark,
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function BottomNav() {
   const [show, setShow] = useState(false);
@@ -63,7 +67,7 @@ export default function BottomNav() {
               offset={-10}
               duration={500}
             >
-              <FontAwesomeIcon icon={faBusinessTime} />
+              <FontAwesomeIcon icon={faBriefcase} />
             </Link>
           </li>
           <li className="nav-btn">
