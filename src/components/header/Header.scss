@@ -121,7 +121,10 @@ body.dark .header-container {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  outline: solid 3px var(--menu-icon-color);
+  outline: solid 3px var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo-background {
   height: 10rem;
@@ -131,7 +134,7 @@ body.dark .header-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: solid 3px var(--menu-icon-color);
+  outline: solid 3px var(--secondary);
 }
 .dn-logo {
   transform: scale(0.3);

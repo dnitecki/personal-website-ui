@@ -116,16 +116,17 @@
   margin-top: -12.5px;
   right: 20px;
   font-size: var(--navIconSize);
-  color: var(--white);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .icon-open {
   transform: rotate(0);
+  color: var(--menu-icon-color);
 }
 .icon-closed {
   transform: rotate(180deg);
+  color: var(--white);
 }
 .resume-logo-container {
   display: flex;
