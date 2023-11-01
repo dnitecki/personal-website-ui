@@ -75,14 +75,13 @@ export default function PortfolioSlider() {
     <div className="slider-container">
       {speedbumpOpen && <SpeedBump url={url} appName={appName} />}
       <Swiper
-        effect={"coverflow"}
+        effect={"slide"}
         slidesOffsetBefore={24}
         watchSlidesProgress={true}
         slideToClickedSlide={true}
         updateOnWindowResize={true}
         preventClicks={false}
         preventClicksPropagation={false}
-        touchStartPreventDefault={false}
         loop={false}
         onClick={(swiper: any) => {
           const clickedIndex = swiper.clickedIndex;
@@ -93,15 +92,6 @@ export default function PortfolioSlider() {
             handleInsuranceClick();
           }
         }}
-        // onTouchStart={(swiper: any) => {
-        //   const clickedIndex = swiper.clickedIndex;
-        //   if (clickedIndex === 0) {
-        //     handleFinfetchClick();
-        //   }
-        //   if (clickedIndex === 1) {
-        //     handleInsuranceClick();
-        //   }
-        // }}
         slidesPerGroup={1}
         slidesPerView={1.5}
         style={{ overflow: "visible", width: "100%" }}
