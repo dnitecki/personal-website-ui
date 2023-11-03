@@ -95,14 +95,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  row-gap: 0.5rem;
   align-items: center;
   height: fit-content;
-  width: calc(100% - 3rem);
+  width: fit-content;
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow);
   background-color: var(--primary);
   z-index: 8000;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 2rem 1rem 2rem;
   color: var(--white);
   animation: fadeIn 200ms ease-in;
   -webkit-animation: fadeIn 200ms ease-in;
@@ -114,9 +115,13 @@
 .speedbump-text {
   display: flex;
   width: 100%;
+  height: fit-content;
   justify-content: center;
   align-items: center;
   text-align: center;
+  h3 {
+    margin: 0%;
+  }
 }
 .speedbump-buttons {
   display: flex;
