@@ -47,99 +47,110 @@ export default function PortfolioSlider() {
 
   const SpeedBump = ({ url, appName }: speedbumpProps) => {
     return (
-      <div className="speedbump-container">
-        <div className="speedbump-text">
-          <h3>
-            Navigating to <br /> <b>{appName}</b>
-          </h3>
-        </div>
-        <div className="speedbump-buttons">
-          <button className="speedbump-close" onClick={handleSpeedbumpClose}>
-            <h3>Close</h3>
-          </button>
-          <button
-            className="speedbump-proceed"
-            onClick={() => {
-              handleSpeedbumpNavigation(url);
-            }}
-          >
-            <h3>Proceed</h3>
-            <FontAwesomeIcon icon={faChevronRight} />
-          </button>
+      <div className="speedbump-bg">
+        <div className="speedbump-container">
+          <div className="speedbump-text">
+            <h3>
+              Navigate to <br />
+              {appName}?
+            </h3>
+          </div>
+          <div className="speedbump-buttons">
+            <button className="speedbump-close" onClick={handleSpeedbumpClose}>
+              <h3>Close</h3>
+            </button>
+            <button
+              className="speedbump-proceed"
+              onClick={() => {
+                handleSpeedbumpNavigation(url);
+              }}
+            >
+              <h3>Proceed</h3>
+              <FontAwesomeIcon icon={faChevronRight} />
+            </button>
+          </div>
         </div>
       </div>
     );
   };
 
   return (
-    <div className="slider-container">
-      {speedbumpOpen && <SpeedBump url={url} appName={appName} />}
-      <Swiper
-        onClick={(swiper: any) => {
-          const clickedIndex = swiper.clickedIndex;
-          if (clickedIndex === 0) {
-            handleFinfetchClick();
-          }
-          if (clickedIndex === 1) {
-            handleInsuranceClick();
-          }
-        }}
-        slidesOffsetBefore={24}
-        spaceBetween={24}
-        slideToClickedSlide={true}
-        updateOnWindowResize={true}
-        preventClicks={false}
-        preventClicksPropagation={false}
-        loop={false}
-        slidesPerView={"auto"}
-        slidesPerGroupAuto={true}
-        style={{ overflow: "visible", width: "100%" }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="swiper-container"
-      >
-        <SwiperSlide style={{ width: "fit-content" }} className="swiper-slide">
-          <div className="item">
-            <div className="portfolio-card glass">
-              <div className="portfolio-image-container">
-                <img
-                  className="portfolio-logo finfetch-icon"
-                  src={finfetchIcon}
-                  alt="icon"
-                />
-                <img
-                  className="portfolio-image finfetch"
-                  src={finfetchMockup}
-                  alt="finfetch"
-                />
+    <>
+      <div className="slider-container">
+        {speedbumpOpen && <SpeedBump url={url} appName={appName} />}
+        <Swiper
+          onClick={(swiper: any) => {
+            const clickedIndex = swiper.clickedIndex;
+            if (clickedIndex === 0) {
+              handleFinfetchClick();
+            }
+            if (clickedIndex === 1) {
+              handleInsuranceClick();
+            }
+          }}
+          slidesOffsetBefore={24}
+          spaceBetween={24}
+          slideToClickedSlide={true}
+          updateOnWindowResize={true}
+          preventClicks={false}
+          preventClicksPropagation={false}
+          loop={false}
+          slidesPerView={"auto"}
+          slidesPerGroupAuto={true}
+          style={{ overflow: "visible", width: "100%" }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="swiper-container"
+        >
+          <SwiperSlide
+            style={{ width: "fit-content" }}
+            className="swiper-slide"
+          >
+            <div className="item">
+              <div className="portfolio-card glass">
+                <div className="portfolio-image-container">
+                  <img
+                    className="portfolio-logo finfetch-icon"
+                    src={finfetchIcon}
+                    alt="icon"
+                  />
+                  <img
+                    className="portfolio-image finfetch"
+                    src={finfetchMockup}
+                    alt="finfetch"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide style={{ width: "fit-content" }} className="swiper-slide">
-          <div className="item">
-            <div className="portfolio-card glass">
-              <div className="portfolio-image-container">
-                <img
-                  className="portfolio-logo insurance-icon"
-                  src={insuranceIcon}
-                  alt="icon"
-                />
-                <img
-                  className="portfolio-image insurance"
-                  src={insuranceMockup}
-                  alt="onestopinsurance"
-                />
+          </SwiperSlide>
+          <SwiperSlide
+            style={{ width: "fit-content" }}
+            className="swiper-slide"
+          >
+            <div className="item">
+              <div className="portfolio-card glass">
+                <div className="portfolio-image-container">
+                  <img
+                    className="portfolio-logo insurance-icon"
+                    src={insuranceIcon}
+                    alt="icon"
+                  />
+                  <img
+                    className="portfolio-image insurance"
+                    src={insuranceMockup}
+                    alt="onestopinsurance"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="item">
-            <div className="portfolio-card glass"></div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="item">
+              <div className="portfolio-card glass"></div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </>
   );
 }

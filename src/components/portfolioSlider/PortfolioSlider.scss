@@ -1,6 +1,7 @@
 .slider-container {
-  height: fit-content;
+  height: 100%;
   width: 100%;
+  position: relative;
 }
 .swiper-container {
   height: fit-content;
@@ -86,27 +87,36 @@
   padding: 0 1.5rem 0 1.5rem;
   overflow: visible;
 }
-.speedbump-container {
+.speedbump-bg {
+  display: flex;
   position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
+  top: 0;
+  height: 100vh;
+  width: 100svw;
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  background-size: cover;
+  overflow: hidden;
+  background-color: var(--bgColor);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 200ms ease-in;
+  -webkit-animation: fadeIn 200ms ease-in;
+}
+.speedbump-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 0.5rem;
+  row-gap: 1rem;
   align-items: center;
   height: fit-content;
   width: fit-content;
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow);
   background-color: var(--primary);
-  z-index: 8000;
   padding: 1rem 2rem 1rem 2rem;
   color: var(--white);
-  animation: fadeIn 200ms ease-in;
-  -webkit-animation: fadeIn 200ms ease-in;
 }
 .speedbump-icon {
   display: flex;
