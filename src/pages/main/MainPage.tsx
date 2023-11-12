@@ -16,9 +16,9 @@ export default function MainPage() {
             key={index}
             id={section.id}
             className={section.className}
-            initial={{ translateY: 400 }}
+            initial={{ translateY: 500 }}
             animate={{ translateY: 0 }}
-            transition={{ duration: 1, delay: 3.5 + index * 0.2 }}
+            transition={{ duration: 1, delay: 3.5 + index * 0.15 }}
           >
             {section.headerText && (
               <div className="section-name">
