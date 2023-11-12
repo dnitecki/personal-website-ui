@@ -16,7 +16,7 @@ export default function MainPage() {
             key={index}
             id={section.id}
             className={section.className}
-            initial={{ translateY: 200 }}
+            initial={{ translateY: 400 }}
             animate={{ translateY: 0 }}
             transition={{ duration: 1, delay: 3.5 + index * 0.2 }}
           >
