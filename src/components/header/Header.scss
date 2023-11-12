@@ -124,6 +124,7 @@ body.dark .header-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: solid 3px var(--white);
 }
 .logo-background {
   height: 10rem;
