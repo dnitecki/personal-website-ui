@@ -1,6 +1,7 @@
 export type MainPageType = {
   id: string;
-  headerText: string;
+  className: string;
+  headerText?: string;
   component: React.FC;
 };
 export type SpeedbumpProps = {

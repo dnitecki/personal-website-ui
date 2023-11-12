@@ -2,26 +2,30 @@ import { MainPageType } from "../utils/types";
 import Header from "../components/header/Header";
 import PortfolioSlider from "../components/portfolioSlider/PortfolioSlider";
 import Resume from "../components/resume/Resume";
+import Contact from "../components/contact/Contact";
 
-const MainPageMapper: MainPageType[] = [
+export const MainPageItems: MainPageType[] = [
   {
-    id: "",
-    headerText: "",
+    id: "home",
+    className: "home",
     component: Header,
   },
   {
-    id: "",
-    headerText: "",
+    id: "portfolio",
+    className: "section",
+    headerText: "Portfolio",
     component: PortfolioSlider,
   },
   {
-    id: "",
-    headerText: "",
+    id: "experience",
+    className: "section",
+    headerText: "Resume",
     component: Resume,
   },
   {
-    id: "",
-    headerText: "",
-    component: Header,
+    id: "contact",
+    className: "section",
+    headerText: "Let's Connect",
+    component: Contact,
   },
 ];
