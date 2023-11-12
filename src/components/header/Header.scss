@@ -160,12 +160,14 @@ body.dark .header-container {
 .modal-open {
   bottom: 0;
   left: 50%;
+  opacity: 1;
   -moz-transform: translate3d(0, 0, 0) translate(-50%, -50%);
   transform: translate3d(0, 0, 0) translate(-50%, -50%);
 }
 .modal-close {
-  bottom: -10rem;
+  bottom: -15rem;
   left: 50%;
+  opacity: 0;
   -moz-transform: translate3d(0, 0, 0) translate(-50%, -50%);
   transform: translate3d(0, 0, 0) translate(-50%, -50%);
 }
