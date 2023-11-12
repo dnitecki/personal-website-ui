@@ -4,11 +4,11 @@ import "./Background.scss";
 export default function Background() {
   function createStars(stars: number) {
     for (let i = 0; i < stars; i++) {
-      drawStars();
+      drawStar();
     }
   }
 
-  function drawStars() {
+  function drawStar() {
     const tmpStar = document.createElement("figure");
     tmpStar.className = "star";
     tmpStar.style.top = 100 * Math.random() + "%";
