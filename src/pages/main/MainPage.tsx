@@ -1,5 +1,6 @@
 import React from "react";
 import "./MainPage.scss";
+import { motion } from "framer-motion";
 import BottomNav from "../../components/bottomNav/BottomNav";
 import PortfolioSlider from "../../components/portfolioSlider/PortfolioSlider";
 import Header from "../../components/header/Header";
@@ -15,12 +16,12 @@ export default function MainPage() {
         <div id="home" className="home">
           <Header />
         </div>
-        <div id="portfolio" className="section">
+        <motion.div id="portfolio" className="section">
           <div className="section-name">
             <h1>Portfolio</h1>
           </div>
           <PortfolioSlider />
-        </div>
+        </motion.div>
         <div id="experience" className="section">
           <div className="section-name">
             <h1>Experience</h1>

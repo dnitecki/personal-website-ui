@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Skills.scss";
 import { motion } from "framer-motion";
-import { skillItems } from "../../mappers/mappers";
+import { SkillItems } from "../../mappers/contentMappers";
 
 export default function Skills() {
   const [width, setWidth] = useState(0);
@@ -18,7 +18,7 @@ export default function Skills() {
         dragConstraints={{ right: 0, left: -width }}
         className="inner-container"
       >
-        {skillItems.map((item: any, index: number) => (
+        {SkillItems.map((item: any, index: number) => (
           <div className="skill-item" key={index}>
             <div className="skill-bubble">
               <p>{item.text}</p>

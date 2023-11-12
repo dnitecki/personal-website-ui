@@ -1,4 +1,6 @@
-export const skillItems: any = [
+import { Skills } from "../utils/types";
+
+export const SkillItems: Skills[] = [
   {
     text: "React",
   },

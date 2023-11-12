@@ -7,7 +7,7 @@ import finfetchIcon from "../../assets/FinFetch-icon.png";
 import insuranceMockup from "../../assets/InsuranceMockup.png";
 import insuranceIcon from "../../assets/onestop-icon.png";
 import { EMPTY_STRING, finfetch, insurance } from "../../utils/constants";
-import { speedbumpProps } from "../../utils/types";
+import { SpeedbumpProps } from "../../utils/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -45,7 +45,7 @@ export default function PortfolioSlider() {
     setAppName(EMPTY_STRING);
   };
 
-  const SpeedBump = ({ url, appName }: speedbumpProps) => {
+  const SpeedBump = ({ url, appName }: SpeedbumpProps) => {
     return (
       <div className="speedbump-bg">
         <div className="speedbump-container">
