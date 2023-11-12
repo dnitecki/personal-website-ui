@@ -1,11 +1,23 @@
+body.dark .stars-container {
+  width: 100%;
+  height: 100%;
+  perspective: 1px;
+  -webkit-perspective: 1px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
 body.dark .stars {
   display: flex;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   overflow: hidden;
+  z-index: -1;
 }
+
 body.dark .star {
   box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.4);
   position: absolute;
