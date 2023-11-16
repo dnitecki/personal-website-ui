@@ -51,7 +51,7 @@ export default function PortfolioSlider() {
         <div className="speedbump-container">
           <div className="speedbump-text">
             <h3>
-              Navigate to <br />
+              Navigate to&nbsp;
               {appName}?
             </h3>
           </div>
