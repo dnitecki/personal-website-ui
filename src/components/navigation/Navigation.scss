@@ -19,14 +19,19 @@
   position: fixed;
   display: flex;
   top: 2rem;
-  left: 1rem;
+  left: 0;
   width: 2rem;
   height: 2rem;
   justify-content: center;
+  padding: 1rem;
   align-items: center;
   font-size: var(--iconSize);
-  color: var(--menu-icon-color);
+  color: var(--iconColor);
+  border-top-right-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
+  background-color: var(--primary);
   transition: opacity 0.3s ease-in-out;
+  box-shadow: var(--shadow);
 }
 .active-btn {
   opacity: 1;
