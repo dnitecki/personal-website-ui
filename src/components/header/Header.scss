@@ -118,18 +118,18 @@ body.dark .header-container {
   transform: rotateX(180deg);
 }
 .headshot {
-  height: 10rem;
-  width: 10rem;
+  height: 10.5rem;
+  width: 10.5rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(var(--secondary), var(--primary)) border-box;
+  background: linear-gradient(var(--primary), var(--secondary)) border-box;
   border: 3px solid transparent;
 }
 .logo-background {
-  height: 10rem;
-  width: 10rem;
+  height: 10.5rem;
+  width: 10.5rem;
   border-radius: 50%;
   background: linear-gradient(110deg, #474747, var(--black));
   display: flex;
@@ -154,7 +154,8 @@ body.dark .header-container {
   align-items: baseline;
   border-radius: var(--borderRadius);
   color: var(--iconColor);
-  background: linear-gradient(var(--primary) 40%, var(--secondary));
+  background: linear-gradient(var(--secondary) 40%, var(--primary));
+  background: -webkit-linear-gradient(var(--secondary) 40%, var(--primary));
   transition: all 0.3s ease-in-out;
   padding: 1rem 3rem 0.7rem 3rem;
   box-shadow: var(--shadow);

@@ -55,7 +55,7 @@ body {
   --card-color: rgba(221, 221, 221, 0.7);
   --company-bg: brightness(0) invert(1);
   --swiper-pagination-color: var(--secondary);
-  --linear-gradient: linear-gradient(var(--primary) 40%, var(--text-color));
+  --linear-gradient: linear-gradient(var(--text-color), var(--primary));
   margin: 0;
   padding: 0;
   background-color: var(--background-color) !important;
@@ -76,7 +76,7 @@ body.dark {
   --swiper-pagination-color: var(--secondary);
   --swiper-pagination-bullet-inactive-color: var(--white);
   --swiper-pagination-bullet-inactive-opacity: 0.5;
-  --linear-gradient: linear-gradient(var(--primary), var(--text-color));
+  --linear-gradient: linear-gradient(var(--primary) 10%, var(--text-color));
   margin: 0;
   padding: 0;
   background-color: var(--background-color) !important;
