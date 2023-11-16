@@ -1,7 +1,7 @@
 import React from "react";
 import "./MainPage.scss";
 import { motion } from "framer-motion";
-import BottomNav from "../../components/bottomNav/BottomNav";
+import Navigation from "../../components/navigation/Navigation";
 import ModeToggle from "../../components/modeToggle/ModeToggle";
 import { MainPageItems } from "../../mappers/mainPageMapper";
 import { MainPageType } from "../../utils/types";
@@ -28,7 +28,7 @@ export default function MainPage() {
             <section.component />
           </motion.div>
         ))}
-        <BottomNav />
+        <Navigation />
       </div>
     </>
   );

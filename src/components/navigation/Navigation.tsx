@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./BottomNav.scss";
+import "./Navigation.scss";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,7 +11,7 @@ import {
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function BottomNav() {
+export default function Navigation() {
   const [show, setShow] = useState(false);
 
   const handleMenuClick = () => {

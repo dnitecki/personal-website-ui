@@ -7,7 +7,7 @@ import Contact from "../components/contact/Contact";
 export const MainPageItems: MainPageType[] = [
   {
     id: "home",
-    className: "home",
+    className: "home section",
     component: Header,
   },
   {
