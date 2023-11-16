@@ -11,7 +11,7 @@
   align-items: center;
   border-top-right-radius: var(--borderRadius);
   border-bottom-right-radius: var(--borderRadius);
-  background: linear-gradient(var(--primary), var(--secondary));
+  background: var(--primary);
   transition: all 0.3s ease-in-out;
   box-shadow: var(--shadow);
 }
@@ -29,7 +29,7 @@
   color: var(--iconColor);
   border-top-right-radius: var(--borderRadius);
   border-bottom-right-radius: var(--borderRadius);
-  background: linear-gradient(var(--primary), var(--secondary));
+  background: var(--primary);
   transition: opacity 0.3s ease-in-out;
   box-shadow: var(--shadow);
 }
