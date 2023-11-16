@@ -33,7 +33,7 @@ export default function Navigation() {
         <FontAwesomeIcon icon={faXmark} />
       </button>
       <div
-        className={`bottomNav-container ${show ? "nav-show" : "nav-hidden"}`}
+        className={`navigation-container ${show ? "nav-show" : "nav-hidden"}`}
       >
         <ul className="bottomNav-links">
           <li className="nav-btn">
