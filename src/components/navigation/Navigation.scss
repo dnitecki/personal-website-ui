@@ -11,7 +11,7 @@
   align-items: center;
   border-top-right-radius: var(--borderRadius);
   border-bottom-right-radius: var(--borderRadius);
-  background: var(--primary);
+  background: var(--tertiary);
   transition: all 0.3s ease-in-out;
   box-shadow: var(--shadow);
 }
@@ -29,7 +29,7 @@
   color: var(--iconColor);
   border-top-right-radius: var(--borderRadius);
   border-bottom-right-radius: var(--borderRadius);
-  background: var(--primary);
+  background: var(--tertiary);
   transition: opacity 0.3s ease-in-out;
   box-shadow: var(--shadow);
 }

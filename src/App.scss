@@ -47,6 +47,7 @@ body {
   --active-color: #ffffff;
   --primary: #28979f;
   --secondary: #28979f;
+  --tertiary: #7ac38f;
   --button-color: #ffffff;
   --iconColor: #ffffff;
   --menu-icon-color: #333333;
@@ -55,7 +56,7 @@ body {
   --card-color: rgba(221, 221, 221, 0.7);
   --company-bg: brightness(0) invert(1);
   --swiper-pagination-color: var(--secondary);
-  --linear-gradient: linear-gradient(var(--text-color) 10%, var(--primary));
+  --linear-gradient: linear-gradient(var(--secondary), var(--text-color));
   margin: 0;
   padding: 0;
   background-color: var(--background-color) !important;
@@ -67,6 +68,7 @@ body.dark {
   --active-color: #ffffff;
   --primary: #1f1a47;
   --secondary: #7a1e86;
+  --tertiary: #4c1c66;
   --button-color: var(--secondary);
   --iconColor: #ffffff;
   --menu-icon-color: #ffffff;

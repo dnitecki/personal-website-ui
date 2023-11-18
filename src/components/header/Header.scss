@@ -154,8 +154,7 @@ body.dark .header-container {
   align-items: baseline;
   border-radius: var(--borderRadius);
   color: var(--iconColor);
-  background: linear-gradient(var(--secondary) 10%, var(--primary));
-  background: -webkit-linear-gradient(var(--secondary) 10%, var(--primary));
+  background: var(--tertiary);
   transition: all 0.3s ease-in-out;
   padding: 1rem 3rem 0.7rem 3rem;
   box-shadow: var(--shadow);
