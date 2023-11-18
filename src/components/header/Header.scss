@@ -124,7 +124,7 @@ body.dark .header-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(var(--primary), var(--secondary)) border-box;
+  background: linear-gradient(var(--tertiary), var(--primary)) border-box;
   border: 3px solid transparent;
 }
 .logo-background {

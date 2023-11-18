@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./ModeToggle.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import { ToggleContext } from "../../context/toggleContext";
 
 export default function ModeToggle() {
   const [checked, setChecked] = useState(false);
+  const { setToggle } = useContext(ToggleContext);
 
   useEffect(() => {
     document.body.classList.add("dark");
@@ -18,6 +20,7 @@ export default function ModeToggle() {
       document.body.classList.remove("dark");
     }
     setChecked(!checked);
+    setToggle(!checked);
   };
   return (
     <div className="mode-toggle-container">

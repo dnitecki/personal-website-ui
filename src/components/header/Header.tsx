@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Header.scss";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -13,9 +13,12 @@ import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import profile from "../../assets/Profile.png";
 import logo from "../../assets/MyLogo.png";
 import Skills from "../skills/Skills";
+import CanvasAnimation from "../grass/Grass";
+import { ToggleContext } from "../../context/toggleContext";
 
 export default function Header() {
   const [moreClicked, setMoreClicked] = useState(false);
+  const { toggle } = useContext(ToggleContext);
 
   const shareData = {
     text: "Thanks for sharing!",
@@ -48,6 +51,7 @@ export default function Header() {
 
   return (
     <>
+      {toggle && <CanvasAnimation />}
       <div className="header shadow">
         <div className="profile-image">
           <div className="front">
