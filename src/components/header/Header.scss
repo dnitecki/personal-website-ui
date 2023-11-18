@@ -149,6 +149,7 @@ body.dark .header-container {
   z-index: 6000;
   height: fit-content;
   width: calc(100% - 3rem);
+  max-width: 30rem;
   justify-content: space-between;
   column-gap: 2rem;
   align-items: baseline;

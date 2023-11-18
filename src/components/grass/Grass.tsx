@@ -4,7 +4,7 @@ import "./Grass.scss";
 const CanvasAnimation = () => {
   const canvasRef = useRef(null);
   const stackRef = useRef([]);
-  const width = window.innerWidth - 60;
+  const width = window.innerWidth;
   const height = "100";
 
   useEffect(() => {
@@ -23,8 +23,8 @@ const CanvasAnimation = () => {
       let x = 0;
       const maxTall = Math.random() * 100 + 3;
       const maxSize = Math.random() * 5 + 2;
-      const speed = Math.random() * 0.1;
-      const swayAmplitude = 20;
+      const speed = Math.random() * 0.3;
+      const swayAmplitude = 10;
       const position = Math.random() * width - width / 2;
       const c = (l: any, u: any) =>
         Math.round(Math.random() * (u || 255) + l || 0);
