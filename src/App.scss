@@ -55,7 +55,7 @@ body {
   --card-color: rgba(221, 221, 221, 0.7);
   --company-bg: brightness(0) invert(1);
   --swiper-pagination-color: var(--secondary);
-  --linear-gradient: linear-gradient(var(--text-color), var(--primary));
+  --linear-gradient: linear-gradient(var(--text-color) 10%, var(--primary));
   margin: 0;
   padding: 0;
   background-color: var(--background-color) !important;
