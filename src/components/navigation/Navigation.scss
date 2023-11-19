@@ -61,6 +61,7 @@
   border-radius: var(--borderRadius);
   font-size: var(--navIconSize);
   transition: all 0.1s ease-in-out, border-radius, height, width;
+  cursor: pointer;
 }
 .nav-btn .active {
   display: flex;
