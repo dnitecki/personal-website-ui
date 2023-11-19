@@ -106,7 +106,7 @@ html:focus-within {
 }
 .bg-wrap {
   height: 100lvh;
-  width: 100lvh;
+  width: 100%;
   position: relative;
   overflow-x: hidden;
 }
@@ -138,7 +138,7 @@ body.dark .background {
   background: linear-gradient(-45deg, #8399a2 50%, #c9c9c9 90%);
   display: flex;
   height: 100lvh;
-  width: 100%;
+  width: 100vw;
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   position: fixed;
