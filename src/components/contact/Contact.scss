@@ -1,7 +1,7 @@
 .contact-container {
   display: flex;
   height: fit-content;
-  padding: 2rem;
+  padding: 2rem 1rem;
   width: calc(100% - 3rem);
 }
 .contact-form {
@@ -23,7 +23,7 @@
   border-radius: 0%;
   border-bottom: 3px solid var(--secondary);
   outline: 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--text-color);
   padding: 0.5rem;
   margin-bottom: 2rem;
