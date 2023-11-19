@@ -1,5 +1,7 @@
 import React from "react";
 import "./Contact.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
   return (
@@ -9,7 +11,13 @@ export default function Contact() {
           <label htmlFor="name" className="form-label">
             Name
           </label>
-          <input type="text" name="name" id="name" className="form-input" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            className="form-input"
+            required
+          />
           <label htmlFor="email" className="form-label">
             Email
           </label>
@@ -17,19 +25,25 @@ export default function Contact() {
             type="email"
             name="email"
             id="email"
-            placeholder="john.doe@gmail.com"
+            placeholder=" john.doe@gmail.com"
             className="form-input"
+            required
           />
           <label htmlFor="message" className="form-label">
             Message
           </label>
           <textarea
-            rows={50}
+            rows={5}
             name="message"
             id="message"
-            placeholder="How can I help?"
+            placeholder=" How can I help?"
             className="form-input"
+            required
           />
+          <button className="form-submit" type="submit">
+            <h3>Send</h3>
+            <FontAwesomeIcon icon={faPaperPlane} />
+          </button>
         </form>
       </div>
     </>
