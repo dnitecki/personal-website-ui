@@ -4,7 +4,7 @@
   justify-content: center;
   position: relative;
   height: fit-content;
-  width: calc(100svw - 3rem);
+  width: 100%;
   z-index: 3000;
   padding: 2rem 0 0 0;
   border-radius: var(--borderRadius);
@@ -31,7 +31,7 @@ body.dark .header-container {
   justify-content: center;
   position: relative;
   height: fit-content;
-  width: calc(100svw - 3rem);
+  width: 100%;
   z-index: 3000;
   padding: 2rem 0 0 0;
   border-radius: var(--borderRadius);
@@ -69,6 +69,8 @@ body.dark .header-container {
 .header {
   display: flex;
   position: relative;
+  width: calc(100% - 3rem);
+  justify-content: center;
 }
 .header-content {
   display: flex;
