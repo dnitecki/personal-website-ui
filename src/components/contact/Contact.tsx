@@ -41,8 +41,8 @@ export default function Contact() {
             required
           />
           <button className="form-submit" type="submit">
-            <h3>Send</h3>
-            <FontAwesomeIcon icon={faPaperPlane} />
+            <h2>Send</h2>
+            <FontAwesomeIcon className="send-icon" icon={faPaperPlane} />
           </button>
         </form>
       </div>
