@@ -3,13 +3,14 @@ import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import { EMAILJS } from "../../utils/secrets";
+import { EMAILJS, reCAPTCHA_SECRET } from "../../utils/secrets";
 
 export default function Contact() {
   const form = useRef();
   const { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } = EMAILJS;
 
   const sendEmail = (e: any) => {
+    console.log(TEMPLATE_ID);
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
       (result) => {
@@ -56,6 +57,8 @@ export default function Contact() {
             className="form-input"
             required
           />
+          <div className="g-recaptcha" data-sitekey={reCAPTCHA_SECRET} />
+          <br />
           <button className="form-submit" type="submit">
             <h3>Send</h3>
             <FontAwesomeIcon className="send-icon" icon={faPaperPlane} />
