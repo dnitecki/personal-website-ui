@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Contact.scss";
+import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { EMAILJS } from "../../utils/secrets";
 
 export default function Contact() {
+  const form = useRef();
+  const { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } = EMAILJS;
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
   return (
     <>
       <div className="glass contact-container">
-        <form className="contact-form">
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
           <label htmlFor="name" className="form-label">
             Name
           </label>
@@ -25,7 +41,7 @@ export default function Contact() {
             type="email"
             name="email"
             id="email"
-            placeholder=" john.doe@gmail.com"
+            placeholder="john.doe@gmail.com"
             className="form-input"
             required
           />
@@ -36,7 +52,7 @@ export default function Contact() {
             rows={5}
             name="message"
             id="message"
-            placeholder=" How can I help?"
+            placeholder="How can I help?"
             className="form-input"
             required
           />
