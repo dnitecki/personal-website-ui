@@ -32,18 +32,18 @@
 .form-submit {
   display: flex;
   height: fit-content;
-  width: fit-content;
-  column-gap: 0.75rem;
-  padding: var(--buttonPadding);
+  width: 100%;
+  column-gap: 1rem;
+  padding: 0.5rem 0;
   justify-content: center;
   align-items: center;
   border-radius: var(--borderRadius);
   background-color: var(--tertiary);
   color: var(--white);
-  h3 {
+  h2 {
     line-height: 0%;
   }
 }
 .send-icon {
-  font-size: 20px;
+  font-size: 24px;
 }

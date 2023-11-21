@@ -76,10 +76,14 @@ export default function Contact() {
             onChange={handleChange}
             required
           />
-          <div className="g-recaptcha" data-sitekey={reCAPTCHA_SECRET} />
+          <div
+            className="g-recaptcha"
+            data-sitekey={reCAPTCHA_SECRET}
+            data-theme="dark"
+          />
           <br />
           <button className="form-submit" type="submit">
-            <h3>Send</h3>
+            <h2>Send</h2>
             <FontAwesomeIcon className="send-icon" icon={faPaperPlane} />
           </button>
         </form>
