@@ -1,23 +1,36 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { EMAILJS, reCAPTCHA_SECRET } from "../../utils/secrets";
+import { EMPTY_STRING } from "../../utils/constants";
 
 export default function Contact() {
-  const form = useRef();
+  const formInitialState = {
+    name: EMPTY_STRING,
+    email: EMPTY_STRING,
+    message: EMPTY_STRING,
+  };
   const { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } = EMAILJS;
+  const form = useRef();
+
+  const [formData, setFormData] = useState(formInitialState);
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
 
   const sendEmail = (e: any) => {
-    console.log(TEMPLATE_ID);
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
       (result) => {
+        setFormData(formInitialState);
         console.log(result.text);
       },
       (error) => {
         console.log(error.text);
+        setFormData(formInitialState);
       }
     );
   };
@@ -33,6 +46,8 @@ export default function Contact() {
             name="name"
             id="name"
             className="form-input"
+            value={formData.name}
+            onChange={handleChange}
             required
           />
           <label htmlFor="email" className="form-label">
@@ -44,6 +59,8 @@ export default function Contact() {
             id="email"
             placeholder="john.doe@gmail.com"
             className="form-input"
+            value={formData.email}
+            onChange={handleChange}
             required
           />
           <label htmlFor="message" className="form-label">
@@ -55,6 +72,8 @@ export default function Contact() {
             id="message"
             placeholder="How can I help?"
             className="form-input"
+            value={formData.message}
+            onChange={handleChange}
             required
           />
           <div className="g-recaptcha" data-sitekey={reCAPTCHA_SECRET} />
