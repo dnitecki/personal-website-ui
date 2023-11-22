@@ -1,8 +1,12 @@
 .dots {
   width: 60px;
-  aspect-ratio: 2;
+  aspect-ratio: 3;
   --gradient: no-repeat
-    radial-gradient(circle closest-side, var(--white) 90%, var(--lightGrey));
+    radial-gradient(
+      circle closest-side,
+      var(--white) 90%,
+      rgba(255, 255, 255, 0)
+    );
   background: var(--gradient) 0% 50%, var(--gradient) 50% 50%,
     var(--gradient) 100% 50%;
   background-size: calc(100% / 3) 50%;
