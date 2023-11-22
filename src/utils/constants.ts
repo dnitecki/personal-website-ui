@@ -7,3 +7,4 @@ export const insurance = {
   appName: "One Stop Insurance",
 };
 export const EMPTY_STRING = "";
+export const ERROR_MESSAGE = new Map([[400, "Please complete the reCaptcha"]]);

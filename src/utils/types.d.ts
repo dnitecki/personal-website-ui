@@ -11,3 +11,7 @@ export type SpeedbumpProps = {
 export type Skills = {
   text: string;
 };
+export type EmailJsError = {
+  status: number;
+  text: string;
+};

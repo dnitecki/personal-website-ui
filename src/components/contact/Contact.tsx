@@ -1,11 +1,12 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Contact.scss";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { EMAILJS, reCAPTCHA_SECRET } from "../../utils/secrets";
-import { EMPTY_STRING } from "../../utils/constants";
+import { EMPTY_STRING, ERROR_MESSAGE } from "../../utils/constants";
+import { EmailJsError } from "../../utils/types";
 
 export default function Contact() {
   const formInitialState = {
@@ -16,21 +17,28 @@ export default function Contact() {
   const { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } = EMAILJS;
   const form = useRef();
   const [formData, setFormData] = useState(formInitialState);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isComplete, setIsComplete] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(EMPTY_STRING);
+
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
 
   const sendEmail = (e: any) => {
+    setIsLoading(true);
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
-      (result) => {
+      () => {
         setFormData(formInitialState);
-        console.log(result.text);
+        setIsLoading(false);
+        setIsComplete(true);
       },
-      (error) => {
-        console.log(error.text);
+      (error: EmailJsError) => {
         setFormData(formInitialState);
+        setIsLoading(false);
+        setErrorMessage(ERROR_MESSAGE.get(error.status));
       }
     );
   };
@@ -76,8 +84,8 @@ export default function Contact() {
             onChange={handleChange}
             required
           />
-          <ReCAPTCHA sitekey={reCAPTCHA_SECRET} />
-          <br />
+          <ReCAPTCHA sitekey={"reCAPTCHA_SECRET"} />
+          <p>{errorMessage}</p>
           <button className="form-submit" type="submit">
             <h2>Send</h2>
             <FontAwesomeIcon className="send-icon" icon={faPaperPlane} />
