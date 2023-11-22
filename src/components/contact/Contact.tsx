@@ -3,10 +3,11 @@ import "./Contact.scss";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { EMAILJS, reCAPTCHA_SECRET } from "../../utils/secrets";
 import { EMPTY_STRING, ERROR_MESSAGE } from "../../utils/constants";
 import { EmailJsError } from "../../utils/types";
+import Loader from "../loader/Loader";
 
 export default function Contact() {
   const formInitialState = {
@@ -36,10 +37,33 @@ export default function Contact() {
         setIsComplete(true);
       },
       (error: EmailJsError) => {
-        setFormData(formInitialState);
         setIsLoading(false);
         setErrorMessage(ERROR_MESSAGE.get(error.status));
       }
+    );
+  };
+  const buttonText = () => {
+    if (isLoading) {
+      return (
+        <>
+          <h2>Sending</h2>
+          <Loader />
+        </>
+      );
+    }
+    if (isComplete) {
+      return (
+        <>
+          <h2>Sent!</h2>
+          <FontAwesomeIcon className="send-icon" icon={faCheck} />
+        </>
+      );
+    }
+    return (
+      <>
+        <h2>Send</h2>
+        <FontAwesomeIcon className="send-icon" icon={faPaperPlane} />
+      </>
     );
   };
   return (
@@ -84,11 +108,10 @@ export default function Contact() {
             onChange={handleChange}
             required
           />
-          <ReCAPTCHA sitekey={"reCAPTCHA_SECRET"} />
+          <ReCAPTCHA sitekey={reCAPTCHA_SECRET} />
           <p>{errorMessage}</p>
           <button className="form-submit" type="submit">
-            <h2>Send</h2>
-            <FontAwesomeIcon className="send-icon" icon={faPaperPlane} />
+            {buttonText()}
           </button>
         </form>
       </div>
