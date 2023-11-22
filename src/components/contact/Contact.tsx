@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import "./Contact.scss";
+import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
@@ -14,7 +15,6 @@ export default function Contact() {
   };
   const { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } = EMAILJS;
   const form = useRef();
-
   const [formData, setFormData] = useState(formInitialState);
   const handleChange = (e: any) => {
     const { name, value } = e.target;
@@ -76,11 +76,7 @@ export default function Contact() {
             onChange={handleChange}
             required
           />
-          <div
-            className="g-recaptcha"
-            data-sitekey={reCAPTCHA_SECRET}
-            data-theme="dark"
-          />
+          <ReCAPTCHA sitekey={reCAPTCHA_SECRET} />
           <br />
           <button className="form-submit" type="submit">
             <h2>Send</h2>
