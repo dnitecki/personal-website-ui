@@ -110,9 +110,11 @@ export default function Contact() {
           />
           <ReCAPTCHA sitekey={reCAPTCHA_SECRET} />
           <p>{errorMessage}</p>
-          <button className="form-submit" type="submit">
-            {buttonText()}
-          </button>
+          <div className="form-submit-container">
+            <button className="form-submit-button" type="submit">
+              {buttonText()}
+            </button>
+          </div>
         </form>
       </div>
     </>
