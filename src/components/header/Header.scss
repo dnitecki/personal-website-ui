@@ -126,8 +126,8 @@ body.dark .header-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(var(--tertiary), var(--primary)) border-box;
-  border: solid 3px var(--tertiary);
+  background: var(--headshot-bg);
+  border: solid 3px var(--lightGrey);
 }
 .headshot {
   height: 95%;

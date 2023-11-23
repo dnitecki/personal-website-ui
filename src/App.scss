@@ -4,7 +4,7 @@
   --black: #000000;
   --bgColor: rgba(0, 0, 0, 0.5);
   --trackColor: #e7e7e7;
-  --lightGrey: #a4a4a4;
+  --lightGrey: #c8c8c8;
   --iconSize: 30px;
   --navIconSize: 25px;
   --iconColor: rgb(255, 255, 255);
@@ -61,6 +61,7 @@ body {
   --color-env2: #26898e;
   --color-flap: #13474b;
   --color-bg: #35c5cf;
+  --headshot-bg: linear-gradient(var(--color-bg), var(--color-env2));
   margin: 0;
   padding: 0;
   background-color: var(--background-color) !important;
@@ -88,6 +89,7 @@ body.dark {
   --color-env2: #81208e;
   --color-flap: #4c1c66;
   --color-bg: #bd31d0;
+  --headshot-bg: linear-gradient(var(--tertiary), var(--primary));
   margin: 0;
   padding: 0;
   background-color: var(--background-color) !important;
