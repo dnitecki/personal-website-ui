@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Envelope.scss";
 
 export default function Envelope() {
+  const [formComplete, setFormComplete] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setFormComplete(true);
+    }, 1000);
+  });
+
   return (
     <div className="envelope-container">
-      <div id="envelope" className="envelope open">
+      <div className={`envelope ${formComplete ? "close" : "open"}`}>
         <div className="front-envelope flap"></div>
         <div className="front-envelope pocket"></div>
         <div className="letter">
