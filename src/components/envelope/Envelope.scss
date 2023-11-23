@@ -1,8 +1,3 @@
-$color-env: #0077b2;
-$color-env2: darken($color-env, 3%);
-$color-flap: darken($color-env, 20%);
-$color-bg: lighten($color-env, 48%);
-
 $env-border-radius: 6px;
 $env-width: 280px;
 $env-height: 180px;
@@ -15,15 +10,15 @@ $env-height: 180px;
   align-items: center;
   animation: envelope-move 1s ease-in-out;
   animation-delay: 2s;
-  animation-direction: forward;
+  animation-fill-mode: forwards;
 }
 .envelope {
   position: relative;
   width: $env-width;
   height: $env-height;
   border-bottom-left-radius: $env-border-radius;
-  background-color: $color-flap;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-flap);
+  box-shadow: var(--shadow);
 }
 .front-envelope {
   position: absolute;
@@ -35,14 +30,14 @@ $env-height: 180px;
   border-left: calc($env-width / 2) solid transparent;
   border-right: calc($env-width / 2) solid transparent;
   border-bottom: calc($env-height / 2) - 8 solid transparent; /* a little smaller */
-  border-top: calc($env-height / 2) + 8 solid $color-flap; /* a little larger */
+  border-top: calc($env-height / 2) + 8 solid var(--color-flap); /* a little larger */
   transform-origin: top;
   pointer-events: none;
 }
 .pocket {
-  border-left: calc($env-width / 2) solid $color-env;
-  border-right: calc($env-width / 2) solid $color-env;
-  border-bottom: calc($env-height / 2) solid $color-env2;
+  border-left: calc($env-width / 2) solid var(--color-env);
+  border-right: calc($env-width / 2) solid var(--color-env);
+  border-bottom: calc($env-height / 2) solid var(--color-env2);
   border-top: calc($env-height / 2) solid transparent;
   border-bottom-left-radius: $env-border-radius;
   border-bottom-right-radius: $env-border-radius;
@@ -119,7 +114,7 @@ $env-height: 180px;
     opacity: 1;
   }
   100% {
-    transform: translateY(-200px);
+    transform: translateY(-500px);
     opacity: 0;
   }
 }
@@ -129,7 +124,7 @@ $env-height: 180px;
     opacity: 1;
   }
   100% {
-    transform: translateY(-200px);
+    transform: translateY(-500px);
     opacity: 0;
   }
 }
