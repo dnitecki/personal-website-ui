@@ -20,7 +20,7 @@ export default function Contact() {
   const form = useRef();
   const [formData, setFormData] = useState(formInitialState);
   const [isLoading, setIsLoading] = useState(false);
-  const [isComplete, setIsComplete] = useState(false);
+  const [isComplete, setIsComplete] = useState(true);
   const [errorMessage, setErrorMessage] = useState(EMPTY_STRING);
 
   const handleChange = (e: any) => {
