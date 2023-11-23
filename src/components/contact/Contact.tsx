@@ -8,6 +8,7 @@ import { EMAILJS, reCAPTCHA_SECRET } from "../../utils/secrets";
 import { EMPTY_STRING, ERROR_MESSAGE } from "../../utils/constants";
 import { EmailJsError } from "../../utils/types";
 import Loader from "../loader/Loader";
+import Envelope from "../envelope/Envelope";
 
 export default function Contact() {
   const formInitialState = {
@@ -19,7 +20,7 @@ export default function Contact() {
   const form = useRef();
   const [formData, setFormData] = useState(formInitialState);
   const [isLoading, setIsLoading] = useState(false);
-  const [isComplete, setIsComplete] = useState(false);
+  const [isComplete, setIsComplete] = useState(true);
   const [errorMessage, setErrorMessage] = useState(EMPTY_STRING);
 
   const handleChange = (e: any) => {
@@ -69,53 +70,57 @@ export default function Contact() {
   return (
     <>
       <div className="glass contact-container">
-        <form ref={form} onSubmit={sendEmail} className="contact-form">
-          <label htmlFor="name" className="form-label">
-            Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            className="form-input"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <label htmlFor="email" className="form-label">
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="john.doe@gmail.com"
-            className="form-input"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <label htmlFor="message" className="form-label">
-            Message
-          </label>
-          <textarea
-            rows={5}
-            name="message"
-            id="message"
-            placeholder="How can I help?"
-            className="form-input"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
-          <ReCAPTCHA sitekey={reCAPTCHA_SECRET} />
-          <p>{errorMessage}</p>
-          <div className="form-submit-container">
-            <button className="form-submit-button" type="submit">
-              {buttonText()}
-            </button>
-          </div>
-        </form>
+        {isComplete ? (
+          <Envelope />
+        ) : (
+          <form ref={form} onSubmit={sendEmail} className="contact-form">
+            <label htmlFor="name" className="form-label">
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              className="form-input"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+            <label htmlFor="email" className="form-label">
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="john.doe@gmail.com"
+              className="form-input"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            <label htmlFor="message" className="form-label">
+              Message
+            </label>
+            <textarea
+              rows={5}
+              name="message"
+              id="message"
+              placeholder="How can I help?"
+              className="form-input"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+            <ReCAPTCHA sitekey={reCAPTCHA_SECRET} />
+            <p>{errorMessage}</p>
+            <div className="form-submit-container">
+              <button className="form-submit-button" type="submit">
+                {buttonText()}
+              </button>
+            </div>
+          </form>
+        )}
       </div>
     </>
   );

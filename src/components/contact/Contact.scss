@@ -1,7 +1,8 @@
 .contact-container {
   display: flex;
-  height: fit-content;
+  min-height: 35rem;
   padding: 2rem 1rem;
+  overflow: hidden;
   width: calc(100% - 3rem);
 }
 .contact-form {
