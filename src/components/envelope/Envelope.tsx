@@ -7,7 +7,7 @@ export default function Envelope() {
   useEffect(() => {
     setTimeout(() => {
       setFormComplete(true);
-    }, 1000);
+    }, 500);
   });
 
   return (
