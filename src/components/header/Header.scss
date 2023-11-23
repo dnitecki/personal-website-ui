@@ -119,7 +119,7 @@ body.dark .header-container {
   z-index: 1000;
   transform: rotateX(180deg);
 }
-.headshot {
+.headshot-container {
   height: 10.5rem;
   width: 10.5rem;
   border-radius: 50%;
@@ -127,7 +127,11 @@ body.dark .header-container {
   justify-content: center;
   align-items: center;
   background: linear-gradient(var(--tertiary), var(--primary)) border-box;
-  border: 3px solid transparent;
+  border: solid 3px var(--tertiary);
+}
+.headshot {
+  height: 95%;
+  width: auto;
 }
 .logo-background {
   height: 10.5rem;

@@ -10,7 +10,7 @@ import {
   faShareFromSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
-import profile from "../../assets/Profile.png";
+import profile from "../../assets/MyMemoji.png";
 import logo from "../../assets/MyLogo.png";
 import Skills from "../skills/Skills";
 import CanvasAnimation from "../grass/Grass";
@@ -55,7 +55,9 @@ export default function Header() {
       <div className="header shadow">
         <div className="profile-image">
           <div className="front">
-            <img className="headshot" src={profile} alt="headshot" />
+            <div className="headshot-container">
+              <img className="headshot" src={profile} alt="headshot" />
+            </div>
           </div>
           <div className="back">
             <div className="logo-background">
