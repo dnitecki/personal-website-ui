@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Background.scss";
+import Clouds from "../clouds/Clouds";
 
 export default function Background() {
   useEffect(() => {
@@ -22,6 +23,7 @@ export default function Background() {
 
   return (
     <>
+      <Clouds />
       <div className="stars-container">
         <div className="stars" id="stars" />
       </div>
