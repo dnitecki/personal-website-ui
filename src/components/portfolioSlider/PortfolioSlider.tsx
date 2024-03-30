@@ -8,8 +8,7 @@ import insuranceMockup from "../../assets/InsuranceMockup.png";
 import insuranceIcon from "../../assets/onestop-icon.png";
 import { EMPTY_STRING, finfetch, insurance } from "../../utils/constants";
 import { SpeedbumpProps } from "../../utils/types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -66,7 +65,7 @@ export default function PortfolioSlider() {
               }}
             >
               <h3>Proceed</h3>
-              <FontAwesomeIcon icon={faChevronRight} />
+              <ChevronRightIcon fontSize="inherit" />
             </button>
           </div>
         </div>

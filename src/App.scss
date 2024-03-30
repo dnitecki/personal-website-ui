@@ -227,6 +227,12 @@ a {
   -ms-user-select: none;
   user-select: none;
 }
+.MuiSvgIcon-root {
+  font-size: inherit;
+  .MuiSvgIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+}
 @keyframes move-background {
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);

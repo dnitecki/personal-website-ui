@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Resume.scss";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import StantecLogo from "../../assets/StantecLogoColor.png";
 import ChaseLogo from "../../assets/ChaseLogo.png";
 import Certs from "../certs/Certs";
@@ -26,7 +25,7 @@ export default function Resume() {
               jpmcClicked ? "icon-closed" : "icon-open"
             }`}
           >
-            <FontAwesomeIcon icon={faChevronRight} />
+            <ChevronRightIcon fontSize="inherit" />
           </div>
           <div className="bg-image-jpmc" />
 
@@ -68,7 +67,7 @@ export default function Resume() {
               stnClicked ? "icon-closed" : "icon-open"
             }`}
           >
-            <FontAwesomeIcon icon={faChevronRight} />
+            <ChevronRightIcon fontSize="inherit" />
           </div>
           <div className="bg-image-stn" />
           <div

@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import "./Navigation.scss";
 import { Link } from "react-scroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHouse,
-  faFolder,
-  faBriefcase,
-  faPaperPlane,
-  faXmark,
-  faBars,
-} from "@fortawesome/free-solid-svg-icons";
+import HomeIcon from "@mui/icons-material/Home";
+import FolderIcon from "@mui/icons-material/Folder";
+import WorkIcon from "@mui/icons-material/Work";
+import SendIcon from "@mui/icons-material/Send";
+import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Navigation() {
   const [show, setShow] = useState(false);
@@ -24,13 +21,13 @@ export default function Navigation() {
         className={`menu-btn ${show ? "inactive-btn" : "active-btn"}`}
         onClick={handleMenuClick}
       >
-        <FontAwesomeIcon icon={faBars} />
+        <MenuIcon />
       </button>
       <button
         className={`menu-btn ${show ? "active-btn" : "inactive-btn"}`}
         onClick={handleMenuClick}
       >
-        <FontAwesomeIcon icon={faXmark} />
+        <CloseIcon />
       </button>
       <div
         className={`navigation-container ${show ? "nav-show" : "nav-hidden"}`}
@@ -45,7 +42,7 @@ export default function Navigation() {
               duration={500}
               height="50px"
             >
-              <FontAwesomeIcon icon={faHouse} />
+              <HomeIcon fontSize="inherit" />
             </Link>
           </li>
           <li className="nav-btn">
@@ -56,7 +53,7 @@ export default function Navigation() {
               offset={-10}
               duration={500}
             >
-              <FontAwesomeIcon icon={faFolder} />
+              <FolderIcon fontSize="inherit" />
             </Link>
           </li>
           <li className="nav-btn">
@@ -67,7 +64,7 @@ export default function Navigation() {
               offset={-10}
               duration={500}
             >
-              <FontAwesomeIcon icon={faBriefcase} />
+              <WorkIcon fontSize="inherit" />
             </Link>
           </li>
           <li className="nav-btn">
@@ -78,7 +75,7 @@ export default function Navigation() {
               offset={-10}
               duration={500}
             >
-              <FontAwesomeIcon icon={faPaperPlane} />
+              <SendIcon fontSize="inherit" />
             </Link>
           </li>
         </ul>

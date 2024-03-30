@@ -1,15 +1,12 @@
 import React, { useContext, useState } from "react";
 import "./Header.scss";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faComment,
-  faLink,
-  faShareFromSquare,
-} from "@fortawesome/free-solid-svg-icons";
-import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import ShareIcon from "@mui/icons-material/Share";
+import LinkIcon from "@mui/icons-material/Link";
+import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
+import IosShareIcon from "@mui/icons-material/IosShare";
 import profile from "../../assets/MyMemoji.png";
 import logo from "../../assets/MyLogo.png";
 import Skills from "../skills/Skills";
@@ -79,24 +76,24 @@ export default function Header() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon={faLinkedin} />
+                <LinkedInIcon fontSize="inherit" />
               </a>
               <a
                 href="https://www.instagram.com/dominick_nitecki/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon={faInstagram} />
+                <InstagramIcon fontSize="inherit" />
               </a>
               <a
                 href="https://github.com/dnitecki"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon={faGithub} />
+                <GitHubIcon fontSize="inherit" />
               </a>
               <button onClick={handleMoreClick}>
-                <FontAwesomeIcon icon={faShareNodes} />
+                <ShareIcon fontSize="inherit" />
               </button>
             </div>
           </div>
@@ -110,18 +107,18 @@ export default function Header() {
           className={`more-modal ${moreClicked ? "modal-open" : "modal-close"}`}
         >
           <button className="share-icon-btn" onClick={copyText}>
-            <FontAwesomeIcon className="share-icon" icon={faLink} />
+            <LinkIcon fontSize="inherit" className="share-icon" />
             <p>Copy Link</p>
           </button>
           <a
             className="share-icon-btn"
             href="sms://?&body=www.dominicknitecki.com"
           >
-            <FontAwesomeIcon className="share-icon" icon={faComment} />
+            <ChatBubbleIcon fontSize="inherit" className="share-icon" />
             <p>Message</p>
           </a>
           <button className="share-icon-btn" onClick={handleShare}>
-            <FontAwesomeIcon className="share-icon" icon={faShareFromSquare} />
+            <IosShareIcon fontSize="inherit" className="share-icon" />
             <p>Share to...</p>
           </button>
         </div>

@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import "./Contact.scss";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import CheckIcon from "@mui/icons-material/Check";
+import SendIcon from "@mui/icons-material/Send";
 import { EMAILJS, reCAPTCHA_SECRET } from "../../utils/secrets";
 import { EMPTY_STRING, ERROR_MESSAGE } from "../../utils/constants";
 import { EmailJsError } from "../../utils/types";
@@ -56,14 +56,14 @@ export default function Contact() {
       return (
         <>
           <h2>Sent!</h2>
-          <FontAwesomeIcon className="send-icon" icon={faCheck} />
+          <CheckIcon fontSize="inherit" className="send-icon" />
         </>
       );
     }
     return (
       <>
         <h2>Send</h2>
-        <FontAwesomeIcon className="send-icon" icon={faPaperPlane} />
+        <SendIcon fontSize="inherit" className="send-icon" />
       </>
     );
   };

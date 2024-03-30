@@ -1,10 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./ModeToggle.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun } from "@fortawesome/free-solid-svg-icons";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { ToggleContext } from "../../context/toggleContext";
-
+import NightsStayIcon from "@mui/icons-material/NightsStay";
+import Brightness7Icon from "@mui/icons-material/Brightness7";
 export default function ModeToggle() {
   const [checked, setChecked] = useState(false);
   const { setToggle } = useContext(ToggleContext);
@@ -32,17 +30,17 @@ export default function ModeToggle() {
       />
       <label htmlFor="mode-toggle" className="toggle-label">
         <div className="toggle-icons">
-          <FontAwesomeIcon
+          <NightsStayIcon
+            fontSize="inherit"
             className={`moon ${
               checked ? "icon-inactive moon-color" : "icon-active"
             }`}
-            icon={faMoon}
           />
-          <FontAwesomeIcon
+          <Brightness7Icon
+            fontSize="inherit"
             className={`sun ${
               checked ? "icon-active" : "icon-inactive sun-color"
             }`}
-            icon={faSun}
           />
         </div>
       </label>
