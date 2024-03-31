@@ -21,7 +21,7 @@ export default function Navigation() {
         className={`menu-btn ${show ? "inactive-btn" : "active-btn"}`}
         onClick={handleMenuClick}
       >
-        <MenuIcon />
+        <MenuIcon fontSize="inherit" />
       </button>
       <button
         className={`menu-btn ${show ? "active-btn" : "inactive-btn"}`}

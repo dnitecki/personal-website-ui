@@ -63,6 +63,11 @@
   font-size: var(--navIconSize);
   transition: all 0.1s ease-in-out, border-radius, height, width;
   cursor: pointer;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .nav-btn .active {
   display: flex;
@@ -76,6 +81,7 @@
   font-size: var(--navIconSize);
   transition: all 0.1s ease-in-out, border-radius, height, width;
 }
+
 .nav-show {
   left: 0;
   opacity: 1;

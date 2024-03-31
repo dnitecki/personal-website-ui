@@ -97,7 +97,7 @@ export default function PortfolioSlider() {
           slidesPerView={"auto"}
           slidesPerGroupAuto={true}
           style={{ overflow: "visible", width: "100%" }}
-          pagination={true}
+          pagination={false}
           modules={[EffectCoverflow, Pagination]}
           className="swiper-container"
         >

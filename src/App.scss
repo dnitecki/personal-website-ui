@@ -168,6 +168,8 @@ body.dark .clouds {
   opacity: 0.2;
   overflow-x: hidden;
   filter: brightness(4);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   z-index: 1;
   -moz-animation: move-background 120s linear infinite;
   -ms-animation: move-background 120s linear infinite;

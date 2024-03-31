@@ -91,6 +91,12 @@ body.dark .header-container {
   border-radius: var(--borderRadius);
   background-color: var(--primary);
   color: var(--iconColor);
+  a,
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .header-text {
   display: flex;
@@ -148,7 +154,6 @@ body.dark .header-container {
   display: flex;
   margin-left: 5px;
 }
-
 .more-modal {
   position: fixed;
   display: flex;
@@ -211,13 +216,11 @@ body.dark .header-container {
   align-items: center;
   flex-direction: column;
   line-height: 0%;
+  font-size: var(--navIconSize);
   text-decoration: none;
   p {
     font-size: 12px;
   }
-}
-.share-icon {
-  font-size: var(--navIconSize);
 }
 
 @keyframes flip {
