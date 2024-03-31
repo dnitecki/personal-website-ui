@@ -23,7 +23,7 @@ export default function Background() {
 
   return (
     <>
-      <Clouds />
+      {/* <Clouds /> remove but add in when stutter fixed */}
       <div className="stars-container">
         <div className="stars" id="stars" />
       </div>

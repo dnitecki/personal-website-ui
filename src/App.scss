@@ -55,7 +55,7 @@ body {
   --card-color: rgba(221, 221, 221, 0.7);
   --company-bg: brightness(0) invert(1);
   --swiper-pagination-color: var(--secondary);
-  --linear-gradient: linear-gradient(var(--secondary), var(--text-color));
+  --linear-gradient: var(--white);
   --input-bg: rgba(0, 0, 0, 0.05);
   --color-env: #28979f;
   --color-env2: #26898e;
@@ -83,7 +83,7 @@ body.dark {
   --swiper-pagination-color: var(--secondary);
   --swiper-pagination-bullet-inactive-color: var(--white);
   --swiper-pagination-bullet-inactive-opacity: 0.5;
-  --linear-gradient: linear-gradient(var(--primary) 10%, var(--text-color) 60%);
+  --linear-gradient: linear-gradient(var(--primary) 10%, var(--text-color) 40%);
   --input-bg: rgba(255, 255, 255, 0.05);
   --color-env: #7a1e86;
   --color-env2: #81208e;

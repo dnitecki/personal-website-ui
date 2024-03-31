@@ -48,7 +48,6 @@ export default function Header() {
 
   return (
     <>
-      {toggle && <CanvasAnimation />}
       <div className="header shadow">
         <div className="profile-image">
           <div className="front">
