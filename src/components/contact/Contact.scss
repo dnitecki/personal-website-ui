@@ -55,5 +55,8 @@
   }
 }
 .send-icon {
-  font-size: 24px;
+  font-size: var(--navIconSize);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

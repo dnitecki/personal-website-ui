@@ -56,14 +56,18 @@ export default function Contact() {
       return (
         <>
           <h2>Sent!</h2>
-          <CheckIcon fontSize="inherit" className="send-icon" />
+          <div className="send-icon">
+            <CheckIcon fontSize="inherit" />
+          </div>
         </>
       );
     }
     return (
       <>
         <h2>Send</h2>
-        <SendIcon fontSize="inherit" className="send-icon" />
+        <div className="send-icon">
+          <SendIcon fontSize="inherit" />
+        </div>
       </>
     );
   };
