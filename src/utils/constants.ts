@@ -30,7 +30,7 @@ export const MEDIA_FILES = {
   stantecLogoColor: `${MEDIA_URL}stantec-logo-color.png`,
   stantecLogo: `${MEDIA_URL}stantec-logo.png`,
   photoMockup:
-    "https://live.staticflickr.com/65535/53406868026_1b0e9f7d53_b.jpg",
+    "https://live.staticflickr.com/65535/53406868026_1b0e9f7d53_b.png",
 };
 
 export const EMPTY_STRING = "";
