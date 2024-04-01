@@ -108,6 +108,9 @@ export default function PortfolioSlider() {
                       src={item.coverImage.src}
                       alt="finfetch"
                     />
+                    <div className="portfolio-title">
+                      <h3>{item.appName}</h3>
+                    </div>
                   </div>
                 </div>
               </div>

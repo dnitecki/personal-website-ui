@@ -20,8 +20,8 @@ export const PortfolioItems: PortfolioItemType[] = [
       className: "finfetch-icon",
     },
     coverImage: {
-      src: MEDIA_FILES.dnMemoji,
-      className: "finfetch",
+      src: MEDIA_FILES.photoMockup,
+      className: "photo-mock",
     },
     url: PHOTOS.url,
     appName: PHOTOS.appName,

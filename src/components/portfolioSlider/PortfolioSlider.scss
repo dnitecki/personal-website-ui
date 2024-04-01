@@ -33,6 +33,19 @@
   display: flex;
   position: absolute;
 }
+.portfolio-title {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tertiary);
+  overflow: hidden;
+  h3 {
+    margin: 0.5rem;
+  }
+}
 .finfetch-icon {
   top: -4.5rem;
   right: 4.5rem;
@@ -61,11 +74,18 @@
   height: auto;
 }
 .insurance {
-  bottom: 70px;
-  left: 20px;
+  bottom: 60px;
+  left: 10px;
   width: 100%;
   transform: scale(2.2);
   height: auto;
+}
+.photo-mock {
+  display: flex;
+  right: 0px;
+  align-items: center;
+  width: auto;
+  height: 100%;
 }
 .portfolio-logo {
   display: flex;

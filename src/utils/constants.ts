@@ -29,6 +29,8 @@ export const MEDIA_FILES = {
   oneStopMockup: `${MEDIA_URL}onestop-mockup.png`,
   stantecLogoColor: `${MEDIA_URL}stantec-logo-color.png`,
   stantecLogo: `${MEDIA_URL}stantec-logo.png`,
+  photoMockup:
+    "https://live.staticflickr.com/65535/53406868026_1b0e9f7d53_b.jpg",
 };
 
 export const EMPTY_STRING = "";
