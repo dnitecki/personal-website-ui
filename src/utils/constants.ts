@@ -1,6 +1,6 @@
 export const FINFETCH = {
   url: "https://www.finfetch.dominicknitecki.com/",
-  appName: "FinFetch",
+  appName: "FinFetch API",
 };
 export const INSURANCE = {
   url: "https://www.onestopinsurance.net/",
