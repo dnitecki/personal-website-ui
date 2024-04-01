@@ -2,32 +2,23 @@ import React, { useState } from "react";
 import "./PortfolioSlider.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination } from "swiper/modules";
-import finfetchMockup from "../../assets/FinfetchMockup.png";
-import finfetchIcon from "../../assets/FinFetch-icon.png";
-import insuranceMockup from "../../assets/InsuranceMockup.png";
-import insuranceIcon from "../../assets/onestop-icon.png";
-import { EMPTY_STRING, finfetch, insurance } from "../../utils/constants";
+import { EMPTY_STRING } from "../../utils/constants";
 import { SpeedbumpProps } from "../../utils/types";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import { PortfolioItems } from "../../mappers/portfolioMapper";
 
 export default function PortfolioSlider() {
   const [url, setUrl] = useState(EMPTY_STRING);
   const [appName, setAppName] = useState(EMPTY_STRING);
   const [speedbumpOpen, setSpeedbumpOpen] = useState(false);
 
-  const handleFinfetchClick = () => {
-    setUrl(finfetch.url);
-    setAppName(finfetch.appName);
-    setSpeedbumpOpen(true);
-  };
-
-  const handleInsuranceClick = () => {
-    setUrl(insurance.url);
-    setAppName(insurance.appName);
+  const handlePortfolioClick = (url: string, appName: string) => {
+    setUrl(url);
+    setAppName(appName);
     setSpeedbumpOpen(true);
   };
 
@@ -80,12 +71,10 @@ export default function PortfolioSlider() {
         <Swiper
           onClick={(swiper: any) => {
             const clickedIndex = swiper.clickedIndex;
-            if (clickedIndex === 0) {
-              handleFinfetchClick();
-            }
-            if (clickedIndex === 1) {
-              handleInsuranceClick();
-            }
+            handlePortfolioClick(
+              PortfolioItems[clickedIndex].url,
+              PortfolioItems[clickedIndex].appName
+            );
           }}
           slidesOffsetBefore={24}
           spaceBetween={24}
@@ -101,53 +90,29 @@ export default function PortfolioSlider() {
           modules={[EffectCoverflow, Pagination]}
           className="swiper-container"
         >
-          <SwiperSlide
-            style={{ width: "fit-content" }}
-            className="swiper-slide"
-          >
-            <div className="item">
-              <div className="portfolio-card glass">
-                <div className="portfolio-image-container">
-                  <img
-                    className="portfolio-logo finfetch-icon"
-                    src={finfetchIcon}
-                    alt="icon"
-                  />
-                  <img
-                    className="portfolio-image finfetch"
-                    src={finfetchMockup}
-                    alt="finfetch"
-                  />
+          {PortfolioItems.map((item) => (
+            <SwiperSlide
+              style={{ width: "fit-content" }}
+              className="swiper-slide"
+            >
+              <div className="item">
+                <div className="portfolio-card glass">
+                  <div className="portfolio-image-container">
+                    <img
+                      className={`portfolio-logo ${item.icon.className}`}
+                      src={item.icon.src}
+                      alt="icon"
+                    />
+                    <img
+                      className={`portfolio-image ${item.coverImage.className}`}
+                      src={item.coverImage.src}
+                      alt="finfetch"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide
-            style={{ width: "fit-content" }}
-            className="swiper-slide"
-          >
-            <div className="item">
-              <div className="portfolio-card glass">
-                <div className="portfolio-image-container">
-                  <img
-                    className="portfolio-logo insurance-icon"
-                    src={insuranceIcon}
-                    alt="icon"
-                  />
-                  <img
-                    className="portfolio-image insurance"
-                    src={insuranceMockup}
-                    alt="onestopinsurance"
-                  />
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="item">
-              <div className="portfolio-card glass"></div>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </>
