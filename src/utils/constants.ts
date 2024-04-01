@@ -8,7 +8,7 @@ export const insurance = {
 };
 export const photos = {
   url: "https://photos.dominicknitecki.com",
-  appNAme: "Photo Library",
+  appName: "Photo Library",
 };
 export const EMPTY_STRING = "";
 export const ERROR_MESSAGE = new Map([[400, "Please complete the reCaptcha"]]);

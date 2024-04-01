@@ -1,10 +1,12 @@
-import { finfetch, insurance } from "../utils/constants";
+import { finfetch, insurance, photos } from "../utils/constants";
 import finfetchMockup from "../assets/FinfetchMockup.png";
 import finfetchIcon from "../assets/FinFetch-icon.png";
 import insuranceMockup from "../assets/InsuranceMockup.png";
 import insuranceIcon from "../assets/onestop-icon.png";
+import photoIcon from "../assets/MyLogoCircle.png";
+import { PortfolioItemType } from "../utils/types";
 
-export const PortfolioItems = [
+export const PortfolioItems: PortfolioItemType[] = [
   {
     icon: {
       src: finfetchIcon,
@@ -16,6 +18,18 @@ export const PortfolioItems = [
     },
     url: finfetch.url,
     appName: finfetch.appName,
+  },
+  {
+    icon: {
+      src: photoIcon,
+      className: "finfetch-icon",
+    },
+    coverImage: {
+      src: photoIcon,
+      className: "finfetch",
+    },
+    url: photos.url,
+    appName: photos.appName,
   },
   {
     icon: {

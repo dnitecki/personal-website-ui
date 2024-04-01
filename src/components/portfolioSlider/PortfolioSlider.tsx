@@ -3,7 +3,7 @@ import "./PortfolioSlider.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import { EMPTY_STRING } from "../../utils/constants";
-import { SpeedbumpProps } from "../../utils/types";
+import { PortfolioItemType, SpeedbumpProps } from "../../utils/types";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 import "swiper/css";
@@ -90,7 +90,7 @@ export default function PortfolioSlider() {
           modules={[EffectCoverflow, Pagination]}
           className="swiper-container"
         >
-          {PortfolioItems.map((item) => (
+          {PortfolioItems.map((item: PortfolioItemType) => (
             <SwiperSlide
               style={{ width: "fit-content" }}
               className="swiper-slide"

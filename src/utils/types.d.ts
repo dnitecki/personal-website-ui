@@ -8,6 +8,18 @@ export type SpeedbumpProps = {
   url: string;
   appName: string;
 };
+export type PortfolioItemType = {
+  url: string;
+  appName: string;
+  icon: {
+    src: any;
+    className: string;
+  };
+  coverImage: {
+    src: any;
+    className: string;
+  };
+};
 export type Skills = {
   text: string;
 };
