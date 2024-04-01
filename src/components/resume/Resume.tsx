@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./Resume.scss";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import StantecLogo from "../../assets/StantecLogoColor.png";
-import ChaseLogo from "../../assets/ChaseLogo.png";
 import Certs from "../certs/Certs";
+import { MEDIA_FILES } from "../../utils/constants";
 
 export default function Resume() {
   const [jpmcClicked, setJpmcClicked] = useState(false);
@@ -46,7 +45,7 @@ export default function Resume() {
               <div className="resume-logo-container">
                 <img
                   className="resume-logo"
-                  src={ChaseLogo}
+                  src={MEDIA_FILES.chaseLogo}
                   alt="stantec logo"
                 />
               </div>
@@ -86,7 +85,7 @@ export default function Resume() {
               <div className="resume-logo-container">
                 <img
                   className="resume-logo"
-                  src={StantecLogo}
+                  src={MEDIA_FILES.stantecLogoColor}
                   alt="stantec logo"
                 />
               </div>

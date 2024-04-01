@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -7,15 +7,11 @@ import ShareIcon from "@mui/icons-material/Share";
 import LinkIcon from "@mui/icons-material/Link";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import IosShareIcon from "@mui/icons-material/IosShare";
-import profile from "../../assets/MyMemoji.png";
-import logo from "../../assets/MyLogo.png";
 import Skills from "../skills/Skills";
-import CanvasAnimation from "../grass/Grass";
-import { ToggleContext } from "../../context/toggleContext";
+import { MEDIA_FILES } from "../../utils/constants";
 
 export default function Header() {
   const [moreClicked, setMoreClicked] = useState(false);
-  const { toggle } = useContext(ToggleContext);
 
   const shareData = {
     text: "Thanks for sharing!",
@@ -52,12 +48,16 @@ export default function Header() {
         <div className="profile-image">
           <div className="front">
             <div className="headshot-container">
-              <img className="headshot" src={profile} alt="headshot" />
+              <img
+                className="headshot"
+                src={MEDIA_FILES.dnMemoji}
+                alt="headshot"
+              />
             </div>
           </div>
           <div className="back">
             <div className="logo-background">
-              <img className="dn-logo" src={logo} alt="logo" />
+              <img className="dn-logo" src={MEDIA_FILES.dnIcon} alt="logo" />
             </div>
           </div>
         </div>

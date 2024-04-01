@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./Certs.scss";
-import cloudPractitioner from "../../assets/AWSCP.png";
-import ibmCert from "../../assets/IBMPC.png";
-import ibmPython from "../../assets/IBMPY.png";
-import associateDeveloper from "../../assets/AWSDA.png";
+import { MEDIA_FILES } from "../../utils/constants";
 
 export default function Certs() {
   const [cert1Clicked, setCert1Clicked] = useState(false);
@@ -36,7 +33,7 @@ export default function Certs() {
         <div className="cert-back">
           <img
             className="cert-icon"
-            src={associateDeveloper}
+            src={MEDIA_FILES.awsDevAssoc}
             alt="AWS Developer Associate"
           />
         </div>
@@ -51,7 +48,7 @@ export default function Certs() {
         <div className="cert-back">
           <img
             className="cert-icon"
-            src={cloudPractitioner}
+            src={MEDIA_FILES.awsCloudPrac}
             alt="AWS Cloud Practitioner"
           />
         </div>
@@ -66,7 +63,7 @@ export default function Certs() {
         <div className="cert-back">
           <img
             className="cert-icon"
-            src={ibmCert}
+            src={MEDIA_FILES.ibmDataScience}
             alt="IBM Data Science Professional"
           />
         </div>
@@ -79,7 +76,11 @@ export default function Certs() {
           {cert4Clicked && <h2>Add Info</h2>}
         </div>
         <div className="cert-back">
-          <img className="cert-icon" src={ibmPython} alt="IBM Python" />
+          <img
+            className="cert-icon"
+            src={MEDIA_FILES.ibmPythonProject}
+            alt="IBM Python"
+          />
         </div>
       </div>
     </div>

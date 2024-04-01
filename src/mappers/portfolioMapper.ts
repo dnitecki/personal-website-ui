@@ -1,46 +1,41 @@
-import { finfetch, insurance, photos } from "../utils/constants";
-import finfetchMockup from "../assets/FinfetchMockup.png";
-import finfetchIcon from "../assets/FinFetch-icon.png";
-import insuranceMockup from "../assets/InsuranceMockup.png";
-import insuranceIcon from "../assets/onestop-icon.png";
-import photoIcon from "../assets/MyLogoCircle.png";
+import { FINFETCH, INSURANCE, MEDIA_FILES, PHOTOS } from "../utils/constants";
 import { PortfolioItemType } from "../utils/types";
 
 export const PortfolioItems: PortfolioItemType[] = [
   {
     icon: {
-      src: finfetchIcon,
+      src: MEDIA_FILES.finfetchIcon,
       className: "finfetch-icon",
     },
     coverImage: {
-      src: finfetchMockup,
+      src: MEDIA_FILES.finfetchMockup,
       className: "finfetch",
     },
-    url: finfetch.url,
-    appName: finfetch.appName,
+    url: FINFETCH.url,
+    appName: FINFETCH.appName,
   },
   {
     icon: {
-      src: photoIcon,
+      src: MEDIA_FILES.dnLogo,
       className: "finfetch-icon",
     },
     coverImage: {
-      src: photoIcon,
+      src: MEDIA_FILES.dnMemoji,
       className: "finfetch",
     },
-    url: photos.url,
-    appName: photos.appName,
+    url: PHOTOS.url,
+    appName: PHOTOS.appName,
   },
   {
     icon: {
-      src: insuranceIcon,
+      src: MEDIA_FILES.oneStopIcon,
       className: "insurance-icon",
     },
     coverImage: {
-      src: insuranceMockup,
+      src: MEDIA_FILES.oneStopMockup,
       className: "insurance",
     },
-    url: insurance.url,
-    appName: insurance.appName,
+    url: INSURANCE.url,
+    appName: INSURANCE.appName,
   },
 ];

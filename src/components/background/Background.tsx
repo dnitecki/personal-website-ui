@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./Background.scss";
-import Clouds from "../clouds/Clouds";
 
 export default function Background() {
   useEffect(() => {
@@ -23,7 +22,6 @@ export default function Background() {
 
   return (
     <>
-      {/* <Clouds /> remove but add in when stutter fixed */}
       <div className="stars-container">
         <div className="stars" id="stars" />
       </div>
