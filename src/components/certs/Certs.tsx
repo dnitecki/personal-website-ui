@@ -10,14 +10,26 @@ export default function Certs() {
 
   const handleCert1Click = () => {
     setCert1Clicked(!cert1Clicked);
+    setCert2Clicked(false);
+    setCert3Clicked(false);
+    setCert4Clicked(false);
   };
   const handleCert2Click = () => {
+    setCert1Clicked(false);
     setCert2Clicked(!cert2Clicked);
+    setCert3Clicked(false);
+    setCert4Clicked(false);
   };
   const handleCert3Click = () => {
+    setCert1Clicked(false);
+    setCert2Clicked(false);
     setCert3Clicked(!cert3Clicked);
+    setCert4Clicked(false);
   };
   const handleCert4Click = () => {
+    setCert1Clicked(false);
+    setCert2Clicked(false);
+    setCert3Clicked(false);
     setCert4Clicked(!cert4Clicked);
   };
 

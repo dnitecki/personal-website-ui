@@ -10,9 +10,11 @@ export default function Resume() {
 
   const handleJpmcClick = () => {
     setJpmcClicked(!jpmcClicked);
+    setStnClicked(false);
   };
   const handleStnClick = () => {
     setStnClicked(!stnClicked);
+    setJpmcClicked(false);
   };
 
   return (
