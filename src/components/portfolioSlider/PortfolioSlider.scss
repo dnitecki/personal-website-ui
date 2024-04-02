@@ -17,8 +17,8 @@
 }
 .portfolio-card {
   display: flex;
-  height: 20rem;
-  width: 15rem;
+  height: 25rem;
+  width: 16rem;
   flex-direction: column;
 }
 .portfolio-image-container {
@@ -43,8 +43,11 @@
   color: var(--active-color);
   background-color: var(--tertiary);
   overflow: hidden;
-  h3 {
-    margin: 0.75rem;
+  text-align: center;
+  h2 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 22px;
   }
 }
 .finfetch-icon {
@@ -75,10 +78,10 @@
   height: auto;
 }
 .insurance {
-  bottom: 60px;
-  left: 10px;
+  top: 120px;
+  left: 20px;
   width: 100%;
-  transform: scale(2.2);
+  transform: scale(2.3);
   height: auto;
 }
 .photo-mock {

@@ -5,7 +5,6 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 import { EMPTY_STRING } from "../../utils/constants";
 import { PortfolioItemType, SpeedbumpProps } from "../../utils/types";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -78,6 +77,7 @@ export default function PortfolioSlider() {
           }}
           slidesOffsetBefore={24}
           spaceBetween={24}
+          slidesOffsetAfter={24}
           slideToClickedSlide={true}
           updateOnWindowResize={true}
           preventClicks={false}
@@ -109,7 +109,7 @@ export default function PortfolioSlider() {
                       alt="finfetch"
                     />
                     <div className="portfolio-title">
-                      <h3>{item.appName}</h3>
+                      <h2>{item.appName}</h2>
                     </div>
                   </div>
                 </div>
