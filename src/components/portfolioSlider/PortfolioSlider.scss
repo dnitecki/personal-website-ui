@@ -131,18 +131,38 @@
   -webkit-animation: fadeIn 200ms ease-in;
 }
 .speedbump-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 1rem;
   align-items: center;
   height: fit-content;
-  width: fit-content;
+  width: 20rem;
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow);
   background-color: var(--primary);
   padding: 1rem 2rem 1rem 2rem;
   color: var(--white);
+}
+.speedBump-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: red;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .speedbump-icon {
   display: flex;

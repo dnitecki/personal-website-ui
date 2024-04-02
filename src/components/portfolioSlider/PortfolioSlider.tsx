@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { PortfolioItems } from "../../mappers/portfolioMapper";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function PortfolioSlider() {
   const [url, setUrl] = useState(EMPTY_STRING);
@@ -38,6 +39,11 @@ export default function PortfolioSlider() {
     return (
       <div className="speedbump-bg">
         <div className="speedbump-container">
+          <div className="speedBump-close">
+            <button onClick={handleSpeedbumpClose}>
+              <CloseIcon fontSize="inherit" />
+            </button>
+          </div>
           <div className="speedbump-text">
             <h3>
               Navigate to&nbsp;
