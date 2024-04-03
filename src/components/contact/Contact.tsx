@@ -97,20 +97,18 @@ export default function Contact() {
               type="email"
               name="email"
               id="email"
-              placeholder="john.doe@gmail.com"
               className="form-input"
               value={formData.email}
               onChange={handleChange}
               required
             />
             <label htmlFor="message" className="form-label">
-              Message
+              How can I help?
             </label>
             <textarea
               rows={5}
               name="message"
               id="message"
-              placeholder="How can I help?"
               className="form-input"
               value={formData.message}
               onChange={handleChange}

@@ -38,16 +38,18 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
   justify-content: center;
   align-items: center;
+  height: 6rem;
   color: var(--active-color);
   background-color: var(--tertiary);
   overflow: hidden;
   text-align: center;
   h2 {
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
-    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 .finfetch-icon {
@@ -78,11 +80,11 @@
   height: auto;
 }
 .insurance {
-  top: 120px;
-  left: 20px;
+  top: 40px;
   width: 100%;
-  transform: scale(2.3);
+  transform: scale(2);
   height: auto;
+  opacity: 0.8;
 }
 .photo-mock {
   display: flex;
