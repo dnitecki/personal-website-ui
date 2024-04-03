@@ -23,6 +23,9 @@ export default function Background() {
   return (
     <>
       <div className="stars-container">
+        <div className="shooting-stars">
+          <span />
+        </div>
         <div className="stars" id="stars" />
       </div>
     </>
