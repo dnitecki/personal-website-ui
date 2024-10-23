@@ -45,7 +45,7 @@
     "compression-webpack-plugin": "^11.1.0",
     "css-loader": "^7.1.0",
     "html-webpack-plugin": "^5.6.0",
-    "sass": "^1.75.0",
+    "sass-embedded": "^1.70.0",
     "sass-loader": "^14.2.1",
     "style-loader": "^4.0.0",
     "typescript": "^5.4.4",
