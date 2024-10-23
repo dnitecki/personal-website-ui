@@ -17,12 +17,7 @@ function App() {
       {showStartup ? (
         <StartupAnimation />
       ) : (
-        <div
-          id="app-container"
-          className={
-            showStartup ? "app-container no-scroll" : "app-container background"
-          }
-        >
+        <div id="app-container" className="app-container">
           <MainPage />
         </div>
       )}

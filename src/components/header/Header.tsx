@@ -44,12 +44,6 @@ export default function Header() {
 
   return (
     <>
-      {/* <div className="bubble">
-        <div className="text-bubble">Dommmmmmm</div>
-        <div className="bubble-3" />
-        <div className="bubble-2" />
-        <div className="bubble-1" />
-      </div> */}
       <div className="header shadow">
         <div className="profile-image">
           <div className="front">

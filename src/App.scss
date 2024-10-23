@@ -86,6 +86,7 @@ html:focus-within {
   flex-direction: column;
   height: 100%;
   width: 100%;
+  background: linear-gradient(-45deg, #342b77 20%, #110e27 60%);
 }
 .glass {
   border-radius: var(--borderRadius);
@@ -95,23 +96,18 @@ html:focus-within {
   box-shadow: var(--shadow);
   position: relative;
 }
-.background {
-  background: linear-gradient(-45deg, #342b77 20%, #110e27 60%);
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
-
-.no-scroll {
-  overflow: hidden;
+p {
+  font-size: 18px;
 }
 h1 {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 35px;
 }
 h2 {
   font-weight: 500;
 }
 h3 {
+  font-size: 20px;
   font-weight: 400;
 }
 h4 {

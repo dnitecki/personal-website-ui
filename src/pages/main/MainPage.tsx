@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./MainPage.scss";
 import { motion } from "framer-motion";
 import Navigation from "../../components/navigation/Navigation";
-import ModeToggle from "../../components/modeToggle/ModeToggle";
 import { MainPageItems } from "../../mappers/mainPageMapper";
 import { MainPageType } from "../../utils/types";
 import { ToggleContext } from "../../context/toggleContext";
@@ -20,7 +19,7 @@ export default function MainPage() {
               className={section.className}
               initial={{ translateY: 500 }}
               animate={{ translateY: 0 }}
-              transition={{ duration: 1, delay: 3.5 + index * 0.15 }}
+              transition={{ duration: 1, delay: index * 0.15 }}
             >
               {section.headerText && (
                 <div className="section-name">

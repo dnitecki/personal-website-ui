@@ -77,13 +77,12 @@
 }
 .header-text {
   display: flex;
-  height: 100%;
+  height: fit-content;
   width: 100%;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   padding-top: 4rem;
-  line-height: 0%;
 }
 .front,
 .back {
@@ -197,58 +196,6 @@
   text-decoration: none;
   p {
     font-size: 12px;
-  }
-}
-.bubble {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  row-gap: 0.4rem;
-  margin-bottom: 4rem;
-  width: 50%;
-  align-items: center;
-  opacity: 0.7;
-  transition: all ease-in-out;
-  .text-bubble {
-    display: flex;
-    position: absolute;
-    bottom: 50px;
-    border-radius: 4rem;
-    background: var(--white);
-    color: var(--black);
-    padding: 1rem;
-    height: fit-content;
-    min-width: 10rem;
-  }
-  .bubble-1 {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    right: 60px;
-    border-radius: 50%;
-    background: var(--white);
-    height: 0.8rem;
-    width: 0.8rem;
-  }
-  .bubble-2 {
-    display: flex;
-    position: absolute;
-    bottom: 15px;
-    right: 40px;
-    border-radius: 50%;
-    background: var(--white);
-    height: 1.3rem;
-    width: 1.3rem;
-  }
-  .bubble-3 {
-    display: flex;
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-    border-radius: 50%;
-    background: var(--white);
-    height: 1.7rem;
-    width: 1.7rem;
   }
 }
 
