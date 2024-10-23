@@ -8,66 +8,6 @@
   --iconSize: 30px;
   --navIconSize: 25px;
   --iconColor: rgb(255, 255, 255);
-
-  // glass card
-  --glassBgColor: rgba(255, 255, 255, 0);
-
-  // other
-  --doc-height: 100%;
-  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  --topBarHeight: 5rem;
-  --hoverAnimation: all 175ms ease-in-out;
-  --buttonPadding: 0.3rem 1.2rem 0.3rem 1.2rem;
-  --borderRadius: 16px;
-  --border: 2px solid var(--borderCard);
-}
-::-webkit-scrollbar {
-  height: 4px;
-  width: 4px; /* width of the entire scrollbar */
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-  /* color of the tracking area */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--white); /* color of the scroll thumb */
-  border-radius: 2px;
-}
-* {
-  box-sizing: border-box;
-  outline: none;
-}
-html,
-body {
-  --text-color: #333333;
-  --background-color: #000000;
-  --active-color: #ffffff;
-  --primary: #28979f;
-  --secondary: #28979f;
-  --tertiary: #4eb26a;
-  --button-color: #ffffff;
-  --iconColor: #ffffff;
-  --menu-icon-color: #333333;
-  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  --mode-opacity: 0.6;
-  --card-color: rgba(221, 221, 221, 0.7);
-  --company-bg: brightness(0) invert(1);
-  --swiper-pagination-color: var(--secondary);
-  --linear-gradient: var(--white);
-  --input-bg: rgba(0, 0, 0, 0.05);
-  --color-env: #28979f;
-  --color-env2: #26898e;
-  --color-flap: #13474b;
-  --color-bg: #35c5cf;
-  --headshot-bg: linear-gradient(var(--color-bg), var(--color-env2));
-  margin: 0;
-  padding: 0;
-  background-color: var(--background-color) !important;
-  padding: 0;
-}
-body.dark {
   --text-color: #ffffff;
   --background-color: #000000;
   --active-color: #ffffff;
@@ -94,6 +34,42 @@ body.dark {
   padding: 0;
   background-color: var(--background-color) !important;
   padding: 0;
+  // glass card
+  --glassBgColor: rgba(255, 255, 255, 0);
+
+  // other
+  --doc-height: 100%;
+  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --topBarHeight: 5rem;
+  --hoverAnimation: all 175ms ease-in-out;
+  --buttonPadding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  --borderRadius: 16px;
+  --border: 2px solid var(--borderCard);
+}
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--trackColor); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+html,
+body {
+  overflow: visible;
+  min-height: 100%;
+  width: 100%;
+}
+* {
+  font-family: "Poppins";
+  box-sizing: border-box;
+  margin: 0;
 }
 
 html:focus-within {
@@ -101,33 +77,17 @@ html:focus-within {
 }
 .app {
   display: flex;
-  height: 100svh;
+  height: 100%;
   width: 100%;
-  overflow-y: visible;
-  overflow-x: scroll;
-  padding: 0;
   color: var(--text-color);
 }
 .app-container {
   display: flex;
-  position: absolute;
+  flex-direction: column;
   height: 100%;
   width: 100%;
-  z-index: 1000;
-}
-.bg-wrap {
-  height: 100lvh;
-  width: 100%;
-  position: relative;
-  overflow-x: hidden;
 }
 .glass {
-  border-radius: var(--borderRadius);
-  background: var(--card-color);
-  box-shadow: var(--shadow);
-  position: relative;
-}
-body.dark .glass {
   border-radius: var(--borderRadius);
   background: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(10px);
@@ -135,25 +95,11 @@ body.dark .glass {
   box-shadow: var(--shadow);
   position: relative;
 }
-body.dark .background {
+.background {
   background: linear-gradient(-45deg, #342b77 20%, #110e27 60%);
   display: flex;
-  height: 100lvh;
+  height: 100%;
   width: 100%;
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  position: fixed;
-  z-index: 0;
-}
-.background {
-  background: linear-gradient(-45deg, #8399a2 50%, #c9c9c9 90%);
-  display: flex;
-  height: 100lvh;
-  width: 100vw;
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  position: fixed;
-  z-index: 0;
 }
 
 .no-scroll {

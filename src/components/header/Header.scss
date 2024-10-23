@@ -1,31 +1,8 @@
-.header-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  height: fit-content;
-  width: 100%;
-  z-index: 1000;
-  padding: 2rem 0 0 0;
-  border-radius: var(--borderRadius);
-  background: var(--card-color);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  -webkit-mask: radial-gradient(
-      11rem 11rem at 50% 50%,
-      transparent 50.05%,
-      white 49.9%
-    )
-    bottom/ 100% 200%;
-  mask: radial-gradient(11rem 11rem at 50% 50%, transparent 50.05%, white 49.9%)
-    bottom/ 100% 200%;
-}
-
 .shadow {
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow);
 }
-body.dark .header-container {
+.header-container {
   display: flex;
   flex-direction: column;
   justify-content: center;

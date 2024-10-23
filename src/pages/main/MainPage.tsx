@@ -13,7 +13,6 @@ export default function MainPage() {
     <>
       <ToggleContext.Provider value={{ toggle, setToggle }}>
         <div id="main-page-content" className="main-page-content">
-          <ModeToggle />
           {MainPageItems.map((section: MainPageType, index: number) => (
             <motion.div
               key={index}
