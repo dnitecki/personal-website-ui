@@ -1,77 +1,3 @@
-:root {
-  // colors
-  --white: #ffffff;
-  --black: #000000;
-  --bgColor: rgba(0, 0, 0, 0.5);
-  --trackColor: #e7e7e7;
-  --lightGrey: #c8c8c8;
-  --iconSize: 30px;
-  --navIconSize: 25px;
-  --iconColor: rgb(255, 255, 255);
-  --text-color: #ffffff;
-  --background-color: #000000;
-  --active-color: #ffffff;
-  --primary: #1f1a47;
-  --secondary: #7a1e86;
-  --tertiary: #4c1c66;
-  --button-color: var(--secondary);
-  --iconColor: #ffffff;
-  --menu-icon-color: #ffffff;
-  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  --mode-opacity: 0.1;
-  --company-bg: brightness(0) invert(1);
-  --swiper-pagination-color: var(--secondary);
-  --swiper-pagination-bullet-inactive-color: var(--white);
-  --swiper-pagination-bullet-inactive-opacity: 0.5;
-  --linear-gradient: linear-gradient(var(--primary) 10%, var(--text-color) 40%);
-  --input-bg: rgba(255, 255, 255, 0.05);
-  --color-env: #7a1e86;
-  --color-env2: #81208e;
-  --color-flap: #4c1c66;
-  --color-bg: #bd31d0;
-  --headshot-bg: linear-gradient(var(--tertiary), var(--primary));
-  margin: 0;
-  padding: 0;
-  background-color: var(--background-color) !important;
-  padding: 0;
-  // glass card
-  --glassBgColor: rgba(255, 255, 255, 0);
-
-  // other
-  --doc-height: 100%;
-  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  --topBarHeight: 5rem;
-  --hoverAnimation: all 175ms ease-in-out;
-  --buttonPadding: 0.3rem 1.2rem 0.3rem 1.2rem;
-  --borderRadius: 16px;
-  --border: 2px solid var(--borderCard);
-}
-::-webkit-scrollbar {
-  height: 8px;
-  width: 8px; /* width of the entire scrollbar */
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-  /* color of the tracking area */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--trackColor); /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
-}
-html,
-body {
-  overflow: visible;
-  min-height: 100%;
-  width: 100%;
-}
-* {
-  font-family: "Poppins";
-  box-sizing: border-box;
-  margin: 0;
-}
-
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -86,7 +12,7 @@ html:focus-within {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background: linear-gradient(-45deg, #342b77 20%, #110e27 60%);
+  background: linear-gradient(-45deg, #000000 20%, #110e27 60%);
 }
 .glass {
   border-radius: var(--borderRadius);

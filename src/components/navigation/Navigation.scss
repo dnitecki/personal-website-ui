@@ -26,8 +26,8 @@
   justify-content: center;
   padding: 1rem;
   align-items: center;
-  font-size: var(--iconSize);
-  color: var(--iconColor);
+  font-size: var(--icon-size);
+  color: var(--icon-color);
   border-top-right-radius: var(--borderRadius);
   border-bottom-right-radius: var(--borderRadius);
   background: var(--tertiary);
@@ -53,14 +53,14 @@
 }
 .nav-btn {
   display: flex;
-  color: var(--iconColor);
+  color: var(--icon-color);
   height: 3rem;
   width: 3rem;
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0);
   border-radius: var(--borderRadius);
-  font-size: var(--navIconSize);
+  font-size: var(--nav-icon-size);
   transition: all 0.1s ease-in-out, border-radius, height, width;
   cursor: pointer;
   a {
@@ -78,7 +78,7 @@
   align-items: center;
   background: var(--active-color);
   border-radius: var(--borderRadius);
-  font-size: var(--navIconSize);
+  font-size: var(--nav-icon-size);
   transition: all 0.1s ease-in-out, border-radius, height, width;
 }
 

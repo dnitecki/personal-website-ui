@@ -63,11 +63,11 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  font-size: var(--iconSize);
+  font-size: var(--icon-size);
   padding: 0 4rem 0 4rem;
   border-radius: var(--borderRadius);
   background-color: var(--primary);
-  color: var(--iconColor);
+  color: var(--icon-color);
   a,
   button {
     display: flex;
@@ -141,7 +141,7 @@
   column-gap: 2rem;
   align-items: baseline;
   border-radius: var(--borderRadius);
-  color: var(--iconColor);
+  color: var(--icon-color);
   background: var(--tertiary);
   transition: all 0.3s ease-in-out;
   padding: 1rem 3rem 0.7rem 3rem;
@@ -184,7 +184,7 @@
   position: absolute;
   top: 20px;
   right: 30px;
-  font-size: var(--iconSize);
+  font-size: var(--icon-size);
 }
 .share-icon-btn {
   display: flex;
@@ -192,7 +192,7 @@
   align-items: center;
   flex-direction: column;
   line-height: 0%;
-  font-size: var(--navIconSize);
+  font-size: var(--nav-icon-size);
   text-decoration: none;
   p {
     font-size: 12px;

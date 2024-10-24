@@ -125,7 +125,7 @@
   transform: translate3d(0, 0, 0);
   background-size: cover;
   overflow: hidden;
-  background-color: var(--bgColor);
+  background-color: var(--background-color);
   z-index: 10000;
   justify-content: center;
   align-items: center;
@@ -168,7 +168,7 @@
 }
 .speedbump-icon {
   display: flex;
-  font-size: var(--navIconSize);
+  font-size: var(--nav-icon-size);
 }
 .speedbump-text {
   display: flex;
