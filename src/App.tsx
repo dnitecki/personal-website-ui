@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.scss";
-import MainPage from "./pages/main/MainPage";
+import MainPage from "./pages/mainPage/MainPage";
 import StartupAnimation from "./components/startupAnimation/StartupAnimation";
 
 function App() {
