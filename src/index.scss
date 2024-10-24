@@ -2,10 +2,11 @@
   // color variables
   --white: #ffffff;
   --black: #000000;
-  --trackColor: #e7e7e7;
+  --track-color: #e7e7e7;
   --icon-color: rgb(255, 255, 255);
   --text-color: #ffffff;
   --background-color: #000000;
+  --focus-background-color: rgba(0, 0, 0, 0.5);
   --primary: #1f1a47;
   --secondary: #7a1e86;
   --tertiary: #4c1c66;
@@ -37,19 +38,24 @@
   --borderRadius: 16px;
   --border: 2px solid var(--borderCard);
 }
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+// scrollbar styles
 ::-webkit-scrollbar {
   height: 8px;
-  width: 8px; /* width of the entire scrollbar */
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
   background-color: transparent;
-  /* color of the tracking area */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--trackColor); /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
+  background-color: var(--track-color);
+  border-radius: 20px;
 }
 html,
 body {

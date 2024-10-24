@@ -125,7 +125,7 @@
   transform: translate3d(0, 0, 0);
   background-size: cover;
   overflow: hidden;
-  background-color: var(--background-color);
+  background-color: var(--focus-background-color);
   z-index: 10000;
   justify-content: center;
   align-items: center;
@@ -200,9 +200,6 @@
   border-radius: var(--borderRadius);
   background-color: var(--white);
   color: var(--primary);
-  h3 {
-    line-height: 0%;
-  }
 }
 .speedbump-close {
   display: flex;
@@ -212,7 +209,4 @@
   justify-content: center;
   align-items: center;
   border-radius: var(--borderRadius);
-  h3 {
-    line-height: 0%;
-  }
 }

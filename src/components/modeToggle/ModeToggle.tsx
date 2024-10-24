@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./ModeToggle.scss";
 import { ToggleContext } from "../../context/toggleContext";
 import NightsStayIcon from "@mui/icons-material/NightsStay";
