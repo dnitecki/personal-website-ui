@@ -20,7 +20,7 @@
 }
 .resume-card {
   overflow: hidden;
-  border-radius: var(--borderRadius);
+  border-radius: var(--border-radius);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -54,12 +54,12 @@
 .resume-closed {
   top: 0;
   left: 0;
-  border-radius: var(--borderRadius);
+  border-radius: var(--border-radius);
 }
 .resume-open {
   top: 0;
   left: 100%;
-  border-radius: var(--borderRadius);
+  border-radius: var(--border-radius);
 }
 .resume-card-bg {
   height: 100%;

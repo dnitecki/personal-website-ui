@@ -43,8 +43,11 @@ export default function Header() {
   };
 
   return (
-    <>
-      <div className="header shadow">
+    <div>
+      <div>
+        <h1>About Me</h1>
+      </div>
+      <div className="header-container">
         <div className="profile-image">
           <div className="front">
             <div className="headshot-container">
@@ -61,67 +64,65 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className="header-container">
-          <div className="header-content">
-            <div className="header-text">
-              <h2>Dominick Nitecki</h2>
-              <h3>Software Engineer</h3>
-              <Skills />
-            </div>
+        <div className="header-content">
+          <div className="header-text">
+            <h2>Dominick Nitecki</h2>
+            <h3>Software Engineer</h3>
+            <Skills />
+          </div>
 
-            <div className="header-links">
-              <a
-                href="https://www.linkedin.com/in/dnitecki/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <LinkedInIcon fontSize="inherit" />
-              </a>
-              <a
-                href="https://www.instagram.com/dominick_nitecki/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <InstagramIcon fontSize="inherit" />
-              </a>
-              <a
-                href="https://github.com/dnitecki"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GitHubIcon fontSize="inherit" />
-              </a>
-              <button onClick={handleMoreClick}>
-                <ShareIcon fontSize="inherit" />
-              </button>
-            </div>
+          <div className="header-links">
+            <a
+              href="https://www.linkedin.com/in/dnitecki/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedInIcon fontSize="inherit" />
+            </a>
+            <a
+              href="https://www.instagram.com/dominick_nitecki/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <InstagramIcon fontSize="inherit" />
+            </a>
+            <a
+              href="https://github.com/dnitecki"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GitHubIcon fontSize="inherit" />
+            </a>
+            <button onClick={handleMoreClick}>
+              <ShareIcon fontSize="inherit" />
+            </button>
           </div>
         </div>
-        <div
-          className={`modal-bg ${moreClicked ? "bg-open" : "bg-close"}`}
-          onClick={handleModalClose}
-        />
-        <div
-          id="more-modal"
-          className={`more-modal ${moreClicked ? "modal-open" : "modal-close"}`}
-        >
-          <button className="share-icon-btn" onClick={copyText}>
-            <LinkIcon fontSize="inherit" className="share-icon" />
-            <p>Copy Link</p>
-          </button>
-          <a
-            className="share-icon-btn"
-            href="sms://?&body=www.dominicknitecki.com"
-          >
-            <ChatBubbleIcon fontSize="inherit" className="share-icon" />
-            <p>Message</p>
-          </a>
-          <button className="share-icon-btn" onClick={handleShare}>
-            <IosShareIcon fontSize="inherit" className="share-icon" />
-            <p>Share to...</p>
-          </button>
-        </div>
       </div>
-    </>
+      <div
+        className={`modal-bg ${moreClicked ? "bg-open" : "bg-close"}`}
+        onClick={handleModalClose}
+      />
+      <div
+        id="more-modal"
+        className={`more-modal ${moreClicked ? "modal-open" : "modal-close"}`}
+      >
+        <button className="share-icon-btn" onClick={copyText}>
+          <LinkIcon fontSize="inherit" className="share-icon" />
+          <p>Copy Link</p>
+        </button>
+        <a
+          className="share-icon-btn"
+          href="sms://?&body=www.dominicknitecki.com"
+        >
+          <ChatBubbleIcon fontSize="inherit" className="share-icon" />
+          <p>Message</p>
+        </a>
+        <button className="share-icon-btn" onClick={handleShare}>
+          <IosShareIcon fontSize="inherit" className="share-icon" />
+          <p>Share to...</p>
+        </button>
+      </div>
+    </div>
   );
 }

@@ -27,7 +27,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: var(--borderRadius);
+  border-radius: var(--border-radius);
 }
 .portfolio-image {
   display: flex;
@@ -141,7 +141,7 @@
   align-items: center;
   height: fit-content;
   width: 20rem;
-  border-radius: var(--borderRadius);
+  border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   background-color: var(--primary);
   padding: 1rem 2rem 1rem 2rem;
@@ -197,7 +197,7 @@
   padding: var(--buttonPadding);
   justify-content: center;
   align-items: center;
-  border-radius: var(--borderRadius);
+  border-radius: var(--border-radius);
   background-color: var(--white);
   color: var(--primary);
 }
@@ -208,5 +208,5 @@
   padding: var(--buttonPadding);
   justify-content: center;
   align-items: center;
-  border-radius: var(--borderRadius);
+  border-radius: var(--border-radius);
 }

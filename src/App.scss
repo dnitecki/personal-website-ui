@@ -3,16 +3,16 @@
   height: 100%;
   width: 100%;
   color: var(--text-color);
+  overflow-x: hidden;
 }
 .app-container {
   display: flex;
-  flex-direction: column;
   height: 100%;
   width: 100%;
-  background: linear-gradient(-45deg, #000000 20%, #110e27 60%);
+  background: var(--black);
 }
 .glass {
-  border-radius: var(--borderRadius);
+  border-radius: var(--border-radius);
   background: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -20,7 +20,7 @@
   position: relative;
 }
 p {
-  font-size: 18px;
+  font-size: 20px;
 }
 h1 {
   font-weight: 500;

@@ -1,92 +1,26 @@
 .navigation-container {
-  position: fixed;
   display: flex;
-  flex-direction: column;
-  z-index: 6000;
+  height: 100%;
   width: fit-content;
-  top: 20rem;
-  transform: translate(0%, -50%);
-  height: fit-content;
-  justify-content: center;
-  align-items: center;
-  border-top-right-radius: var(--borderRadius);
-  border-bottom-right-radius: var(--borderRadius);
-  background: var(--tertiary);
-  transition: all 0.3s ease-in-out;
-  box-shadow: var(--shadow);
-}
-.menu-btn {
-  position: fixed;
-  display: flex;
-  top: 2rem;
-  z-index: 6000;
-  left: 0;
-  width: 2rem;
-  height: 2rem;
-  justify-content: center;
-  padding: 1rem;
-  align-items: center;
-  font-size: var(--icon-size);
-  color: var(--icon-color);
-  border-top-right-radius: var(--borderRadius);
-  border-bottom-right-radius: var(--borderRadius);
-  background: var(--tertiary);
-  transition: opacity 0.3s ease-in-out;
-  box-shadow: var(--shadow);
-}
-.active-btn {
-  opacity: 1;
-  z-index: 3000;
-}
-.inactive-btn {
-  opacity: 0;
-  z-index: 1;
-}
-.bottomNav-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 1rem;
-  width: 100%;
-  align-items: center;
-  padding: 0.75rem 0.75rem 0.75rem 0.5rem;
-}
-.nav-btn {
-  display: flex;
-  color: var(--icon-color);
-  height: 3rem;
-  width: 3rem;
-  justify-content: center;
-  align-items: center;
-  background: rgba(255, 255, 255, 0);
-  border-radius: var(--borderRadius);
-  font-size: var(--nav-icon-size);
-  transition: all 0.1s ease-in-out, border-radius, height, width;
-  cursor: pointer;
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.nav-btn .active {
-  display: flex;
-  color: var(--primary);
-  height: 3rem;
-  width: 3rem;
-  justify-content: center;
-  align-items: center;
-  background: var(--active-color);
-  border-radius: var(--borderRadius);
-  font-size: var(--nav-icon-size);
-  transition: all 0.1s ease-in-out, border-radius, height, width;
-}
+  padding: 2rem 1rem;
 
-.nav-show {
-  left: 0;
-  opacity: 1;
-}
-.nav-hidden {
-  left: -20%;
-  opacity: 0;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    li {
+      writing-mode: vertical-lr;
+      text-orientation: mixed;
+      cursor: pointer;
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      padding: 0.5rem 0.2rem;
+      border: 2px solid transparent;
+      border-radius: var(--border-radius);
+      transition: all 0.2s ease-in-out;
+    }
+    li:hover {
+      border: 2px solid var(--white);
+    }
+  }
 }

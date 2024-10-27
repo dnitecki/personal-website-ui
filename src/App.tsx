@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import "./App.scss";
 import MainPage from "./pages/mainPage/MainPage";
 import StartupAnimation from "./components/startupAnimation/StartupAnimation";
+import Overview from "./pages/overview/Overview";
+import Navigation from "./components/navigation/Navigation";
 
 function App() {
-  const [showStartup, setShowStartup] = useState(true);
+  const [showStartup, setShowStartup] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,7 +20,8 @@ function App() {
         <StartupAnimation />
       ) : (
         <div id="app-container" className="app-container">
-          <MainPage />
+          <Navigation />
+          <Overview />
         </div>
       )}
     </div>
