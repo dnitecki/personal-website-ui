@@ -1,0 +1,23 @@
+.main-container {
+  display: flex;
+  height: 100%;
+  width: calc(100% - var(--navigation-width));
+  margin-left: var(--navigation-width);
+  flex-direction: column;
+  overflow-y: auto;
+  section {
+    height: 100vh;
+  }
+}
+
+.overview-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+}
+.overview-container > * {
+  width: calc(100% / 3);
+}

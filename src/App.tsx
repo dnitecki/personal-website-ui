@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.scss";
-import MainPage from "./pages/mainPage/MainPage";
 import StartupAnimation from "./components/startupAnimation/StartupAnimation";
-import Overview from "./pages/overview/Overview";
 import Navigation from "./components/navigation/Navigation";
+import Main from "./pages/main/Main";
 
 function App() {
   const [showStartup, setShowStartup] = useState(false);
@@ -21,7 +20,7 @@ function App() {
       ) : (
         <div id="app-container" className="app-container">
           <Navigation />
-          <Overview />
+          <Main />
         </div>
       )}
     </div>

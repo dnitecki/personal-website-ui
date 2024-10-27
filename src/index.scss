@@ -29,14 +29,11 @@
   --icon-size: 30px;
   --nav-icon-size: 25px;
   --mode-opacity: 0.1;
+  --navigation-width: 100px;
 
   // misc variables
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  --topBarHeight: 5rem;
-  --hoverAnimation: all 175ms ease-in-out;
-  --buttonPadding: 0.3rem 1.2rem 0.3rem 1.2rem;
   --border-radius: 16px;
-  --border: 2px solid var(--borderCard);
 }
 
 html:focus-within {

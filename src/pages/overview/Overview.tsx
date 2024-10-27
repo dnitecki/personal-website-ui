@@ -1,12 +1,6 @@
-import Header from "../../components/header/Header";
 import "./Overview.scss";
-
 const Overview = () => {
-  return (
-    <div className="overview-container">
-      <Header />
-    </div>
-  );
+  return <div>Overview</div>;
 };
 
 export default Overview;
