@@ -35,11 +35,7 @@ const Navigation = () => {
   return (
     <div className="navigation-container">
       <div className="navigation-logo">
-        <img
-          className=""
-          src={MEDIA_FILES.dnIcon}
-          alt="Dominick Nitecki Logo"
-        />
+        <img src={MEDIA_FILES.dnIcon} alt="Dominick Nitecki Logo" />
       </div>
       <ul>
         <li>
