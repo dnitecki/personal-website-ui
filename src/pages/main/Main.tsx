@@ -8,16 +8,16 @@ import "./Main.scss";
 const Main = () => {
   return (
     <div className="main-container">
-      <section>
+      <section id="overview">
         <Overview />
       </section>
-      <section>
+      <section id="resume">
         <Resume />
       </section>
-      <section>
+      <section id="portfolio">
         <Portfolio />
       </section>
-      <section>
+      <section id="contact">
         <Contact />
       </section>
     </div>
