@@ -1,4 +1,3 @@
-import Header from "../../components/header/Header";
 import Contact from "../contact/Contact";
 import Overview from "../overview/Overview";
 import Portfolio from "../portfolio/Portfolio";
