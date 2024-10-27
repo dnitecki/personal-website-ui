@@ -7,16 +7,16 @@ import "./Main.scss";
 const Main = () => {
   return (
     <div className="main-container">
-      <section id="overview">
+      <section section-id="overview" id="overview">
         <Overview />
       </section>
-      <section id="resume">
+      <section section-id="resume" id="resume">
         <Resume />
       </section>
-      <section id="portfolio">
+      <section section-id="portfolio" id="portfolio">
         <Portfolio />
       </section>
-      <section id="contact">
+      <section section-id="contact" id="contact">
         <Contact />
       </section>
     </div>
