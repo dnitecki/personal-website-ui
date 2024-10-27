@@ -1,7 +1,7 @@
 import "./Resume.scss";
 
 const Resume = () => {
-  return <div>Resume</div>;
+  return <div className="resume-container">Resume</div>;
 };
 
 export default Resume;

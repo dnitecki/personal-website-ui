@@ -1,23 +1,13 @@
 .main-container {
   display: flex;
-  height: 100%;
+  height: 100vh;
   width: calc(100% - var(--navigation-width));
   margin-left: var(--navigation-width);
   flex-direction: column;
-  overflow-y: auto;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
   section {
-    height: 100vh;
+    min-height: 100vh;
+    scroll-snap-align: start;
   }
-}
-
-.overview-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  gap: 1rem;
-  padding: 1rem;
-}
-.overview-container > * {
-  width: calc(100% / 3);
 }
