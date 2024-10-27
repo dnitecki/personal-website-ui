@@ -5,16 +5,24 @@ const Navigation = () => {
     <div className="navigation-container">
       <ul>
         <li>
-          <p>Overview</p>
+          <a href="#overview">
+            <p>Overview</p>
+          </a>
         </li>
         <li>
-          <p>Resume</p>
+          <a href="#resume">
+            <p>Resume</p>
+          </a>
         </li>
         <li>
-          <p>Portfolio</p>
+          <a href="#portfolio">
+            <p>Portfolio</p>
+          </a>
         </li>
         <li>
-          <p>Contact</p>
+          <a href="#contact">
+            <p>Contact</p>
+          </a>
         </li>
       </ul>
     </div>

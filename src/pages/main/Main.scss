@@ -6,6 +6,7 @@
   flex-direction: column;
   overflow: auto;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   section {
     min-height: 100vh;
     scroll-snap-align: start;

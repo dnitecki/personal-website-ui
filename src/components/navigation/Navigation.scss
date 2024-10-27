@@ -10,6 +10,10 @@
     flex-direction: column;
     gap: 2rem;
     li {
+      display: flex;
+      justify-content: center;
+    }
+    a {
       writing-mode: vertical-lr;
       text-orientation: mixed;
       cursor: pointer;
@@ -20,7 +24,10 @@
       border-radius: var(--border-radius);
       transition: all 0.2s ease-in-out;
     }
-    li:hover {
+    a:hover {
+      border: 2px solid var(--white);
+    }
+    a.active {
       border: 2px solid var(--white);
     }
   }
