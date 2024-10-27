@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Navigation.scss";
-import { EMPTY_STRING } from "../../utils/constants";
+import { EMPTY_STRING, MEDIA_FILES } from "../../utils/constants";
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -34,6 +34,13 @@ const Navigation = () => {
   }, []);
   return (
     <div className="navigation-container">
+      <div className="navigation-logo">
+        <img
+          className=""
+          src={MEDIA_FILES.dnIcon}
+          alt="Dominick Nitecki Logo"
+        />
+      </div>
       <ul>
         <li>
           <a
