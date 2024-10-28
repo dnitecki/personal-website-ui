@@ -52,7 +52,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--white);
-  border-radius: 20px;
+  border-radius: var(--border-radius);
 }
 html,
 body {
