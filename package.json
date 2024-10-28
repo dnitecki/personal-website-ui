@@ -23,7 +23,6 @@
     "react-lottie-player": "^1.5.5",
     "react-router": "^6.16.0",
     "react-router-dom": "^6.16.0",
-    "react-scroll": "^1.8.9",
     "react-scroll-parallax": "^3.4.4",
     "swiper": "11.0.3"
   },
