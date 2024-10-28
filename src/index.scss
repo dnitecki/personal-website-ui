@@ -42,8 +42,8 @@ html {
 
 // scrollbar styles
 ::-webkit-scrollbar {
-  height: 8px;
-  width: 8px;
+  height: 4px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -51,7 +51,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--track-color);
+  background-color: var(--white);
   border-radius: 20px;
 }
 html,
