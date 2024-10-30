@@ -5,7 +5,45 @@
   width: 100%;
   gap: 1rem;
   padding: 2rem;
+  justify-content: center;
+  align-items: center;
 }
-.overview-container > * {
-  width: calc(100% / 3);
+.overview-grid {
+  display: grid;
+  gap: 2rem;
+  height: 80%;
+  width: 100%;
+  grid-template-areas: "aboutMe portfolio portfolio" "aboutMe photo certs";
+  .aboutme-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    grid-area: aboutMe;
+  }
+  .portfolio-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    grid-area: portfolio;
+  }
+  .certs-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    grid-area: certs;
+  }
+  .photo-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    grid-area: photo;
+  }
 }
