@@ -4,16 +4,19 @@
   height: 100%;
   width: 100%;
   gap: 1rem;
-  padding: 2rem;
+  padding: 3rem;
   justify-content: center;
   align-items: center;
+  h1 {
+    width: 100%;
+  }
 }
 .overview-grid {
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
   height: 80%;
   width: 100%;
-  grid-template-areas: "aboutMe portfolio portfolio" "aboutMe photo certs";
+  grid-template-areas: "aboutMe aboutMe portfolio portfolio" "aboutMe aboutMe photo certs";
   .aboutme-container {
     display: flex;
     height: 100%;
