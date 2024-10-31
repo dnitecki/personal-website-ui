@@ -1,0 +1,29 @@
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  .timeline-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    padding: 0.3rem;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary);
+    min-height: 8rem;
+  }
+}

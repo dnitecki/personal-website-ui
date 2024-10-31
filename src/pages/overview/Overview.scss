@@ -22,7 +22,7 @@
     height: 100%;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--white);
+    background-color: var(--secondary);
     grid-area: aboutMe;
   }
   .portfolio-container {
@@ -30,7 +30,7 @@
     height: 100%;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--white);
+    background-color: var(--secondary);
     grid-area: portfolio;
   }
   .certs-container {
@@ -38,7 +38,7 @@
     height: 100%;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--white);
+    background-color: var(--secondary);
     grid-area: certs;
   }
   .photo-container {
@@ -46,7 +46,7 @@
     height: 100%;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--white);
+    background-color: var(--secondary);
     grid-area: photo;
   }
 }
