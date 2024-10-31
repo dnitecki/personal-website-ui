@@ -7,8 +7,8 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import JPMCIcon from "../../assets/jpmc-icon.png";
 import STNIcon from "../../assets/stantec-icon.png";
-import UKYIcon from "../../assets/kentucky-logo.webp";
-import OneStopIcon from "../../assets/one-stop-logo.png";
+import UKYIcon from "../../assets/uky-icon.png";
+import OneStopIcon from "../../assets/one-stop-icon.png";
 
 const CustomTimeline = () => {
   return (
@@ -25,13 +25,15 @@ const CustomTimeline = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <div className="content-container">Content</div>
+            <div className="content-container">
+              <div className="timeline-content">Content</div>
+            </div>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
           <TimelineSeparator>
             <TimelineConnector />
-            <TimelineDot sx={{ bgcolor: "white" }}>
+            <TimelineDot sx={{ bgcolor: "#0033a0" }}>
               <div className="timeline-icon">
                 <img src={UKYIcon} />
               </div>
@@ -39,7 +41,9 @@ const CustomTimeline = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <div className="content-container">Content</div>
+            <div className="content-container">
+              <div className="timeline-content">Content</div>
+            </div>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -53,7 +57,9 @@ const CustomTimeline = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <div className="content-container">Content</div>
+            <div className="content-container">
+              <div className="timeline-content">Content</div>
+            </div>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -67,7 +73,9 @@ const CustomTimeline = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <div className="content-container">Content</div>
+            <div className="content-container">
+              <div className="timeline-content">Content</div>
+            </div>
           </TimelineContent>
         </TimelineItem>
       </Timeline>
