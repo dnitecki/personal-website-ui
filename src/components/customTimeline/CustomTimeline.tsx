@@ -27,7 +27,22 @@ const CustomTimeline = () => {
           </TimelineSeparator>
           <TimelineContent>
             <div className="content-container">
-              <div className="timeline-content-card">Content</div>
+              <div className="timeline-card">
+                <div className="timeline-content">
+                  <div className="timeline-header">
+                    <h2>JPMorganChase</h2>
+                    <div className="timeline-chips">
+                      <div className="chip">Chip</div>
+                      <div className="chip">Chip</div>
+                      <div className="chip">Chip</div>
+                      <div className="chip">Chip</div>
+                      <div className="chip">Chip</div>
+                      <div className="chip">Chip</div>
+                    </div>
+                  </div>
+                  <div className="timeline-body">Body</div>
+                </div>
+              </div>
             </div>
           </TimelineContent>
         </TimelineItem>
@@ -43,7 +58,7 @@ const CustomTimeline = () => {
           </TimelineSeparator>
           <TimelineContent>
             <div className="content-container">
-              <div className="timeline-content-card">Content</div>
+              <div className="timeline-card">Content</div>
             </div>
           </TimelineContent>
         </TimelineItem>
@@ -59,7 +74,7 @@ const CustomTimeline = () => {
           </TimelineSeparator>
           <TimelineContent>
             <div className="content-container">
-              <div className="timeline-content-card">Content</div>
+              <div className="timeline-card">Content</div>
             </div>
           </TimelineContent>
         </TimelineItem>
@@ -75,7 +90,7 @@ const CustomTimeline = () => {
           </TimelineSeparator>
           <TimelineContent>
             <div className="content-container">
-              <div className="timeline-content-card">Content</div>
+              <div className="timeline-card">Content</div>
             </div>
           </TimelineContent>
         </TimelineItem>
