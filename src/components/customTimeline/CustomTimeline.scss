@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   height: 100%;
-  width: 80%;
+  width: 100%;
+  max-width: 70rem;
   position: relative;
   z-index: 1;
   .timeline-icon {
