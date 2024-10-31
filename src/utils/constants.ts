@@ -35,3 +35,12 @@ export const MEDIA_FILES = {
 
 export const EMPTY_STRING = "";
 export const ERROR_MESSAGE = new Map([[400, "Please complete the reCaptcha"]]);
+
+export const COLORS = {
+  PRIMARY: getComputedStyle(document.documentElement).getPropertyValue(
+    "--primary"
+  ),
+  SECONDARY: getComputedStyle(document.documentElement).getPropertyValue(
+    "--secondary"
+  ),
+};

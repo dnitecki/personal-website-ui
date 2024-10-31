@@ -9,6 +9,7 @@ import JPMCIcon from "../../assets/jpmc-icon.png";
 import STNIcon from "../../assets/stantec-icon.png";
 import UKYIcon from "../../assets/uky-icon.png";
 import OneStopIcon from "../../assets/one-stop-icon.png";
+import { COLORS } from "../../utils/constants";
 
 const CustomTimeline = () => {
   return (
@@ -17,7 +18,7 @@ const CustomTimeline = () => {
         <TimelineItem>
           <TimelineSeparator>
             <TimelineConnector />
-            <TimelineDot sx={{ bgcolor: "white" }}>
+            <TimelineDot sx={{ bgcolor: COLORS.SECONDARY }}>
               <div className="timeline-icon">
                 <img src={OneStopIcon} />
               </div>
@@ -26,14 +27,14 @@ const CustomTimeline = () => {
           </TimelineSeparator>
           <TimelineContent>
             <div className="content-container">
-              <div className="timeline-content">Content</div>
+              <div className="timeline-content-card">Content</div>
             </div>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
           <TimelineSeparator>
             <TimelineConnector />
-            <TimelineDot sx={{ bgcolor: "#0033a0" }}>
+            <TimelineDot sx={{ bgcolor: COLORS.SECONDARY }}>
               <div className="timeline-icon">
                 <img src={UKYIcon} />
               </div>
@@ -42,14 +43,14 @@ const CustomTimeline = () => {
           </TimelineSeparator>
           <TimelineContent>
             <div className="content-container">
-              <div className="timeline-content">Content</div>
+              <div className="timeline-content-card">Content</div>
             </div>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
           <TimelineSeparator>
             <TimelineConnector />
-            <TimelineDot sx={{ bgcolor: "white" }}>
+            <TimelineDot sx={{ bgcolor: COLORS.SECONDARY }}>
               <div className="timeline-icon">
                 <img src={STNIcon} />
               </div>
@@ -58,14 +59,14 @@ const CustomTimeline = () => {
           </TimelineSeparator>
           <TimelineContent>
             <div className="content-container">
-              <div className="timeline-content">Content</div>
+              <div className="timeline-content-card">Content</div>
             </div>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
           <TimelineSeparator>
             <TimelineConnector />
-            <TimelineDot sx={{ bgcolor: "white" }}>
+            <TimelineDot sx={{ bgcolor: COLORS.SECONDARY }}>
               <div className="timeline-icon">
                 <img src={JPMCIcon} />
               </div>
@@ -74,7 +75,7 @@ const CustomTimeline = () => {
           </TimelineSeparator>
           <TimelineContent>
             <div className="content-container">
-              <div className="timeline-content">Content</div>
+              <div className="timeline-content-card">Content</div>
             </div>
           </TimelineContent>
         </TimelineItem>
