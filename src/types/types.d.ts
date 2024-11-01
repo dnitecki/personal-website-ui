@@ -27,3 +27,12 @@ export type EmailJsError = {
   status: number;
   text: string;
 };
+
+export type TimelineItemType = {
+  icon: any;
+  companyName: string;
+  position: string;
+  timeFrame: string;
+  skills: Skills[];
+  bodyText: string;
+};
