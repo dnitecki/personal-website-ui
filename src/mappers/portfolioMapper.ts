@@ -1,5 +1,10 @@
-import { FINFETCH, INSURANCE, MEDIA_FILES, PHOTOS } from "../utils/constants";
-import { PortfolioItemType } from "../utils/types";
+import {
+  FINFETCH,
+  INSURANCE,
+  MEDIA_FILES,
+  PHOTOS,
+} from "../constants/constants";
+import { PortfolioItemType } from "../types/types";
 
 export const PortfolioItems: PortfolioItemType[] = [
   {

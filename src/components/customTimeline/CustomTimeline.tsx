@@ -9,7 +9,7 @@ import JPMCIcon from "../../assets/jpmc-icon.png";
 import STNIcon from "../../assets/stantec-icon.png";
 import UKYIcon from "../../assets/uky-icon.png";
 import OneStopIcon from "../../assets/one-stop-icon.png";
-import { COLORS } from "../../utils/constants";
+import { COLORS } from "../../constants/constants";
 
 const CustomTimeline = () => {
   return (

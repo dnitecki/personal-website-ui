@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Certs.scss";
-import { MEDIA_FILES } from "../../utils/constants";
+import { MEDIA_FILES } from "../../constants/constants";
 
 export default function Certs() {
   const [cert1Clicked, setCert1Clicked] = useState(false);

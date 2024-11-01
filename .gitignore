@@ -1,3 +1,3 @@
 build
 node_modules
-/src/utils/secrets.ts
+/src/secrets.ts

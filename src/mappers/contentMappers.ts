@@ -1,4 +1,4 @@
-import { Skills } from "../utils/types";
+import { Skills } from "../types/types";
 
 export const SkillItems: Skills[] = [
   {

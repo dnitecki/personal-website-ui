@@ -4,9 +4,9 @@ import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 import CheckIcon from "@mui/icons-material/Check";
 import SendIcon from "@mui/icons-material/Send";
-import { EMAILJS, reCAPTCHA_SECRET } from "../../utils/secrets";
-import { EMPTY_STRING, ERROR_MESSAGE } from "../../utils/constants";
-import { EmailJsError } from "../../utils/types";
+import { EMAILJS, reCAPTCHA_SECRET } from "../../secrets";
+import { EMPTY_STRING, ERROR_MESSAGE } from "../../constants/constants";
+import { EmailJsError } from "../../types/types";
 import Loader from "../loader/Loader";
 import Envelope from "../envelope/Envelope";
 
