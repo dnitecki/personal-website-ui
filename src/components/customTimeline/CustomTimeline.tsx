@@ -26,7 +26,7 @@ const CustomTimeline = () => {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot sx={{ bgcolor: COLORS.SECONDARY }}>
+              <TimelineDot sx={{ bgcolor: "transparent" }}>
                 <div className="timeline-icon">
                   <img src={item.icon} alt={item.companyName} />
                 </div>
