@@ -37,6 +37,9 @@
       border: 2px solid transparent;
       border-radius: var(--border-radius);
       transition: all 0.2s ease-in-out;
+      p {
+        font-size: 20px;
+      }
     }
     a:hover {
       border: 2px solid var(--white);

@@ -18,7 +18,7 @@ const CustomTimeline = () => {
             <TimelineOppositeContent>
               <div
                 className={`timeline-opposite-content ${
-                  index % 2 === 0 ? "even" : ""
+                  index % 2 === 0 && "even"
                 }`}
               >
                 <h2>{item.timeFrame}</h2>
@@ -40,7 +40,9 @@ const CustomTimeline = () => {
                     <div className="timeline-header">
                       <h2>{item.position}</h2>
                       <h3>{item.companyName}</h3>
-                      <div className="timeline-chips">
+                      <div
+                        className={`timeline-chips ${index % 2 != 0 && "odd"}`}
+                      >
                         {item.skills.map((skill, index) => (
                           <div className="chip" key={index}>
                             <p>{skill.text}</p>
@@ -48,7 +50,7 @@ const CustomTimeline = () => {
                         ))}
                       </div>
                     </div>
-                    <div className="timeline-body">{item.bodyText}</div>
+                    {/* <div className="timeline-body">{item.bodyText}</div> */}
                   </div>
                 </div>
               </div>

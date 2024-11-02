@@ -15,6 +15,7 @@ export const TimelineItems: TimelineItemType[] = [
       { text: "Business Development" },
       { text: "Graphic Design" },
       { text: "Marketing" },
+      { text: "Illustrator" },
     ],
     bodyText:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Litora aptent placerat nostra eget augue justo justo adipiscing. Primis orci sollicitudin libero; sit egestas at feugiat suscipit.",
@@ -27,8 +28,11 @@ export const TimelineItems: TimelineItemType[] = [
     skills: [
       { text: "Python" },
       { text: "Machine Learning" },
-      { text: "Data Analytics" },
+      { text: "Tableau" },
       { text: "Investments" },
+      { text: "Data Analytics" },
+      { text: "Data Modeling" },
+      { text: "Public Speaking" },
     ],
     bodyText:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Litora aptent placerat nostra eget augue justo justo adipiscing. Primis orci sollicitudin libero; sit egestas at feugiat suscipit.",
@@ -40,10 +44,14 @@ export const TimelineItems: TimelineItemType[] = [
     timeFrame: "2020-2022",
     skills: [
       { text: "Python" },
+      { text: "TypeScript" },
       { text: "Angular" },
       { text: "Machine Learning" },
       { text: "UI/UX" },
       { text: "C#" },
+      { text: "SQL" },
+      { text: "Power BI" },
+      { text: "Agile" },
     ],
     bodyText:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Litora aptent placerat nostra eget augue justo justo adipiscing. Primis orci sollicitudin libero; sit egestas at feugiat suscipit.",
@@ -59,6 +67,7 @@ export const TimelineItems: TimelineItemType[] = [
       { text: "UI/UX" },
       { text: "TypeScript" },
       { text: "Jest" },
+      { text: "Agile" },
     ],
     bodyText:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Litora aptent placerat nostra eget augue justo justo adipiscing. Primis orci sollicitudin libero; sit egestas at feugiat suscipit.",

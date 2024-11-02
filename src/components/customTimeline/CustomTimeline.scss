@@ -31,7 +31,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: fit-content;
+    min-height: 10rem;
     width: 100%;
     position: relative;
     .timeline-card {
@@ -61,22 +61,23 @@
           h3 {
             line-height: 100%;
           }
-
           .timeline-chips {
             display: flex;
             gap: 0.5rem;
             flex-wrap: wrap;
             .chip {
               display: flex;
-              justify-content: center;
               align-items: center;
               background: var(--primary);
               border-radius: 8px;
               padding: 0.2rem 0.5rem;
               p {
-                font-size: 14px;
+                font-size: 16px;
               }
             }
+          }
+          .timeline-chips.odd {
+            justify-content: flex-end;
           }
         }
         .timeline-body {
@@ -85,21 +86,15 @@
         }
       }
     }
-    .timeline-card::after,
-    .timeline-card::before {
+    .timeline-card::after {
       content: "";
       position: absolute;
       height: 100%;
       width: 100%;
       background-image: conic-gradient(from 90deg, #ffffff, #696767, #ffffff);
-      padding: 4px;
+      padding: 2px;
       z-index: -1;
-      border-radius: 20px;
-    }
-
-    .timeline-card::before {
-      filter: blur(1.5rem);
-      opacity: 0.5;
+      border-radius: 16px;
     }
   }
 }

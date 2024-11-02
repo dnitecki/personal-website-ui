@@ -8,7 +8,10 @@
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   section {
+    overflow-y: auto;
+    flex: 1;
     min-height: 100vh;
+    display: flex;
     scroll-snap-align: start;
   }
 }
