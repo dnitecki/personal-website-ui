@@ -88,6 +88,7 @@
         }
       }
     }
+
     .timeline-card:hover {
       background-color: var(--secondary);
       .timeline-content .timeline-header .timeline-chips .chip {
@@ -99,7 +100,7 @@
       position: absolute;
       height: 100%;
       width: 100%;
-      background-image: conic-gradient(#ffffff, #696767, #ffffff);
+      background-image: conic-gradient(from 90deg, #ffffff, #696767, #ffffff);
       padding: 2px;
       z-index: -1;
       border-radius: 16px;
