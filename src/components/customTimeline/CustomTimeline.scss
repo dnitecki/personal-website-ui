@@ -1,11 +1,13 @@
 .timeline-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
   max-width: 80rem;
-  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
   z-index: 1;
   .timeline-opposite-content {
     display: flex;
@@ -33,14 +35,13 @@
     padding: 1rem;
     align-items: center;
     height: 100%;
-    width: 40rem;
+    min-width: 30rem;
     position: relative;
     .timeline-card {
       display: flex;
       position: relative;
       height: fit-content;
       width: 100%;
-      background-color: var(--primary);
       justify-content: center;
       align-items: center;
       border-radius: var(--border-radius);
