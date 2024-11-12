@@ -68,6 +68,8 @@ export const TimelineItems: TimelineItemType[] = [
       { text: "TypeScript" },
       { text: "Jest" },
       { text: "Agile" },
+      { text: "Cypress" },
+      { text: "Storybook" },
     ],
     bodyText:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Litora aptent placerat nostra eget augue justo justo adipiscing. Primis orci sollicitudin libero; sit egestas at feugiat suscipit.",

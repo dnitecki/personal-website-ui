@@ -10,4 +10,12 @@
   h1 {
     width: 100%;
   }
+  .resume-content {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -36,3 +36,8 @@ export type TimelineItemType = {
   skills: Skills[];
   bodyText: string;
 };
+
+export type CertificationType = {
+  image: any;
+  certificateName: string;
+};

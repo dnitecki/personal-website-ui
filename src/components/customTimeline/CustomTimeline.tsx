@@ -44,7 +44,6 @@ const CustomTimeline = () => {
                         ))}
                       </div>
                     </div>
-                    {/* <div className="timeline-body">{item.bodyText}</div> */}
                   </div>
                 </div>
               </div>
