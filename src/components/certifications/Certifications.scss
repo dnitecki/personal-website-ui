@@ -22,7 +22,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      padding-bottom: 1rem;
       .certification-image {
         display: flex;
         justify-content: center;
@@ -34,9 +34,6 @@
           width: auto;
         }
       }
-    }
-    .certification-item :last-of-type {
-      margin-bottom: 1rem;
     }
   }
 }
