@@ -20,8 +20,10 @@ export type PortfolioItemType = {
     className: string;
   };
 };
-export type Skills = {
+export type SkillType = {
   text: string;
+  color: string;
+  fontColor: string;
 };
 export type EmailJsError = {
   status: number;
@@ -33,7 +35,7 @@ export type TimelineItemType = {
   companyName: string;
   position: string;
   timeFrame: string;
-  skills: Skills[];
+  skills: SkillType[];
   bodyText: string;
 };
 

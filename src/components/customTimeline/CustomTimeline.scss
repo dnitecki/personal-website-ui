@@ -4,86 +4,91 @@
   height: 100%;
   width: fit-content;
   max-width: 80rem;
-  margin-right: 2rem;
-  overflow-y: auto;
-  overflow-x: hidden;
+  gap: 2rem;
   z-index: 1;
-  .timeline-opposite-content {
+  h1 {
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    text-align: left;
   }
-  .timeline-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4rem;
-    width: 4rem;
-    img {
-      height: 80%;
-      width: auto;
-    }
-  }
-  .content-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    .timeline-card {
+  .timeline-content-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    .timeline-opposite-content {
       display: flex;
-      position: relative;
-      height: fit-content;
-      width: 30rem;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      text-align: right;
+    }
+    .timeline-icon {
+      display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: var(--border-radius);
-      transition: all 0.2s ease-in-out;
-      .timeline-content {
+      height: 4rem;
+      width: 4rem;
+      img {
+        height: 80%;
+        width: auto;
+      }
+    }
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      .timeline-card {
         display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        height: 100%;
-        width: 100%;
-        padding: 1rem;
-        .timeline-header {
+        position: relative;
+        height: fit-content;
+        width: 30rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--border-radius);
+        transition: all 0.2s ease-in-out;
+        .timeline-content {
           display: flex;
-          width: 100%;
-          gap: 1rem;
           flex-direction: column;
-          height: fit-content;
-          h2,
-          h3 {
-            line-height: 80%;
-          }
-          .timeline-chips {
+          gap: 0.5rem;
+          height: 100%;
+          width: 100%;
+          padding: 1rem;
+          .timeline-header {
             display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            .chip {
+            width: 100%;
+            gap: 1rem;
+            flex-direction: column;
+            height: fit-content;
+            h2,
+            h3 {
+              line-height: 80%;
+            }
+            .timeline-chips {
               display: flex;
-              align-items: center;
-              background: var(--tertiary);
-              border-radius: 8px;
-              padding: 0.2rem 0.5rem;
-              p {
-                font-size: 16px;
+              gap: 0.5rem;
+              flex-wrap: wrap;
+              .chip {
+                display: flex;
+                align-items: center;
+                background: #4a00e0;
+                border-radius: 8px;
+                padding: 0.2rem 0.5rem;
+                p {
+                  font-size: 16px;
+                }
               }
             }
+            .timeline-chips.odd {
+              justify-content: flex-end;
+            }
           }
-          .timeline-chips.odd {
-            justify-content: flex-end;
+          .timeline-body {
+            display: flex;
+            text-align: left;
           }
-        }
-        .timeline-body {
-          display: flex;
-          text-align: left;
         }
       }
     }
@@ -99,5 +104,5 @@
 }
 .MuiTimelineOppositeContent-root {
   display: flex;
-  min-width: 14rem;
+  min-width: 13rem;
 }

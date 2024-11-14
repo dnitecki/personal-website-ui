@@ -11,46 +11,56 @@ import { TimelineItems } from "../../mappers/timelineMapper";
 const CustomTimeline = () => {
   return (
     <div className="timeline-container">
-      <Timeline>
-        {TimelineItems.map((item, index) => (
-          <TimelineItem key={index}>
-            <TimelineOppositeContent sx={{ width: "10rem" }}>
-              <div className="timeline-opposite-content">
-                <h2>{item.timeFrame}</h2>
-              </div>
-            </TimelineOppositeContent>
-
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot sx={{ bgcolor: "transparent" }}>
-                <div className="timeline-icon">
-                  <img src={item.icon} alt={item.companyName} />
+      <h1>Experience</h1>
+      <div className="timeline-content-container">
+        <Timeline>
+          {TimelineItems.map((item, index) => (
+            <TimelineItem key={index}>
+              <TimelineOppositeContent sx={{ width: "10rem" }}>
+                <div className="timeline-opposite-content">
+                  <h2>{item.timeFrame}</h2>
                 </div>
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <div className="content-container">
-                <div className="timeline-card">
-                  <div className="timeline-content">
-                    <div className="timeline-header">
-                      <h2>{item.position}</h2>
-                      <h3>{item.companyName}</h3>
-                      <div className="timeline-chips">
-                        {item.skills.map((skill, index) => (
-                          <div className="chip" key={index}>
-                            <p>{skill.text}</p>
-                          </div>
-                        ))}
+              </TimelineOppositeContent>
+
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot sx={{ bgcolor: "transparent" }}>
+                  <div className="timeline-icon">
+                    <img src={item.icon} alt={item.companyName} />
+                  </div>
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent>
+                <div className="content-container">
+                  <div className="timeline-card">
+                    <div className="timeline-content">
+                      <div className="timeline-header">
+                        <h2>{item.position}</h2>
+                        <h3>{item.companyName}</h3>
+                        <div className="timeline-chips">
+                          {item.skills.map((skill, index) => (
+                            <div
+                              className="chip"
+                              style={{
+                                background: skill.color,
+                                color: skill.fontColor,
+                              }}
+                              key={index}
+                            >
+                              <p>{skill.text}</p>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </TimelineContent>
-          </TimelineItem>
-        ))}
-      </Timeline>
+              </TimelineContent>
+            </TimelineItem>
+          ))}
+        </Timeline>
+      </div>
     </div>
   );
 };
