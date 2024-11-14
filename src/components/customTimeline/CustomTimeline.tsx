@@ -21,7 +21,6 @@ const CustomTimeline = () => {
                   <h2>{item.timeFrame}</h2>
                 </div>
               </TimelineOppositeContent>
-
               <TimelineSeparator>
                 <TimelineConnector />
                 <TimelineDot sx={{ bgcolor: "transparent" }}>
