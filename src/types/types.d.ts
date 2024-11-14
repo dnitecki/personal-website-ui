@@ -22,8 +22,6 @@ export type PortfolioItemType = {
 };
 export type SkillType = {
   text: string;
-  color?: string;
-  fontColor?: string;
 };
 export type EmailJsError = {
   status: number;

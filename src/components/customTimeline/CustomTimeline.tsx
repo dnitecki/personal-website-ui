@@ -40,14 +40,7 @@ const CustomTimeline = () => {
                         <h3>{item.companyName}</h3>
                         <div className="timeline-chips">
                           {item.skills.map((skill, index) => (
-                            <div
-                              className="chip"
-                              style={{
-                                background: skill.color,
-                                color: skill.fontColor,
-                              }}
-                              key={index}
-                            >
+                            <div className="chip" key={index}>
                               <p>{skill.text}</p>
                             </div>
                           ))}
