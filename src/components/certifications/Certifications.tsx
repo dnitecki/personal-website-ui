@@ -4,6 +4,7 @@ import "./Certifications.scss";
 const Certifications = () => {
   return (
     <div className="certifications-container">
+      <h1>Certifications</h1>
       <ul className="certifications-list">
         {CertificationsList.map((item, index) => (
           <li key={index} className="certification-item">
