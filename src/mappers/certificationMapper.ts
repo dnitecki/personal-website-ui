@@ -19,11 +19,11 @@ export const CertificationsList: CertificationType[] = [
     certificateName: "AWS Cloud Practitioner",
   },
   {
-    image: IBMDataScience,
-    certificateName: "IBM Data Science Professional",
-  },
-  {
     image: IBMPython,
     certificateName: "IBM Python",
+  },
+  {
+    image: IBMDataScience,
+    certificateName: "IBM Data Science Professional",
   },
 ];
