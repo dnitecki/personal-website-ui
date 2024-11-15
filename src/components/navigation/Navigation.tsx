@@ -44,6 +44,7 @@ const Navigation = () => {
           <a
             href="#overview"
             className={activeSection === "overview" ? "active" : EMPTY_STRING}
+            title="Overview"
           >
             <p>Overview</p>
           </a>
@@ -52,6 +53,7 @@ const Navigation = () => {
           <a
             href="#resume"
             className={activeSection === "resume" ? "active" : EMPTY_STRING}
+            title="Resume"
           >
             <p>Resume</p>
           </a>
@@ -60,6 +62,7 @@ const Navigation = () => {
           <a
             href="#portfolio"
             className={activeSection === "portfolio" ? "active" : EMPTY_STRING}
+            title="Portfolio"
           >
             <p>Portfolio</p>
           </a>
@@ -68,6 +71,7 @@ const Navigation = () => {
           <a
             href="#contact"
             className={activeSection === "contact" ? "active" : EMPTY_STRING}
+            title="Contact"
           >
             <p>Contact</p>
           </a>

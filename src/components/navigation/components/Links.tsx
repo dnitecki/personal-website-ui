@@ -25,6 +25,7 @@ const Links = () => {
           target="_blank"
           rel="noreferrer"
           className="link-btn"
+          title="LinkedIn"
         >
           <LinkedInIcon fontSize="inherit" />
         </a>
@@ -33,6 +34,7 @@ const Links = () => {
           target="_blank"
           rel="noreferrer"
           className="link-btn"
+          title="Instagram"
         >
           <InstagramIcon fontSize="inherit" />
         </a>
@@ -41,10 +43,11 @@ const Links = () => {
           target="_blank"
           rel="noreferrer"
           className="link-btn"
+          title="GitHub"
         >
           <GitHubIcon fontSize="inherit" />
         </a>
-        <button className="link-btn" onClick={handleShare}>
+        <button className="link-btn" onClick={handleShare} title="Share">
           <ShareIcon fontSize="inherit" />
         </button>
       </div>
