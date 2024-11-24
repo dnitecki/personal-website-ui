@@ -7,7 +7,7 @@ const Overview = () => {
         <div className="aboutme-container">
           <div className="aboutme-header">
             <div className="headshot-container">
-              <img src={Headshot} />
+              <img src={Headshot} alt="headshot" />
             </div>
           </div>
         </div>
