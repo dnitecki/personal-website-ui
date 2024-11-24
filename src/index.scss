@@ -47,13 +47,6 @@ html {
   background-color: var(--white);
   border-radius: var(--border-radius);
 }
-html,
-body {
-  overflow: visible;
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--background-color) !important;
-}
 * {
   font-family: "Poppins";
   box-sizing: border-box;
