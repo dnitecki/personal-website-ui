@@ -1,4 +1,4 @@
-import { CertificationsList } from "../../mappers/certificationMapper";
+import { CertificationsList } from "@mappers/certificationMapper";
 import "./Certifications.scss";
 
 const Certifications = () => {

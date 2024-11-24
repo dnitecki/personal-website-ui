@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-
+    "baseUrl": "src",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@mappers/*": ["mappers/*"]
+    },
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Projects */

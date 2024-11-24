@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.scss";
 import StartupAnimation from "./components/animations/startupAnimation/StartupAnimation";
 import Navigation from "./components/navigation/Navigation";
-import Main from "./pages/main/Main";
+import Main from "@pages/main/Main";
 
 function App() {
   const [showStartup, setShowStartup] = useState(false);

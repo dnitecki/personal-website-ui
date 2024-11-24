@@ -1,9 +1,9 @@
 import { CertificationType } from "../types/types";
-import AWSPractitioner from "../assets/aws-certified-cloud-practitioner.png";
-import AWSDeveloper from "../assets/aws-certified-developer-associate.png";
-import AWSArchitect from "../assets/aws-certified-solutions-architect-associate.png";
-import IBMDataScience from "../assets/ibm-data-science-professional-certificate.png";
-import IBMPython from "../assets/python-project-for-data-science.png";
+import AWSPractitioner from "@assets/aws-certified-cloud-practitioner.png";
+import AWSDeveloper from "@assets/aws-certified-developer-associate.png";
+import AWSArchitect from "@assets/aws-certified-solutions-architect-associate.png";
+import IBMDataScience from "@assets/ibm-data-science-professional-certificate.png";
+import IBMPython from "@assets/python-project-for-data-science.png";
 
 export const CertificationsList: CertificationType[] = [
   {

@@ -1,6 +1,5 @@
-import FadeInWhenVisible from "../../components/animations/fadeInWhenVisible/FadeInWhenVisible";
-import Certifications from "../../components/certifications/Certifications";
-import CustomTimeline from "../../components/customTimeline/CustomTimeline";
+import Certifications from "./components/certifications/Certifications";
+import CustomTimeline from "./components/customTimeline/CustomTimeline";
 import "./Resume.scss";
 
 const Resume = () => {

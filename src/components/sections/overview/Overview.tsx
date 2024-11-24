@@ -1,5 +1,6 @@
 import "./Overview.scss";
-import Headshot from "../../assets/dominick-headshot.png";
+import Headshot from "@assets/dominick-headshot.png";
+
 const Overview = () => {
   return (
     <div className="overview-container">

@@ -1,8 +1,8 @@
 import { SkillType, TimelineItemType } from "../types/types";
-import JPMCIcon from "../assets/jpmc-icon.png";
-import STNIcon from "../assets/stantec-icon.png";
-import UKYIcon from "../assets/uky-icon.png";
-import OneStopIcon from "../assets/one-stop-icon.png";
+import JPMCIcon from "@assets/jpmc-icon.png";
+import STNIcon from "@assets/stantec-icon.png";
+import UKYIcon from "@assets/uky-icon.png";
+import OneStopIcon from "@assets/one-stop-icon.png";
 
 const SKILLS: Record<any, SkillType> = {
   PYTHON: { text: "Python" },

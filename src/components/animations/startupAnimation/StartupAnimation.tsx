@@ -1,6 +1,6 @@
 import "./StartupAnimation.scss";
 import Lottie from "react-lottie-player";
-import Logo from "../../../assets/MyLogo.json";
+import Logo from "@assets/MyLogo.json";
 
 export default function StartupAnimation() {
   return (

@@ -6,7 +6,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent/TimelineOppositeContent";
-import { TimelineItems } from "../../mappers/timelineMapper";
+import { TimelineItems } from "@mappers/timelineMapper";
 
 const CustomTimeline = () => {
   return (

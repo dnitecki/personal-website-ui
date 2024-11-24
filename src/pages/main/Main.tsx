@@ -1,7 +1,7 @@
-import Contact from "../contact/Contact";
-import Overview from "../overview/Overview";
-import Portfolio from "../portfolio/Portfolio";
-import Resume from "../resume/Resume";
+import Contact from "@components/sections/contact/Contact";
+import Overview from "@components/sections/overview/Overview";
+import Portfolio from "@components/sections/portfolio/Portfolio";
+import Resume from "@components/sections/resume/Resume";
 import "./Main.scss";
 
 const Main = () => {
