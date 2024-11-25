@@ -20,9 +20,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: #8e2de2;
-      background: -webkit-linear-gradient(to bottom, #4a00e0, #8e2de2);
-      background: linear-gradient(to bottom, #4a00e0, #8e2de2);
+      background: var(--primary-gradient);
       border-radius: var(--border-radius);
       outline: 2px solid transparent;
       transition: all 0.2s ease-in-out;
@@ -40,7 +38,7 @@
     }
     .certification-item:hover {
       cursor: pointer;
-      outline: 2px solid var(--white);
+      outline: 2px solid var(--hover-color);
     }
   }
 }

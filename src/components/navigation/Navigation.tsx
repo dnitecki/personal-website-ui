@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Navigation.scss";
-import { EMPTY_STRING, MEDIA_FILES } from "../../constants/constants";
+import { EMPTY_STRING, MEDIA_FILES } from "@constants/constants";
 import Links from "./components/Links";
 
 const Navigation = () => {

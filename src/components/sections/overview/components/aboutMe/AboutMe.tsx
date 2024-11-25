@@ -1,3 +1,4 @@
+import { MEDIA_FILES } from "@constants/constants";
 import "./AboutMe.scss";
 import Headshot from "@assets/dominick-headshot.png";
 
@@ -11,7 +12,12 @@ const AboutMe = () => {
       </div>
       <div className="aboutme-body">
         <h1>Hello! I'm</h1>
-        <h1>Dominick Nitecki</h1>
+        <h1 className="name">Dominick Nitecki</h1>
+      </div>
+      <div className="aboutme-footer">
+        <div className="aboutme-logo">
+          <img src={MEDIA_FILES.dnIcon} alt="Dominick Nitecki Logo" />
+        </div>
       </div>
     </div>
   );

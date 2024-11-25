@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import "./ModeToggle.scss";
-import { ToggleContext } from "../../context/toggleContext";
+import { ToggleContext } from "../../providers/toggleContext";
 import NightsStayIcon from "@mui/icons-material/NightsStay";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 export default function ModeToggle() {

@@ -35,9 +35,7 @@
         width: 14rem;
         height: 14rem;
         border-radius: 50%;
-        background: #8e2de2;
-        background: -webkit-linear-gradient(to bottom, #4a00e0, #8e2de2);
-        background: linear-gradient(to bottom, #4a00e0, #8e2de2);
+        background: var(--primary-gradient);
         z-index: -1;
       }
       &::after {
@@ -65,12 +63,32 @@
     width: 100%;
     h1 {
       font-size: 60px;
-      font-weight: 500;
+      font-weight: 300;
       line-height: 140%;
+    }
+    .name {
+      font-weight: 600;
+    }
+  }
+  .aboutme-footer {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    .aboutme-logo {
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      img {
+        display: flex;
+        height: auto;
+        width: 4rem;
+      }
     }
   }
 }
 .aboutme-container:hover {
   cursor: pointer;
-  outline: 2px solid var(--white);
+  outline: 2px solid var(--hover-color);
 }
