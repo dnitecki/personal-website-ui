@@ -1,0 +1,17 @@
+.certs-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary);
+  grid-area: certs;
+  padding: 2rem;
+  gap: 2rem;
+  outline: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+.certs-container:hover {
+  cursor: pointer;
+  outline: 2px solid var(--hover-color);
+}

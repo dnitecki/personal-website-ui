@@ -18,29 +18,21 @@
   width: 100%;
   max-width: 90rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "aboutMe aboutMe portfolio portfolio portfolio portfolio" "aboutMe aboutMe photo photo certs certs";
+  grid-template-areas: "aboutMe aboutMe portfolio portfolio portfolio portfolio" "aboutMe aboutMe certs certs photo photo";
   .portfolio-container {
     display: flex;
     height: 100%;
     width: 100%;
     border-radius: var(--border-radius);
-    outline: 2px solid white;
     grid-area: portfolio;
-  }
-  .certs-container {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    border-radius: var(--border-radius);
-    outline: 2px solid white;
-    grid-area: certs;
+    background-color: var(--secondary);
   }
   .photo-container {
     display: flex;
     height: 100%;
     width: 100%;
     border-radius: var(--border-radius);
-    outline: 2px solid white;
     grid-area: photo;
+    background-color: var(--secondary);
   }
 }

@@ -62,12 +62,13 @@
     flex-direction: column;
     width: 100%;
     h1 {
-      font-size: 60px;
+      font-size: 50px;
       font-weight: 300;
       line-height: 140%;
     }
     .name {
-      font-weight: 600;
+      font-size: 60px;
+      font-weight: 500;
     }
   }
   .aboutme-footer {
@@ -83,7 +84,7 @@
       img {
         display: flex;
         height: auto;
-        width: 4rem;
+        width: 3rem;
       }
     }
   }
